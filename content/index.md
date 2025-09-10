@@ -1,4 +1,4 @@
-# LESSON NAME
+# Quantum Autumn School 2025
 
 Intro
 
