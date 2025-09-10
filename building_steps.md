@@ -1,3 +1,9 @@
+steps with new content:
+uv run sphinx-build -b html content _build
+git add .
+git commit -m "Update documentation: describe your changes"
+
+
 
 # Activate the virtual environment and run commands
 uv run sphinx-build content _build          # Build documentation
@@ -20,3 +26,4 @@ uv pip show sphinx                          # Show package info
 # Python version management
 uv python list                              # List available Python versions
 uv python pin 3.13.5                       # Pin to specific Python version
+
