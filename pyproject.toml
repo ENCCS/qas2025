@@ -1,0 +1,19 @@
+# Quantum Autumn School 2025 - Educational Materials
+[project]
+name = "qas2025-docs"
+version = "0.1.0"
+description = "Quantum Autumn School 2025 - Educational Materials"
+requires-python = ">=3.13"
+dependencies = [
+    "Sphinx",
+    "sphinx_rtd_theme>=2.0",
+    "sphinx_rtd_theme_ext_color_contrast", 
+    "myst_nb",
+    "sphinx-lesson",
+]
+
+[tool.uv]
+# Development dependencies for live reload and other dev tools
+dev-dependencies = [
+    "sphinx-autobuild>=2021.3.14",
+]
