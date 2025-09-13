@@ -1,5 +1,5 @@
 steps with new content:
-uv run sphinx-build -b html content _build
+uv run sphinx-autobuild -b html content _build
 git add .
 git commit -m "Update documentation: describe your changes"
 

@@ -17,8 +17,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "LESSON NAME"
-copyright = "2021, The contributors"
+project = "Quantum Autumn School 2025"
+copyright = "2025, The contributors"
 author = "The contributors"
 github_user = "ENCCS"
 github_repo_name = ""  # auto-detected from dirname if blank
@@ -37,6 +37,7 @@ extensions = [
     # remove once sphinx_rtd_theme updated for contrast and accessibility:
     "sphinx_rtd_theme_ext_color_contrast",
     "sphinx.ext.todo",
+    "sphinx_design",
 ]
 
 # Settings for myst_nb:
@@ -67,6 +68,7 @@ exclude_patterns = [
     ".DS_Store",
     "jupyter_execute",
     "*venv*",
+    "template_folders",
 ]
 
 # -- Options for HTML output -------------------------------------------------
