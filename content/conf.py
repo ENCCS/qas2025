@@ -37,6 +37,7 @@ extensions = [
     # remove once sphinx_rtd_theme updated for contrast and accessibility:
     "sphinx_rtd_theme_ext_color_contrast",
     "sphinx.ext.todo",
+    "sphinx_design",
 ]
 
 # Settings for myst_nb:
@@ -67,6 +68,7 @@ exclude_patterns = [
     ".DS_Store",
     "jupyter_execute",
     "*venv*",
+    "template_folders",
 ]
 
 # -- Options for HTML output -------------------------------------------------

@@ -7,9 +7,10 @@ requires-python = ">=3.13"
 dependencies = [
     "Sphinx",
     "sphinx_rtd_theme>=2.0",
-    "sphinx_rtd_theme_ext_color_contrast", 
+    "sphinx_rtd_theme_ext_color_contrast",
     "myst_nb",
     "sphinx-lesson",
+    "sphinx-design>=0.6.1",
 ]
 
 [tool.uv]
