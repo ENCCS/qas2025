@@ -1,7 +1,8 @@
-steps with new content:
-uv run sphinx-autobuild -b html content _build
+# Steps to update GitHub Pages with new content:
+uv run sphinx-build -b html content _build    # Build static HTML (not autobuild)
 git add .
 git commit -m "Update documentation: describe your changes"
+git push origin main                           # Push to trigger GitHub Pages deployment
 
 
 

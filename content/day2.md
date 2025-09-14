@@ -26,17 +26,17 @@ Exploration of how quantum processing units (QPUs) are integrated with classical
 ## Lunch
 **Time:** 12:00-13:00
 
-## Getting started with algorithm development on real quantum hardware using IQM Resonance
+## Getting started with algorithm development on actual quantum hardware using IQM Resonance
+**Speaker:** Stefan Seegerer (IQM)  
+**Time:** 11:00-12:00
+
+In this session you will be learning how to execute quantum circuits on actual hardware with IQM’s cloud-accessible Resonance platform. You will not only run your first experiments but also acquire tips and tricks on how to get the most out of the hardware.
+
+## Developing Quantum Algorithms with qrisp—the Next Generation of Quantum Algorithm Development
 **Speaker:** Stefan Seegerer (IQM)  
 **Time:** 13:00-14:00
 
-Hands-on introduction to developing quantum algorithms specifically for IQM quantum computers. This session covers the IQM Resonance platform, hardware-specific considerations, and best practices for algorithm implementation on IQM devices. Participants will learn about the unique features and capabilities of IQM's quantum processors.
-
-## Developing quantum algorithms with qrisp, the next generation quantum algorithm development
-**Speaker:** Stefan Seegerer (IQM)  
-**Time:** 14:00-15:00
-
-Introduction to Qrisp, the next generation quantum algorithm development framework. This session demonstrates how Qrisp simplifies quantum programming through high-level abstractions while maintaining efficiency and hardware compatibility. We'll explore Qrisp's features for rapid quantum algorithm prototyping and deployment.
+This hands-on session introduces qrisp’s high-level, Pythonic workflow that converts mathematical intent directly into resource-optimized quantum circuits. Participants will prototype variational and fault-tolerant routines, run it on simulators and real hardware and experience first hand how qrisp empowers you to develop novel quantum algorithms.
 
 ## Coffee Break
 **Time:** 15:00-15:30

@@ -26,11 +26,11 @@ Advanced techniques for achieving high ground state overlap using quantum embedd
 ## Lunch
 **Time:** 12:00-13:00
 
-## Controlling a quantum computer using pulses
+## Excursion Session: Controlling a Quantum Computer Using Pulses
 **Speaker:** Stefan Seegerer (IQM)  
 **Time:** 13:00-14:00
 
-Low-level control of quantum computers through pulse-level programming. This session covers how quantum gates are implemented using electromagnetic pulses, pulse optimization techniques, and advanced control methods for improving gate fidelity and reducing errors.
+Leave the gate model behind and dive into the microwave layer where quantum logic is born. Through interactive demos you’ll be gaining an intuitive feel for how precise analog signals steer digital-era quantum computation.
 
 ## Interactive tutorial on the devices (LUMI-Q/IQM devices)
 **Speaker:** Stefan Seegerer (IQM)  
