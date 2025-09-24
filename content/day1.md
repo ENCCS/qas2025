@@ -23,7 +23,7 @@ This session provides a comprehensive overview of the European landscape for hyb
 **Time:** 10:40-11:00
 
 ## Overview of the HPC/QC software stack, from ready-made Q-libraries for common tasks to circuit level assembly and hardware-level
-**Speaker:** Miroslav Dobsicek (Chalmers Next Labs, SE)  
+**Speaker:** Miroslav Dobsicek
 **Time:** 11:00-12:00
 
 A technical deep-dive into the software ecosystem that connects classical high-performance computing with quantum computing. This session covers the full stack from ready-made quantum libraries for common tasks down to circuit-level assembly and hardware-level programming. We'll discuss how quantum algorithms integrate with classical computing workflows and the tools available for hybrid quantum-classical computing.
@@ -52,7 +52,7 @@ Building on the previous session, we'll explore how quantum circuits are used to
 
 An introduction to the theoretical foundations of quantum information processing. This session covers key concepts including quantum superposition, entanglement, and quantum measurements. We'll discuss the Quantum Fourier Transform (QFT) and other fundamental quantum algorithms, providing the theoretical background needed for advanced quantum computing applications.
 
-## Quantum error mitigation (QEM) applied to simulation of physical systems
+## SuperQEUROK and LUMI-Q - facts and opportunities
 **Speaker:** Göran Wendin (RISE, SE)  
 **Time:** 16:30-17:30
 
