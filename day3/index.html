@@ -1,0 +1,199 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 3 - Wednesday, November 5th &mdash; Quantum Autumn School 2025  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/overrides.css?v=c88db32d" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=35a8b989"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Day 4 - Thursday, November 6th" href="../day4/" />
+    <link rel="prev" title="Day 2 - Tuesday, November 4th" href="../day2/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Quantum Autumn School 2025
+              <img src="../_static/ENCCS.jpg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../schedule/">Nordic Quantum Autumn School 2025 - Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../day1/">Day 1 - Monday, November 3rd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../day2/">Day 2 - Tuesday, November 4th</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Day 3 - Wednesday, November 5th</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction-to-variational-quantum-algorithms-vqe-and-beyond-ope-sqd">Introduction to variational quantum algorithms: VQE and beyond (OPE, …, SQD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vqe-applied-to-use-cases-for-quantum-chemistry-drug-discovery-with-description-of-specific-use-cases">VQE applied to use cases for quantum chemistry/drug discovery with description of specific use cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coffee-break">Coffee Break</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#high-ground-state-overlap-via-quantum-embedding-methods">High Ground State Overlap via Quantum Embedding Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lunch">Lunch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#excursion-session-controlling-a-quantum-computer-using-pulses">Excursion Session: Controlling a Quantum Computer Using Pulses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interactive-tutorial-on-the-devices-lumi-q-iqm-devices">Interactive tutorial on the devices (LUMI-Q/IQM devices)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Coffee Break</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interactive-tutorial-execution-of-simple-quantum-chemistry-simulation-vqe-vs-lumi-q-iqm">Interactive tutorial: Execution of simple quantum chemistry simulation VQE vs LUMI-Q/IQM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#buffe-dinner">Buffé Dinner</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../day4/">Day 4 - Thursday, November 6th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../day5/">Day 5 - Friday, November 7th</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Quantum Autumn School 2025</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Day 3 - Wednesday, November 5th</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ENCCS/qas2025/blob/main/content/day3.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="day-3-wednesday-november-5th">
+<h1>Day 3 - Wednesday, November 5th<a class="headerlink" href="#day-3-wednesday-november-5th" title="Link to this heading"></a></h1>
+<p><em>Learning Track: Intermediate - Variational algorithms, Molecules, VQE use cases</em></p>
+<section id="introduction-to-variational-quantum-algorithms-vqe-and-beyond-ope-sqd">
+<h2>Introduction to variational quantum algorithms: VQE and beyond (OPE, …, SQD)<a class="headerlink" href="#introduction-to-variational-quantum-algorithms-vqe-and-beyond-ope-sqd" title="Link to this heading"></a></h2>
+<p><strong>Speaker:</strong> Juan (ENCCS, RISE, SE)<br />
+<strong>Time:</strong> 9:00-10:00</p>
+<p>Comprehensive overview of Variational Quantum Eigensolvers (VQE) and related algorithms including Quantum Phase Estimation (QPE) and quantum simulation methods. This session covers the theoretical foundations of variational quantum algorithms and their applications to quantum chemistry and materials science.</p>
+</section>
+<section id="vqe-applied-to-use-cases-for-quantum-chemistry-drug-discovery-with-description-of-specific-use-cases">
+<h2>VQE applied to use cases for quantum chemistry/drug discovery with description of specific use cases<a class="headerlink" href="#vqe-applied-to-use-cases-for-quantum-chemistry-drug-discovery-with-description-of-specific-use-cases" title="Link to this heading"></a></h2>
+<p><strong>Speaker:</strong> Panagiotis Barkoutsos (IonQ)<br />
+<strong>Time:</strong> 10:00-10:40</p>
+<p>Deep dive into practical applications of VQE for quantum chemistry and drug discovery. This session presents specific use cases, discusses the advantages of quantum approaches over classical methods, and explores current limitations and future prospects for quantum-enhanced molecular simulation.</p>
+</section>
+<section id="coffee-break">
+<h2>Coffee Break<a class="headerlink" href="#coffee-break" title="Link to this heading"></a></h2>
+<p><strong>Time:</strong> 10:40-11:00</p>
+</section>
+<section id="high-ground-state-overlap-via-quantum-embedding-methods">
+<h2>High Ground State Overlap via Quantum Embedding Methods<a class="headerlink" href="#high-ground-state-overlap-via-quantum-embedding-methods" title="Link to this heading"></a></h2>
+<p><strong>Speaker:</strong> Matthias Christandl (København U, DK)<br />
+<strong>Time:</strong> 11:00-12:00</p>
+<p>Advanced techniques for achieving high ground state overlap using quantum embedding methods. This session covers sophisticated approaches to quantum simulation of complex systems by embedding them in larger quantum systems, with applications to condensed matter physics and quantum chemistry.</p>
+</section>
+<section id="lunch">
+<h2>Lunch<a class="headerlink" href="#lunch" title="Link to this heading"></a></h2>
+<p><strong>Time:</strong> 12:00-13:00</p>
+</section>
+<section id="excursion-session-controlling-a-quantum-computer-using-pulses">
+<h2>Excursion Session: Controlling a Quantum Computer Using Pulses<a class="headerlink" href="#excursion-session-controlling-a-quantum-computer-using-pulses" title="Link to this heading"></a></h2>
+<p><strong>Speaker:</strong> Stefan Seegerer (IQM)<br />
+<strong>Time:</strong> 13:00-14:00</p>
+<p>Leave the gate model behind and dive into the microwave layer where quantum logic is born. Through interactive demos you’ll be gaining an intuitive feel for how precise analog signals steer digital-era quantum computation.</p>
+</section>
+<section id="interactive-tutorial-on-the-devices-lumi-q-iqm-devices">
+<h2>Interactive tutorial on the devices (LUMI-Q/IQM devices)<a class="headerlink" href="#interactive-tutorial-on-the-devices-lumi-q-iqm-devices" title="Link to this heading"></a></h2>
+<p><strong>Speaker:</strong> Stefan Seegerer (IQM)<br />
+<strong>Time:</strong> 14:00-15:00</p>
+<p>Interactive tutorial providing direct experience with LUMI-Q quantum simulator and IQM quantum devices. Participants will learn to submit jobs, monitor execution, and retrieve results from these quantum computing platforms. This practical session bridges theory and application.</p>
+</section>
+<section id="id1">
+<h2>Coffee Break<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p><strong>Time:</strong> 15:00-15:30</p>
+</section>
+<section id="interactive-tutorial-execution-of-simple-quantum-chemistry-simulation-vqe-vs-lumi-q-iqm">
+<h2>Interactive tutorial: Execution of simple quantum chemistry simulation VQE vs LUMI-Q/IQM<a class="headerlink" href="#interactive-tutorial-execution-of-simple-quantum-chemistry-simulation-vqe-vs-lumi-q-iqm" title="Link to this heading"></a></h2>
+<p><strong>Speakers:</strong> IQM team/Panos (Hands-on)<br />
+<strong>Time:</strong> 15:30-16:30</p>
+<p>Advanced tutorial comparing VQE implementation on quantum simulators versus real LUMI-Q/IQM quantum hardware. Participants will execute quantum chemistry examples and analyze the differences between simulated and real quantum computations.</p>
+</section>
+<section id="buffe-dinner">
+<h2>Buffé Dinner<a class="headerlink" href="#buffe-dinner" title="Link to this heading"></a></h2>
+<p><strong>Time:</strong> 16:30-17:30</p>
+<p>Special dinner event for all participants and instructors.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../day2/" class="btn btn-neutral float-left" title="Day 2 - Tuesday, November 4th" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../day4/" class="btn btn-neutral float-right" title="Day 4 - Thursday, November 6th" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, The contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
