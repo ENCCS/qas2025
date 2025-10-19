@@ -13,8 +13,8 @@ dependencies = [
     "sphinx-design>=0.6.1",
 ]
 
-[tool.uv]
+[dependency-groups]
 # Development dependencies for live reload and other dev tools
-dev-dependencies = [
+dev = [
     "sphinx-autobuild>=2021.3.14",
 ]
