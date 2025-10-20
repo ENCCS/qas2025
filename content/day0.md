@@ -3,14 +3,10 @@
 *Everything you need to know before the Quantum Autumn School 2025*
 
 :::{important}
-**Important: Check Your Email!**
-
-Some essential information is sent exclusively via email:
+Some info is sent only via email to registered participants:
 - **Zoom connection links** for online participation and pre-event check-in
-- **IQM Resonance exclusive signup link** for enhanced quantum hardware access
-- **Calendar invites** (.ics files) for all meetings
-
-Please keep those emails handy throughout the school.
+- **IQM Resonance exclusive signup link** for access to a specific project on IQM resonance cloud
+- **Calendar invites** (.ics files) for all calls
 :::
 
 ## Welcome!
@@ -22,7 +18,9 @@ Thank you for registering for the Quantum Autumn School 2025! Whether you're joi
 
 **Dates:** November 3-7, 2025
 **Venue (In-person):** RISE KTH "Innoversum" room, Drottning Kristinas väg 61, Stockholm
+
 **Pre-Event Check-in:** October 29, 2025 at 11:00 AM Stockholm time (Zoom link in email)
+
 **School Website:** [https://enccs.github.io/qas2025/](https://enccs.github.io/qas2025/)
 :::
 
@@ -35,16 +33,16 @@ If your plans have changed, please inform us so we don't order unnecessary food 
 :::{dropdown} IQM Resonance Cloud Access
 :open:
 
-We have **exciting news** about generous access to quantum computing resources!
+We have **exciting news** about generous access to quantum computing hardware thanks to IQM!
 
 **Exclusive Access for QAS2025 Participants:**
 - Special project access on IQM Resonance cloud
-- Exclusive signup link provided in your registration email
+- Exclusive signup link provided in your registration email (check your email)
 
 **What You Get:**
 - Access to the QAS2025 project (we'll add you after you sign up)
 - Immediate access to the default freemium tier (which is already excellent!)
-- Hands-on experience with real quantum hardware
+- Hands-on experience with real European quantum hardware
 
 **How to Get Started:**
 1. Find the exclusive signup link in your email
@@ -55,7 +53,7 @@ We have **exciting news** about generous access to quantum computing resources!
 **Many thanks to IQM for their generosity in providing this access!**
 :::
 
-## Recommended: IQM Quantum School
+## IQM Quantum School 
 
 :::{dropdown} IQM 3-Day Online School (December 2-4)
 
@@ -75,7 +73,7 @@ Together with the Quantum Autumn School, this will give you an excellent skillse
 :::{dropdown} PechaKucha Evening - Wednesday, November 5th
 :open:
 
-**Time:** Wednesday, November 5th at 15:30
+**Time:** Wednesday, November 5th at 16:30
 **Location:** RISE KTH "Innoversum" room (before dinner)
 
 To balance all that brainwork with some light-hearted fun, we warmly invite you to the **Social PechaKucha Evening**!
@@ -127,11 +125,21 @@ Watch this **[short video by Stefan from IQM](https://www.youtube.com/watch?v=gY
 - Prepare your environment to run Jupyter notebooks
 - Detailed setup steps available on our website
 - We'll guide you through specifics during the pre-event check-in call
+:::
 
+:::{dropdown} Readings and useful links
 **4. Get Familiar with Qrisp**
 - Explore the European quantum SDK **[Qrisp](https://qrisp.eu/)**
 - We'll have a special focus on Qrisp during the school
 - Great opportunity to learn this European quantum algorithm development package
+
+**5. Excellent Lectures and Readings**
+- **[Ronald de Wolf (CWI and ILLC)](https://homepages.cwi.nl/~rdewolf/)** offers excellent quantum computing course materials
+- Course website: [https://homepages.cwi.nl/~rdewolf/qc25.html](https://homepages.cwi.nl/~rdewolf/qc25.html)
+- Lecture notes (PDF): [https://homepages.cwi.nl/~rdewolf/qcnotes.pdf](https://homepages.cwi.nl/~rdewolf/qcnotes.pdf)
+- Highly recommended reading to strengthen your quantum computing foundations
+- **[Quantum Algorithm Zoo](https://quantumalgorithmzoo.org/)** - Excellent summary of available quantum algorithms and related implementations
+  - Citation: [BibTeX reference](https://quantumalgorithmzoo.org/zoo.bib)
 
 **Don't worry if you don't complete all of this—we'll guide you through the essentials during the school!**
 :::
@@ -209,6 +217,7 @@ If you have any questions or concerns before the school starts, don't hesitate t
 
 :::{seealso}
 **Next Steps:**
+- Return to the [main landing page](index.md)
 - Attend the pre-event check-in on October 29
 - Review the [full schedule](schedule.md)
 - Check out [Day 1 agenda](day1.md) to see what's coming
