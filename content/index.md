@@ -3,11 +3,13 @@
 :::{admonition} Welcome to QAS2025!
 :class: important
 
-Join us for an intensive week of quantum computing education, featuring hands-on tutorials, expert lectures, and European quantum hardware. 
+Join us for an intensive week of quantum computing education, featuring hands-on tutorials, expert lectures, and European quantum hardware.
 
 **📅 November 3-7, 2025 | 📍 RISE KTH "Innoversum" room, Stockholm, Sweden**
 
 📋 **[Download Agenda (PDF)](QAS2025agenda.pdf)**
+
+🎯 **[Day 0: Pre-Event Information - Start Here!](day0.md)**
 
 ![QAS2025 Agenda](img/QAS2025agenda.png)
 :::
@@ -21,6 +23,7 @@ The Quantum Autumn School 2025 (QAS2025) brings together researchers, students, 
 ```{toctree}
 :maxdepth: 2
 
+day0
 schedule
 day1
 day2
