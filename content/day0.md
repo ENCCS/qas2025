@@ -108,9 +108,9 @@ Let's unwind together, share stories, and get to know each other beyond the scho
 While preparation is optional, getting familiar with these resources will help you hit the ground running!
 
 ### Quick Start: Environment Setup
-Watch this **short video by Stefan from IQM** to learn how to set up your environment for the school:
-- Video link provided in email communications
+Watch this **[short video by Stefan from IQM](https://www.youtube.com/watch?v=gYD87xxlxJU)** to learn how to set up your environment for the school:
 - Covers Jupyter notebook setup and basic quantum computing tools
+- Great introduction to get you started
 
 ### Recommended Resources:
 
