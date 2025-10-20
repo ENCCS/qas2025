@@ -40,7 +40,6 @@ We have **exciting news** about generous access to quantum computing resources!
 **Exclusive Access for QAS2025 Participants:**
 - Special project access on IQM Resonance cloud
 - Exclusive signup link provided in your registration email
-- Look for: `https://resonance.meetiqm.com/sign-up/qas2025`
 
 **What You Get:**
 - Access to the QAS2025 project (we'll add you after you sign up)
