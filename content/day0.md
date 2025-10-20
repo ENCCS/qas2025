@@ -175,7 +175,7 @@ Save the Zoom link and meeting details somewhere easily accessible—you'll need
 
 :::{dropdown} Follow Us for Updates
 
-**LinkedIn:** [ENCCS Company Page](https://www.linkedin.com/company/enccs)
+**LinkedIn:** [ENCCS EuroHPC-JU Competence Centre](https://www.linkedin.com/company/enccs)
 
 Follow our page for:
 - Updates on QAS2025 as the event approaches
