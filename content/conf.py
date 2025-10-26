@@ -46,6 +46,7 @@ extensions = [
 # jupyter_execute_notebooks = "auto"   # *only* execute if at least one output is missing.
 # jupyter_execute_notebooks = "force"
 nb_execution_mode = "cache"
+nb_execution_excludepatterns = ["notebooks/getting-started/qrisp-starter.ipynb"]
 
 # https://myst-parser.readthedocs.io/en/latest/syntax/optional.html
 myst_enable_extensions = [

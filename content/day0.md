@@ -4,7 +4,7 @@
 
 :::{important}
 Some info is sent only via email to registered participants:
-- **Zoom connection links** for online participation and pre-event check-in
+- **Zoom connection links** for online school participation and pre-event check-in
 - **IQM Resonance exclusive signup link** for access to a specific project on IQM resonance cloud
 - **Calendar invites** (.ics files) for all calls
 :::
@@ -16,17 +16,17 @@ Thank you for registering for the Quantum Autumn School 2025! Whether you're joi
 :::{admonition} Quick Essentials
 :class: tip
 
-**Dates:** November 3-7, 2025
-**Venue (In-person):** RISE KTH "Innoversum" room, Drottning Kristinas väg 61, Stockholm
-
-**Pre-Event Check-in:** October 29, 2025 at 11:00 AM Stockholm time (Zoom link in email)
+- **Dates:** November 3-7, 2025
+- **Venue (In-person):** RISE KTH "Innoversum" room, Drottning Kristinas väg 61, Stockholm
+- **Pre-Event Check-in:** October 29, 2025 at 11:00 AM Stockholm time (Zoom link in email)
+- After each talk, there will be time for few questions, so save your questions till the end!
 
 **School Website:** [https://enccs.github.io/qas2025/](https://enccs.github.io/qas2025/)
 :::
 
 ### Can't Make It? Let Us Know!
 
-If your plans have changed, please inform us so we don't order unnecessary food for in-person participants. It's not too late to switch to in-person attendance if you'd like to join us in Stockholm!
+If your plans have changed, please inform us so we don't order unnecessary food for in-person participants. It's not too late to switch to in-person attendance if you'd like to join us in Stockholm! You can also update us if you will select few days to attend.
 
 ## Access to Quantum Hardware
 
@@ -43,6 +43,7 @@ We have **exciting news** about generous access to quantum computing hardware th
 - Access to the QAS2025 project (we'll add you after you sign up)
 - Immediate access to the default freemium tier (which is already excellent!)
 - Hands-on experience with real European quantum hardware
+- **Pulse-level access will be unlocked during the school** for advanced quantum control
 
 **How to Get Started:**
 1. Find the exclusive signup link in your email
@@ -101,19 +102,73 @@ Let's unwind together, share stories, and get to know each other beyond the scho
 
 ## Preparation Materials
 
-:::{admonition} Getting Your Environment Ready
+:::{important}
+**Don't worry if you don't complete all of this—we'll guide you through the essentials during the school!**
+
+The goal is to give you a head start, not to overwhelm you. Even if you arrive with no preparation, you'll be able to follow along and learn.
+:::
+
+### Quick Start: Environment Setup
+
+Watch this **[short video by Stefan from IQM](https://www.youtube.com/watch?v=gYD87xxlxJU)** to learn how to set up your environment for the school:
+- Covers Jupyter notebook setup and basic quantum computing examples
+- Great introduction to get you started
+
+:::{tip}
+If you're new to Jupyter notebooks, don't worry! Stefan's video above provides a great introduction, and we'll walk through everything during the school.
+:::
+
+### Get Familiar with Qrisp
+
+Explore the European quantum SDK before the school:
+
+- **[Qrisp](https://qrisp.eu/)** - European quantum algorithm development package
+- We'll have a special focus on Qrisp during the school
+- Great opportunity to get a head start on this powerful tool
+
+#### Hands-On: Qrisp Starter Notebook
+
+Get practical experience with our interactive **[Qrisp Starter Tutorial](notebooks/getting-started/qrisp-starter-tutorial)**!
+
+**What you'll learn:**
+- Setting up Qrisp with IQM backend support
+- Running quantum algorithms on real IQM hardware
+- Comparing simulator vs. mock backend vs. real quantum hardware results
+- Understanding NISQ (Noisy Intermediate-Scale Quantum) effects
+
+:::{admonition} Try the Interactive Tutorial
 :class: tip
 
-While preparation is optional, getting familiar with quantum computing tools and setting up your environment will help you hit the ground running!
+Visit the **[Qrisp Starter Tutorial page](notebooks/getting-started/qrisp-starter-tutorial)** to:
+- View the complete notebook with outputs
+- Download it to run on your own machine
+- Follow step-by-step instructions
 
-**📚 [Visit our Environment Setup Guide](environment-setup.md)** for:
-- Quick start video tutorial by Stefan from IQM
-- Jupyter notebook setup instructions
-- Recommended readings and learning resources
-- Links to Qrisp, IQM Academy, and previous school materials
-
-Don't worry if you don't complete all of this—we'll guide you through the essentials during the school!
+The notebook is self-contained and portable - works locally or on cloud platforms like Google Colab!
 :::
+
+### Previous Schools & Materials
+
+Explore materials from our previous quantum schools to get familiar with the topics and format:
+
+- Available at: [https://enccs.se/lessons/](https://enccs.se/lessons/)
+- Browse through previous quantum computing lessons
+- Get a feel for our teaching style and content depth
+
+### Recommended Readings
+
+Strengthen your quantum computing foundations with these resources:
+
+**Ronald de Wolf's Quantum Computing Course:**
+- **[Ronald de Wolf (CWI and ILLC)](https://homepages.cwi.nl/~rdewolf/)** offers excellent quantum computing course materials
+- Course website: [https://homepages.cwi.nl/~rdewolf/qc25.html](https://homepages.cwi.nl/~rdewolf/qc25.html)
+- Lecture notes (PDF): [https://homepages.cwi.nl/~rdewolf/qcnotes.pdf](https://homepages.cwi.nl/~rdewolf/qcnotes.pdf)
+- Highly recommended reading to strengthen your quantum computing foundations
+
+**Quantum Algorithm Zoo:**
+- **[Quantum Algorithm Zoo](https://quantumalgorithmzoo.org/)** - Excellent summary of available quantum algorithms and related implementations
+- Citation: [BibTeX reference](https://quantumalgorithmzoo.org/zoo.bib)
+- Comprehensive catalogue of quantum algorithms organized by application domain
 
 ## Pre-Event Check-In Meeting
 

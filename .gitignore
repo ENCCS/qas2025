@@ -9,3 +9,4 @@ content/statistics.md
 content/welcome_message.md
 
 notebooks/**/token.txt
+.DS_Store
