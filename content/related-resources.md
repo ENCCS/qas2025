@@ -8,7 +8,7 @@ This page contains additional resources related to the Quantum Autumn School 202
 
 This webinar explores the intersection of quantum computing and materials science, demonstrating how quantum acceleration can enhance computational capabilities for materials research.
 
-**[Download Webinar Slides (PDF)](Quantum-Accelerated-Supercomputing-Materials-Science.pdf)**
+**[Download Webinar Slides (PDF)](resources/Quantum-Accelerated-Supercomputing-Materials-Science.pdf)**
 
 :::{admonition} Key Topics
 :class: note

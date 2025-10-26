@@ -7,3 +7,5 @@ jupyter_execute
 *AUD*.md
 content/statistics.md
 content/welcome_message.md
+
+# notebooks/**/token.txt

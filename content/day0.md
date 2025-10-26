@@ -99,49 +99,20 @@ Let's unwind together, share stories, and get to know each other beyond the scho
 :::
 :::
 
-## Preparation Materials (Optional)
+## Preparation Materials
 
-:::{dropdown} Getting Your Environment Ready
+:::{admonition} Getting Your Environment Ready
+:class: tip
 
-While preparation is optional, getting familiar with these resources will help you hit the ground running!
+While preparation is optional, getting familiar with quantum computing tools and setting up your environment will help you hit the ground running!
 
-### Quick Start: Environment Setup
-Watch this **[short video by Stefan from IQM](https://www.youtube.com/watch?v=gYD87xxlxJU)** to learn how to set up your environment for the school:
-- Covers Jupyter notebook setup and basic quantum computing tools
-- Great introduction to get you started
+**📚 [Visit our Environment Setup Guide](environment-setup.md)** for:
+- Quick start video tutorial by Stefan from IQM
+- Jupyter notebook setup instructions
+- Recommended readings and learning resources
+- Links to Qrisp, IQM Academy, and previous school materials
 
-### Recommended Resources:
-
-**1. Previous Schools & Materials**
-- Explore materials from our previous quantum schools
-- Available at: [https://enccs.se/lessons/](https://enccs.se/lessons/)
-
-**2. IQM Academy**
-- Sign up at IQM Resonance cloud
-- Access rich tutorials and learning materials
-- Try IQM QPUs hands-on
-
-**3. Jupyter Notebooks**
-- Prepare your environment to run Jupyter notebooks
-- Detailed setup steps available on our website
-- We'll guide you through specifics during the pre-event check-in call
-:::
-
-:::{dropdown} Readings and useful links
-**4. Get Familiar with Qrisp**
-- Explore the European quantum SDK **[Qrisp](https://qrisp.eu/)**
-- We'll have a special focus on Qrisp during the school
-- Great opportunity to learn this European quantum algorithm development package
-
-**5. Excellent Lectures and Readings**
-- **[Ronald de Wolf (CWI and ILLC)](https://homepages.cwi.nl/~rdewolf/)** offers excellent quantum computing course materials
-- Course website: [https://homepages.cwi.nl/~rdewolf/qc25.html](https://homepages.cwi.nl/~rdewolf/qc25.html)
-- Lecture notes (PDF): [https://homepages.cwi.nl/~rdewolf/qcnotes.pdf](https://homepages.cwi.nl/~rdewolf/qcnotes.pdf)
-- Highly recommended reading to strengthen your quantum computing foundations
-- **[Quantum Algorithm Zoo](https://quantumalgorithmzoo.org/)** - Excellent summary of available quantum algorithms and related implementations
-  - Citation: [BibTeX reference](https://quantumalgorithmzoo.org/zoo.bib)
-
-**Don't worry if you don't complete all of this—we'll guide you through the essentials during the school!**
+Don't worry if you don't complete all of this—we'll guide you through the essentials during the school!
 :::
 
 ## Pre-Event Check-In Meeting
