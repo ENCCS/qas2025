@@ -31,7 +31,6 @@ If your plans have changed, please inform us so we don't order unnecessary food 
 ## Access to Quantum Hardware
 
 :::{dropdown} IQM Resonance Cloud Access
-:open:
 
 We have **exciting news** about generous access to quantum computing hardware thanks to IQM!
 
@@ -72,7 +71,6 @@ Together with the Quantum Autumn School, this will give you an excellent skillse
 ## For In-Person Participants
 
 :::{dropdown} PechaKucha Evening - Wednesday, November 5th
-:open:
 
 **Time:** Wednesday, November 5th at 16:30
 **Location:** RISE KTH "Innoversum" room (before dinner)
@@ -249,6 +247,14 @@ If you have any questions or concerns before the school starts, don't hesitate t
 - Check out [Day 1 agenda](day1.md) to see what's coming
 - Optional: Start exploring the preparation materials above
 :::
+
+```{toctree}
+:hidden:
+:maxdepth: 1
+
+notebooks/getting-started/qrisp-starter-tutorial
+notebooks/getting-started/qrisp-starter
+```
 
 **The Quantum Autumn School 2025 Organisation Team**
 *ENCCS, EuroCC Denmark & Lithuania, with support from WACQT*

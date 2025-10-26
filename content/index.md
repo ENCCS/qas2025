@@ -24,8 +24,6 @@ The Quantum Autumn School 2025 (QAS2025) brings together researchers, students, 
 :maxdepth: 2
 
 day0
-notebooks/getting-started/qrisp-starter-tutorial
-notebooks/getting-started/qrisp-starter
 schedule
 day1
 day2
