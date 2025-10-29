@@ -123,4 +123,26 @@ The EuroHPC Centre of Excellence in Computing Applications (ENCCS) develops and 
 
 ---
 
+# Let's stay connected
+
+:::{admonition} Join our community and stay updated!
+:class: tip
+
+Stay in the loop with ENCCS for updates, training opportunities, and news about connecting HPC, AI, and quantum computing!
+
+**🌐 Visit our website:**
+- **[ENCCS Website](https://enccs.se/)** - HPC services, on-boarding, training courses, webinars, tutorials, blog posts, and upcoming events
+
+**📧 Subscribe to our newsletter:**
+- **[ENCCS Newsletter](https://enccs.se/newsletter)** - Get monthly updates delivered to your inbox
+
+**💬 Follow us on social media:**
+- **[LinkedIn](https://www.linkedin.com/company/enccs/posts)** - Latest news, events, and professional updates
+- **[YouTube](https://www.youtube.com/@enccs)** - Tutorials, webinars, and educational content
+
+Stay connected with the European quantum computing community!
+:::
+
+---
+
 *The lesson file structure and browsing layout is inspired by and derived from work by [CodeRefinery](https://coderefinery.org/) licensed under the [MIT license](http://opensource.org/licenses/mit-license.html).*

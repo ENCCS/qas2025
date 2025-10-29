@@ -92,6 +92,7 @@ If you're new to Jupyter notebooks, don't worry! Stefan's video above provides a
 Explore the European quantum SDK before the school:
 
 - **[Qrisp](https://qrisp.eu/)** - European quantum algorithm development package
+- Check the tutorials and examples on **[Qrisp](https://qrisp.eu/)**
 - We'll have a special focus on Qrisp during the school
 - Great opportunity to get a head start on this powerful tool
 
