@@ -14,7 +14,7 @@ Introduction to the Quantum Approximate Optimization Algorithm (QAOA), one of th
 
 A detailed exploration of QAOA implementation and optimization strategies. We'll dive deep into parameter optimization, circuit design considerations, and practical aspects of running QAOA on real quantum hardware. This session includes discussion of QAOA performance on different problem types and hardware architectures.
 
-## Coffee Break
+## Coffee break
 **Time:** 10:40-11:00
 
 ## (placeholder)Integrating quantum processing units with supercomputers
@@ -32,22 +32,22 @@ Exploration of how quantum processing units (QPUs) are integrated with classical
 
 In this session you will be learning how to execute quantum circuits on actual hardware with IQM’s cloud-accessible Resonance platform. You will not only run your first experiments but also acquire tips and tricks on how to get the most out of the hardware.
 
-## Developing Quantum Algorithms with qrisp—the Next Generation of Quantum Algorithm Development
+## Developing quantum algorithms with qrisp—the next generation of quantum algorithm development
 **Speaker:** Stefan Seegerer (IQM)  
 **Time:** 13:00-14:00
 
 This hands-on session introduces qrisp’s high-level, Pythonic workflow that converts mathematical intent directly into resource-optimized quantum circuits. Participants will prototype variational and fault-tolerant routines, run it on simulators and real hardware and experience first hand how qrisp empowers you to develop novel quantum algorithms.
 
-## Coffee Break
+## Coffee break
 **Time:** 15:00-15:30
 
-## tutorial, simulation (Laura)
+## Tutorial, simulation (Laura)
 **Speaker:** Laura (Tutorial, simulation)  
 **Time:** 15:30-16:30
 
 Interactive tutorial on implementing quantum gates, circuits and algorithms using Qiskit simulation. This comprehensive session provides hands-on experience with quantum programming, covering circuit construction, simulation, and algorithm implementation using IBM's quantum development framework.
 
-## interactive tutorial: Execution of simple optimization examples with QAOA (simulation)
+## Interactive tutorial: Execution of simple optimization examples with QAOA (simulation)
 **Speaker:** Franz (Hands-on)  
 **Time:** 16:30-17:30
 

@@ -2,12 +2,12 @@
 
 *Learning Track: Basics - Quantum computing fundamentals, Tools and QC-access Software & algorithms, Elementary exercises*
 
-## Arrival and Coffee
+## Arrival and coffee
 **Time:** 9:00-9:30
 
 Welcome setup and registration for participants arriving at RISE KTH "Innoversum" room.
 
-## Welcome & Introduction to QAS2025
+## Welcome & introduction to QAS2025
 **Speaker:** Thor Wikfeldt (ENCCS/RISE, SE)  
 **Time:** 9:00-10:00
 
@@ -19,7 +19,7 @@ Welcome to the Nordic Quantum Autumn School 2025! This opening session will intr
 
 This session provides a comprehensive overview of the European landscape for hybrid classical/quantum high-performance computing. We'll explore the LUMI-Q Quantum Flagship initiative and discuss how quantum computing is being integrated into the broader European HPC and AI ecosystem. Participants will learn about current infrastructure, future developments, and opportunities for accessing quantum resources.
 
-## Coffee Break
+## Coffee break
 **Time:** 10:40-11:00
 
 ## Overview of the HPC/QC software stack, from ready-made Q-libraries for common tasks to circuit level assembly and hardware-level
@@ -43,7 +43,7 @@ Introduction to the fundamental building blocks of quantum computing. This sessi
 
 Building on the previous session, we'll explore how quantum circuits are used to implement quantum algorithms. This session bridges the gap between basic gate operations and practical quantum algorithms, showing how circuit design principles apply to real quantum computing problems.
 
-## Coffee Break
+## Coffee break
 **Time:** 15:00-15:30
 
 ## Quantum Information Theory introduction, building quantum algorithm, QFT, ...
@@ -58,7 +58,7 @@ An introduction to the theoretical foundations of quantum information processing
 
 Current quantum computers are noisy intermediate-scale quantum (NISQ) devices that require error mitigation strategies. This session introduces quantum error mitigation techniques applied to simulation of physical systems. We'll cover practical approaches to reducing the impact of quantum noise and improving the reliability of quantum computations.
 
-## Reception & Mingling
+## Reception & mingling
 **Time:** 18:00-20:00
 
 Welcome reception and networking event for all participants and instructors.

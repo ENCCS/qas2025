@@ -1,10 +1,10 @@
-# Related Resources
+# Related resources
 
 This page contains additional resources related to the Quantum Autumn School 2025, including webinars, presentations, and supplementary materials.
 
 ## Webinars
 
-### Quantum-Accelerated Supercomputing for Materials Science
+### Quantum-accelerated supercomputing for materials science
 
 This webinar explores the intersection of quantum computing and materials science, demonstrating how quantum acceleration can enhance computational capabilities for materials research.
 
@@ -21,7 +21,7 @@ This webinar explores the intersection of quantum computing and materials scienc
 
 ---
 
-## Additional Materials
+## Additional materials
 
 For more resources and materials from ENCCS:
 

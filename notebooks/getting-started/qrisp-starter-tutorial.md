@@ -4,15 +4,15 @@
 
 This interactive notebook introduces you to quantum programming with Qrisp and shows you how to run quantum algorithms on real IQM hardware. You'll learn the differences between simulators, mock backends, and actual quantum computers.
 
-:::{admonition} Download & Run Locally
+:::{admonition} Download & run locally
 :class: tip
 
-**[Download qrisp-starter.ipynb](https://github.com/ENCCS/qas2025/raw/main/notebooks/getting-started/qrisp-starter.ipynb)**
+{download}`Download qrisp-starter.ipynb </_static/qrisp-starter.ipynb>`
 
 The notebook is self-contained and portable - works locally or on cloud platforms like Google Colab!
 :::
 
-## What You'll Learn
+## What you'll learn
 
 - Setting up Qrisp with IQM backend support
 - Running quantum algorithms on real IQM hardware
@@ -31,7 +31,7 @@ The notebook is self-contained and portable - works locally or on cloud platform
 
 ---
 
-## Interactive Tutorial
+## Interactive tutorial
 
 **[View the complete notebook on the next page →](qrisp-starter)**
 
@@ -44,7 +44,7 @@ After viewing the notebook, don't forget to download it using the link at the to
 ---
 
 :::{seealso}
-**Related Resources:**
+**Related resources:**
 - [Day 0: Pre-Event Information](../../content/day0.md) - More preparation materials
 - [Qrisp Official Website](https://qrisp.eu/) - Documentation and examples
 - [IQM Academy](https://www.iqmacademy.com/) - Additional quantum computing tutorials

@@ -10,7 +10,7 @@
 
 The Nordic Quantum Autumn School 2025 is a 5-day intensive program covering quantum computing fundamentals, variational quantum algorithms, and hands-on experience with quantum hardware and simulators.
 
-## Daily Schedule
+## Daily schedule
 
 ### Monday, November 3rd
 

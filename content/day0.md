@@ -1,4 +1,4 @@
-# Day 0: Before You Arrive
+# Day 0: Before you arrive
 
 *Everything you need to know before the Quantum Autumn School 2025*
 
@@ -24,27 +24,31 @@ Thank you for registering for the Quantum Autumn School 2025! Whether you're joi
 **School Website:** [https://enccs.github.io/qas2025/](https://enccs.github.io/qas2025/)
 :::
 
-### Can't Make It? Let Us Know!
+### Can't make it? Let us know!
 
 If your plans have changed, please inform us so we don't order unnecessary food for in-person participants. It's not too late to switch to in-person attendance if you'd like to join us in Stockholm! You can also update us if you will select few days to attend.
 
-## Access to Quantum Hardware
+## Access to quantum hardware
 
 :::{dropdown} IQM Resonance Cloud Access
 
 We have **exciting news** about generous access to quantum computing hardware thanks to IQM!
 
+**Platform Access:**
+- Visit **[IQM Resonance](https://resonance.meetiqm.com/)** to access the quantum computing platform
+- Use the exclusive signup link from your registration email for QAS2025 project access
+
 **Exclusive Access for QAS2025 Participants:**
 - Special project access on IQM Resonance cloud
 - Exclusive signup link provided in your registration email (check your email)
 
-**What You Get:**
+**What you get:**
 - Access to the QAS2025 project (we'll add you after you sign up)
 - Immediate access to the default freemium tier (which is already excellent!)
 - Hands-on experience with real European quantum hardware
 - **Pulse-level access will be unlocked during the school** for advanced quantum control
 
-**How to Get Started:**
+**How to get started:**
 1. Find the exclusive signup link in your email
 2. Create your account using the QAS2025 link
 3. Start exploring immediately with the freemium access
@@ -53,22 +57,7 @@ We have **exciting news** about generous access to quantum computing hardware th
 **Many thanks to IQM for their generosity in providing this access!**
 :::
 
-## IQM Quantum School 
-
-:::{dropdown} IQM 3-Day Online School (December 2-4)
-
-We strongly recommend attending the **IQM Quantum School** to complement your learning from QAS2025!
-
-**Details:**
-- **Dates:** December 2-4, 2025
-- **Format:** Online, 3-day school
-- **Signup:** `https://resonance.meetiqm.com/sign-up/quantumschool`
-
-**Why Attend:**
-Together with the Quantum Autumn School, this will give you an excellent skillset to start developing your quantum computing use cases. It's a perfect follow-up to reinforce and expand on what you'll learn during QAS2025.
-:::
-
-## For In-Person Participants
+## For in-person participants
 
 :::{dropdown} PechaKucha Evening - Wednesday, November 5th
 
@@ -98,7 +87,9 @@ Let's unwind together, share stories, and get to know each other beyond the scho
 :::
 :::
 
-## Preparation Materials
+## Preparation materials
+
+Get ready for the school with these optional preparation materials and resources.
 
 :::{important}
 **Don't worry if you don't complete all of this—we'll guide you through the essentials during the school!**
@@ -106,7 +97,7 @@ Let's unwind together, share stories, and get to know each other beyond the scho
 The goal is to give you a head start, not to overwhelm you. Even if you arrive with no preparation, you'll be able to follow along and learn.
 :::
 
-### Quick Start: Environment Setup
+### Quick start: Environment setup
 
 Watch this **[short video by Stefan from IQM](https://www.youtube.com/watch?v=gYD87xxlxJU)** to learn how to set up your environment for the school:
 - Covers Jupyter notebook setup and basic quantum computing examples
@@ -116,7 +107,7 @@ Watch this **[short video by Stefan from IQM](https://www.youtube.com/watch?v=gY
 If you're new to Jupyter notebooks, don't worry! Stefan's video above provides a great introduction, and we'll walk through everything during the school.
 :::
 
-### Get Familiar with Qrisp
+### Get familiar with Qrisp
 
 Explore the European quantum SDK before the school:
 
@@ -124,7 +115,7 @@ Explore the European quantum SDK before the school:
 - We'll have a special focus on Qrisp during the school
 - Great opportunity to get a head start on this powerful tool
 
-#### Hands-On: Qrisp Starter Notebook
+#### Hands-on: Qrisp starter notebook
 
 Get practical experience with our interactive **[Qrisp Starter Tutorial](notebooks/getting-started/qrisp-starter-tutorial)**!
 
@@ -145,7 +136,7 @@ Visit the **[Qrisp Starter Tutorial page](notebooks/getting-started/qrisp-starte
 The notebook is self-contained and portable - works locally or on cloud platforms like Google Colab!
 :::
 
-### Previous Schools & Materials
+### Previous schools & materials
 
 Explore materials from our previous quantum schools to get familiar with the topics and format:
 
@@ -153,7 +144,7 @@ Explore materials from our previous quantum schools to get familiar with the top
 - Browse through previous quantum computing lessons
 - Get a feel for our teaching style and content depth
 
-### Recommended Readings
+### Recommended readings
 
 Strengthen your quantum computing foundations with these resources:
 
@@ -168,7 +159,22 @@ Strengthen your quantum computing foundations with these resources:
 - Citation: [BibTeX reference](https://quantumalgorithmzoo.org/zoo.bib)
 - Comprehensive catalogue of quantum algorithms organized by application domain
 
-## Pre-Event Check-In Meeting
+## IQM Quantum School
+
+:::{dropdown} IQM 3-Day Online School (December 2-4)
+
+We strongly recommend attending the **IQM Quantum School** to complement your learning from QAS2025!
+
+**Details:**
+- **Dates:** December 2-4, 2025
+- **Format:** Online, 3-day school
+- **Signup:** `https://resonance.meetiqm.com/sign-up/quantumschool`
+
+**Why attend:**
+Together with the Quantum Autumn School, this will give you an excellent skillset to start developing your quantum computing use cases. It's a perfect follow-up to reinforce and expand on what you'll learn during QAS2025.
+:::
+
+## Pre-event check-in meeting
 
 :::{admonition} Mandatory Check-In Call
 :class: important
@@ -185,7 +191,7 @@ We'd like to have a quick meeting with you to:
 **Find the Zoom connection details in your email** (also available as an .ics calendar file).
 :::
 
-## Online Participation Details
+## Online participation details
 
 :::{dropdown} Zoom Connection for School Days
 
@@ -203,7 +209,7 @@ Save the Zoom link and meeting details somewhere easily accessible—you'll need
 :::
 :::
 
-## Stay Connected
+## Stay connected
 
 :::{dropdown} Follow Us for Updates
 
@@ -218,7 +224,7 @@ Follow our page for:
 Stay in the loop with the European quantum computing community!
 :::
 
-## Quick Links Summary
+## Quick links summary
 
 Here's everything you need in one place:
 

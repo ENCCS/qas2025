@@ -14,7 +14,7 @@ Join us for an intensive week of quantum computing education, featuring hands-on
 ![QAS2025 Agenda](img/QAS2025agenda.png)
 :::
 
-## About the School
+## About the school
 
 The Quantum Autumn School 2025 (QAS2025) brings together researchers, students, and industry professionals to explore cutting-edge developments in quantum computing. This 5-day event offers a unique combination of theoretical foundations and practical experience emphasising the integration with High Performance Computing, featuring expert-led sessions that cover a range of topics from theoretical foundations to practical applications. Expect a blend of lectures, hands-on exercises, and networking opportunities, including the chance to interact with stakeholders involved with the [EuroHPC JU quantum computers](https://www.eurohpc-ju.europa.eu/eurohpc-quantum-computers_en). It will provide a valuable opportunity to explore the latest advancements in quantum computing, where you'll learn about up-to-date topics and European quantum efforts, especially in light of the eight [EuroHPC JU quantum computers announcements](https://www.eurohpc-ju.europa.eu/eurohpc-quantum-computers_en), and get hands-on experience.
 
@@ -53,13 +53,13 @@ QAS2025 will cover a broad range of topics that will give you a solid foundation
 **HPC & QC workflows:** understand how to run hybrid HPC-QC workflows and accelerate quantum algorithms on GPUs.
 :::
 
-## Partners & Organizers
+## Partners & organizers
 
 This school is organized by EuroCC competence centres of Sweden ENCCS in collaboration with EuroCC Denmark and EuroCC Lithuania. And supported by WACQT, a national research programme, coordinated from Chalmers, that aims to take Swedish research and industry to the forefront of quantum technology.
 
 ![ENCCS](img/QAS2025_organisation.png)
 
-## Registration & Logistics
+## Registration & logistics
 
 :::{important}
 
@@ -84,7 +84,7 @@ There are multiple hotels in the vicinity. Below you can find some hotels in ord
 
 For more hotel options, visit the **[event page](https://enccs.se/events/qas-2025/#:~:text=Elite%20Hotel%20Arcadia%20Stockholm)**.
 
-### Public Transport
+### Public transport
 
 Download the public transport app to purchase tickets:
 - **[iOS App Store](https://apps.apple.com/se/app/sl-biljetter/id918418291)**
@@ -102,7 +102,7 @@ You can also use your regular credit card by scanning it on the metro and all bu
 - **[Arlanda Express](https://www.arlandaexpress.com/)** - fast train (20 minutes to T-Centralen)
 - Flygbussarna - airport bus (approximately 45 minutes to T-Centralen)
 
-### Lunch & Social Events
+### Lunch & social events
 
 - **Lunch**: Provided all days of the event
 - **Social Dinner**: Wednesday, November 5th evening

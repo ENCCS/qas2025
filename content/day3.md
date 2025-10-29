@@ -14,10 +14,10 @@ Comprehensive overview of Variational Quantum Eigensolvers (VQE) and related alg
 
 Deep dive into practical applications of VQE for quantum chemistry and drug discovery. This session presents specific use cases, discusses the advantages of quantum approaches over classical methods, and explores current limitations and future prospects for quantum-enhanced molecular simulation.
 
-## Coffee Break
+## Coffee break
 **Time:** 10:40-11:00
 
-## High Ground State Overlap via Quantum Embedding Methods
+## High ground state overlap via quantum embedding methods
 **Speaker:** Matthias Christandl (København U, DK)  
 **Time:** 11:00-12:00
 
@@ -26,7 +26,7 @@ Advanced techniques for achieving high ground state overlap using quantum embedd
 ## Lunch
 **Time:** 12:00-13:00
 
-## Excursion Session: Controlling a Quantum Computer Using Pulses
+## Excursion session: Controlling a quantum computer using pulses
 **Speaker:** Stefan Seegerer (IQM)  
 **Time:** 13:00-14:00
 
@@ -38,7 +38,7 @@ Leave the gate model behind and dive into the microwave layer where quantum logi
 
 Interactive tutorial providing direct experience with LUMI-Q quantum simulator and IQM quantum devices. Participants will learn to submit jobs, monitor execution, and retrieve results from these quantum computing platforms. This practical session bridges theory and application.
 
-## Coffee Break
+## Coffee break
 **Time:** 15:00-15:30
 
 ## Interactive tutorial: Execution of simple quantum chemistry simulation VQE vs LUMI-Q/IQM
@@ -47,7 +47,7 @@ Interactive tutorial providing direct experience with LUMI-Q quantum simulator a
 
 Advanced tutorial comparing VQE implementation on quantum simulators versus real LUMI-Q/IQM quantum hardware. Participants will execute quantum chemistry examples and analyze the differences between simulated and real quantum computations.
 
-## Buffé Dinner
+## Buffé dinner
 **Time:** 16:30-17:30
 
 Special dinner event for all participants and instructors.
