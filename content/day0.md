@@ -4,6 +4,7 @@
 
 :::{important}
 Some info is sent only via email to registered participants:
+- **Slack workspace invitation** for communicating with instructors and fellow participants
 - **Zoom connection links** for online school participation and pre-event check-in
 - **IQM Resonance exclusive signup link** for access to a specific project on IQM resonance cloud
 - **Calendar invites** (.ics files) for all calls
@@ -209,19 +210,24 @@ Save the Zoom link and meeting details somewhere easily accessible—you'll need
 :::
 :::
 
-## Stay connected
+# Stay connected
 
-:::{dropdown} Follow Us for Updates
+:::{admonition} Join our community and stay updated!
+:class: tip
 
-**LinkedIn:** [ENCCS EuroHPC-JU Competence Centre](https://www.linkedin.com/company/enccs)
+Stay in the loop with ENCCS for updates, training opportunities, and news about HPC, AI, and quantum computing!
 
-Follow our page for:
-- Updates on QAS2025 as the event approaches
-- Information about our other offerings and trainings
-- News about HPC, AI, and Quantum computing initiatives
-- Future events and learning opportunities
+**🌐 Visit our website:**
+- **[ENCCS Website](https://enccs.se/)** - Training courses, webinars, tutorials, blog posts, and upcoming events
 
-Stay in the loop with the European quantum computing community!
+**📧 Subscribe to our newsletter:**
+- **[ENCCS Newsletter](https://enccs.se/newsletter)** - Get monthly updates delivered to your inbox
+
+**💬 Follow us on social media:**
+- **[LinkedIn](https://www.linkedin.com/company/enccs/posts)** - Latest news, events, and professional updates
+- **[YouTube](https://www.youtube.com/@enccs)** - Tutorials, webinars, and educational content
+
+Stay connected with the European quantum computing community!
 :::
 
 ## Quick links summary
