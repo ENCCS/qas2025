@@ -1,15 +1,15 @@
 # Day 4 - Thursday, November 6th
 
-*Learning Track: Intermediate/Advanced - Advanced use cases: Physics, Chemistry, Materials, Health, Finance, Logistics*
+*Learning Track: overview on ion trap modality, accelerating DFT calculations using quantum algorithms, accelerating quantum algorithms using GPUs, quantum error correction, quantum kernel estimation*
 
-## Introduction to trapped-ion
-**Speaker:** Panagiotis Barkoutsos (IonQ)  
+## Scaling up ion trap quantum computers and quantum technologies; the case of IonQ
+**Speaker:** Panagiotis Barkoutsos (IonQ)
 **Time:** 9:00-10:00
 
-Introduction to trapped-ion quantum computing technology, one of the leading modalities for quantum computation. This session covers the principles of trapped-ion systems, their advantages and challenges, and current applications in quantum computing research and development.
+Key topics: ion-trap technology and the updated roadmap of IonQ, scalability beyond qubits and qubit registers, quantum technologies in the industry and how they can be used from an end user perspective
 
-## Atomistic simulations on quantum accelerated supercomputing using NVIDIA CUDA-Q
-**Speaker:** Karim Elgammal (ENCCS/RISE, SE)  
+## Atomistic simulations on quantum accelerated supercomputing
+**Speaker:** Karim Elgammal (ENCCS/RISE, SE), Marc Maußner (infoteam, DE)
 **Time:** 10:00-10:40
 
 An overview on Applications of quantum computing to atomistic simulations and materials science. This session explores how quantum algorithms can enhance Density Functional Calculations (DFT) electronic structure calculations, with practical examples from materials research.
@@ -30,30 +30,25 @@ GPU-accelerated workloads are increasingly being adopted in heterogeneous quantu
 **Speaker:** Mats Granath (Göteborg University)  
 **Time:** 13:00-14:00
 
-Introduction to quantum error correction, essential for fault-tolerant quantum computing. This session covers the principles of quantum error correction codes, logical qubits, and the requirements for implementing QEC in practical quantum systems.
+Introduction to quantum error correction, essential for fault-tolerant quantum computing. This session covers the principles of quantum error correction codes and the requirements for implementing QEC in practical quantum workflows.
 
-## Quantum monte carlo and quantum finance
+## Quantum kernel estimation with application to disability insurance
 **Speaker:** Björn Löfdahl (SEB)  
 **Time:** 14:00-15:00
 
-Advanced applications of quantum computing to financial modeling, focusing on quantum Monte Carlo methods and their applications to risk assessment, option pricing, and portfolio optimization in the financial sector.
+applications of quantum computing within the financial sector.
 
 ## Coffee break
 **Time:** 15:00-15:30
 
 ## Interactive tutorial: Quantum error-correction (QEC) hands-on
-**Speakers:** Mats Granath team (Göteborg University)  
+**Speakers:** Moritz Lange (Göteborg University)
 **Time:** 15:30-16:30
 
-Hands-on exploration of quantum computing applications in finance, focusing on Quantum Amplitude Estimation (QAE) and Classical Monte Carlo methods on quantum computers. This tutorial demonstrates practical financial modeling techniques using quantum algorithms.
+QEC tutorial
 
-## Interactive tutorial: Quantum finance, classical Monte Carlo on a QC, Quantum Amplitude Estimation (QAE)
-**Speakers:** Björn Löfdahl & team  
+## interactive tutorial: Quantum kernel estimation with application to disability insurance
+**Speakers:** Björn Löfdahl
 **Time:** 16:30-17:30
 
-Introduction to quantum reservoir computing, a quantum machine learning paradigm that leverages the natural dynamics of quantum systems for computation. This session covers the theoretical foundations, potential advantages over classical reservoir computing, and current research directions in this emerging field.
-
-## PechaKucha presentations
-**Time:** 17:30-18:00
-
-Short, dynamic presentations by participants sharing their research, projects, and fun projects. This interactive session provides a platform for networking and knowledge exchange.
+Quantum kernel estimation tutorial

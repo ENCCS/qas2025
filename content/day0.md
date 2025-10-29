@@ -1,28 +1,33 @@
-# Day 0: Before you arrive
+# Day 0: before you arrive
 
 *Everything you need to know before the Quantum Autumn School 2025*
 
 :::{important}
 Some info is sent only via email to registered participants:
-- **Slack workspace invitation** for communicating with instructors and fellow participants
 - **Zoom connection links** for online school participation and pre-event check-in
-- **IQM Resonance exclusive signup link** for access to a specific project on IQM resonance cloud
+- **IQM Resonance exclusive signup link** for access to a specific project with credits on IQM resonance cloud
 - **Calendar invites** (.ics files) for all calls
+- **Slack workspace invitation** for communicating with instructors and fellow participants
 :::
 
 ## Welcome!
 
-Thank you for registering for the Quantum Autumn School 2025! Whether you're joining us in-person in Stockholm or online, we're excited to have you participate in this intensive week of quantum computing education.
+Thank you for registering for the Quantum Autumn School 2025! Whether you're joining us in-person in Stockholm or online, we're excited to have you participate in this intensive week of quantum computing interaction.
 
-:::{admonition} Quick Essentials
+:::{admonition} Quick details
 :class: tip
 
 - **Dates:** November 3-7, 2025
-- **Venue (In-person):** RISE KTH "Innoversum" room, Drottning Kristinas väg 61, Stockholm
-- **Pre-Event Check-in:** October 29, 2025 at 11:00 AM Stockholm time (Zoom link in email)
-- After each talk, there will be time for few questions, so save your questions till the end!
+- **Venue (In-person):** RISE KTH "Innoversum" room, Drottning Kristinas väg 61, Stockholm (4th floor)
+- **DONE: Pre-Event Check-in:** October 29, 2025 at 11:00 AM Stockholm time (Zoom link in email)
+- **School Website:** [https://enccs.github.io/qas2025/](https://enccs.github.io/qas2025/)
+:::
 
-**School Website:** [https://enccs.github.io/qas2025/](https://enccs.github.io/qas2025/)
+:::{note}
+**Few logistics!:**
+
+- After each talk, there will be time for questions. Please save your questions until the end of each session to keep the flow and allow speakers to complete their presentations. We want to make sure everyone gets a chance to ask!
+- There will be a chance to write questions in slack or hackMD link to be shared
 :::
 
 ### Can't make it? Let us know!
@@ -58,37 +63,9 @@ We have **exciting news** about generous access to quantum computing hardware th
 **Many thanks to IQM for their generosity in providing this access!**
 :::
 
-## For in-person participants
+## Environment setup to run calculations yourself
 
-:::{dropdown} PechaKucha Evening - Wednesday, November 5th
-
-**Time:** Wednesday, November 5th at 16:30
-**Location:** RISE KTH "Innoversum" room (before dinner)
-
-To balance all that brainwork with some light-hearted fun, we warmly invite you to the **Social PechaKucha Evening**!
-
-**What is PechaKucha?**
-
-Let's unwind together, share stories, and get to know each other beyond the school. Whether it's a hobby, a fun interest, a personal journey, or even your research—PechaKucha is the perfect format to present it!
-
-**Format:**
-- **Maximum 5 minutes** per presenter
-- Traditionally: **20 slides, 20 seconds each** (but flexible)
-- **Visual storytelling**: Focus on images and stories, minimal or no bullet points
-- **Topics:** Anything you're passionate about—hobbies, interests, personal journeys, or your research
-
-**Learn More:**
-- [What is PechaKucha?](https://www.lark.com/en-us/blog/what-is-pechakucha) - Lark
-- [What makes a great PechaKucha Presentation](https://www.youtube.com/watch?v=9NZOt6BkhUg) - Intro video
-
-**We're looking forward to seeing your PechaKuchas!**
-
-:::{note}
-**Food Planning:** We're ordering lots of good food for in-person participants. If you need to cancel your in-person attendance, please let us know so we don't waste food!
-:::
-:::
-
-## Preparation materials
+:::{dropdown} How to install qrisp and run simple calculations
 
 Get ready for the school with these optional preparation materials and resources.
 
@@ -96,7 +73,7 @@ Get ready for the school with these optional preparation materials and resources
 **Don't worry if you don't complete all of this—we'll guide you through the essentials during the school!**
 
 The goal is to give you a head start, not to overwhelm you. Even if you arrive with no preparation, you'll be able to follow along and learn.
-:::
+
 
 ### Quick start: Environment setup
 
@@ -107,8 +84,10 @@ Watch this **[short video by Stefan from IQM](https://www.youtube.com/watch?v=gY
 :::{tip}
 If you're new to Jupyter notebooks, don't worry! Stefan's video above provides a great introduction, and we'll walk through everything during the school.
 :::
+:::
+:::
 
-### Get familiar with Qrisp
+:::{dropdown} Get familiar with Qrisp
 
 Explore the European quantum SDK before the school:
 
@@ -136,8 +115,9 @@ Visit the **[Qrisp Starter Tutorial page](notebooks/getting-started/qrisp-starte
 
 The notebook is self-contained and portable - works locally or on cloud platforms like Google Colab!
 :::
+:::
 
-### Previous schools & materials
+:::{dropdown} Previous schools & materials
 
 Explore materials from our previous quantum schools to get familiar with the topics and format:
 
@@ -175,7 +155,38 @@ We strongly recommend attending the **IQM Quantum School** to complement your le
 Together with the Quantum Autumn School, this will give you an excellent skillset to start developing your quantum computing use cases. It's a perfect follow-up to reinforce and expand on what you'll learn during QAS2025.
 :::
 
-## Pre-event check-in meeting
+## Fun session for in-person participants
+
+:::{dropdown} PechaKucha Evening - Wednesday, November 5th
+
+**Time:** Wednesday, November 5th at 16:30
+**Location:** RISE KTH "Innoversum" room (before dinner)
+
+To balance all that brainwork with some light-hearted fun, we warmly invite you to the **Social PechaKucha Evening**!
+
+**What is PechaKucha?**
+
+Let's unwind together, share stories, and get to know each other beyond the school. Whether it's a hobby, a fun interest, a personal journey, or even your research—PechaKucha is the perfect format to present it!
+
+**Format:**
+- **Maximum 5 minutes** per presenter
+- Traditionally: **20 slides, 20 seconds each** (but flexible)
+- **Visual storytelling**: Focus on images and stories, minimal or no bullet points
+- **Topics:** Anything you're passionate about—hobbies, interests, personal journeys, or your research
+
+**Learn More:**
+- [What is PechaKucha?](https://www.lark.com/en-us/blog/what-is-pechakucha) - Lark
+- [What makes a great PechaKucha Presentation](https://www.youtube.com/watch?v=9NZOt6BkhUg) - Intro video
+
+**We're looking forward to seeing your PechaKuchas!**
+
+:::{note}
+**Food Planning:** We're ordering lots of good food for in-person participants. If you need to cancel your in-person attendance, please let us know so we don't waste food!
+:::
+:::
+
+
+:::{dropdown} Pre-event check-in meeting
 
 :::{admonition} Mandatory Check-In Call
 :class: important
@@ -210,15 +221,15 @@ Save the Zoom link and meeting details somewhere easily accessible—you'll need
 :::
 :::
 
-# Stay connected
+## Let's stay connected
 
 :::{admonition} Join our community and stay updated!
 :class: tip
 
-Stay in the loop with ENCCS for updates, training opportunities, and news about HPC, AI, and quantum computing!
+Stay in the loop with ENCCS for updates, training opportunities, and news about connecting HPC, AI, and quantum computing!
 
 **🌐 Visit our website:**
-- **[ENCCS Website](https://enccs.se/)** - Training courses, webinars, tutorials, blog posts, and upcoming events
+- **[ENCCS Website](https://enccs.se/)** - HPC services, on-boarding, training courses, webinars, tutorials, blog posts, and upcoming events
 
 **📧 Subscribe to our newsletter:**
 - **[ENCCS Newsletter](https://enccs.se/newsletter)** - Get monthly updates delivered to your inbox
@@ -249,7 +260,7 @@ Here's everything you need in one place:
 
 ## Questions?
 
-If you have any questions or concerns before the school starts, don't hesitate to reach out to the organizing team via email.
+If you have any questions or concerns before the school starts, don't hesitate to reach out to the organizing team via email or slack.
 
 :::{seealso}
 **Next Steps:**
