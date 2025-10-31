@@ -7,7 +7,8 @@ Some info is sent only via email to registered participants:
 - **Zoom connection links** for online school participation and pre-event check-in
 - **IQM Resonance exclusive signup link** for access to a specific project with credits on IQM resonance cloud
 - **Calendar invites** (.ics files) for all calls
-- **Slack workspace invitation** for communicating with instructors and fellow participants
+- **Zulip workspace invitation** (optional) for communicating with instructors and fellow participants
+- **Nextcloud markdown file links** for submitting questions during lectures
 :::
 
 ## Welcome!
@@ -18,7 +19,7 @@ Thank you for registering for the Quantum Autumn School 2025! Whether you're joi
 :class: tip
 
 - **Dates:** November 3-7, 2025
-- **Venue (In-person):** RISE KTH "Innoversum" room, Drottning Kristinas väg 61, Stockholm (4th floor)
+- **Venue (In-person):** Stockholm, Sweden (address details shared in email communications)
 - **DONE: Pre-Event Check-in:** October 29, 2025 at 11:00 AM Stockholm time (Zoom link in email)
 - **School Website:** [https://enccs.github.io/qas2025/](https://enccs.github.io/qas2025/)
 :::
@@ -27,7 +28,7 @@ Thank you for registering for the Quantum Autumn School 2025! Whether you're joi
 **Few logistics!:**
 
 - After each talk, there will be time for questions. Please save your questions until the end of each session to keep the flow and allow speakers to complete their presentations. We want to make sure everyone gets a chance to ask!
-- There will be a chance to write questions in slack or hackMD link to be shared
+- You can write questions during lectures using Nextcloud markdown files (links shared in email communication)
 :::
 
 ### Can't make it? Let us know!
@@ -161,7 +162,7 @@ Together with the Quantum Autumn School, this will give you an excellent skillse
 :::{dropdown} PechaKucha Evening - Wednesday, November 5th
 
 **Time:** Wednesday, November 5th at 16:30
-**Location:** RISE KTH "Innoversum" room (before dinner)
+**Location:** Stockholm venue (address details shared in email communications)
 
 To balance all that brainwork with some light-hearted fun, we warmly invite you to the **Social PechaKucha Evening**!
 
@@ -257,11 +258,11 @@ Here's everything you need in one place:
 | **Qrisp SDK** | [https://qrisp.eu/](https://qrisp.eu/) |
 | **ENCCS Lessons** | [https://enccs.se/lessons/](https://enccs.se/lessons/) |
 | **LinkedIn** | [linkedin.com/company/enccs](https://www.linkedin.com/company/enccs) |
-| **Venue Map** | [View on Google Maps](https://maps.app.goo.gl/9rphvAS7ugRUC46U8) |
+| **Venue Address** | Details shared in email communications |
 
 ## Questions?
 
-If you have any questions or concerns before the school starts, don't hesitate to reach out to the organizing team via email or slack.
+If you have any questions or concerns before the school starts, don't hesitate to reach out to the organizing team via email or Zulip (optional).
 
 :::{seealso}
 **Next Steps:**

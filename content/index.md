@@ -5,7 +5,8 @@
 
 Join us for an intensive week of quantum computing education, featuring hands-on tutorials, expert lectures, and European quantum hardware.
 
-**📅 November 3-7, 2025 | 📍 RISE KTH "Innoversum" room, Stockholm, Sweden**
+**📅 November 3-7, 2025 | 📍 Stockholm, Sweden**
+*(Address details shared in email communications)*
 
 📋 **[Download Agenda (PDF)](resources/QAS2025agenda.pdf)**
 
@@ -25,6 +26,7 @@ The Quantum Autumn School 2025 (QAS2025) brings together researchers, students, 
 
 day0
 schedule
+notebooks/getting-started/qrisp-starter-tutorial
 day1
 day2
 day3
@@ -70,9 +72,7 @@ This school is organized by EuroCC competence centres of Sweden ENCCS in collabo
 
 ### Venue
 
-The Quantum Autumn School 2025 is going to be held at the RISE offices on KTH campus Drottning Kristinas väg 61 in room **Innoversum**. The closest metro station (marked T) is **Tekniska Högskolan**.
-
-📍 **[View Location on Maps](https://maps.app.goo.gl/9rphvAS7ugRUC46U8)**
+The Quantum Autumn School 2025 will be held in Stockholm, Sweden. Detailed address and directions have been shared via email with registered participants.
 
 ### Accommodation
 

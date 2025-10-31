@@ -2,7 +2,7 @@
 
 :::{note}
 **Date:** November 3-7, 2025  
-**Location:** RISE KTH at "Innoversum" room  
+**Location:** Stockholm, Sweden (address details shared in email communications)  
 **Organizers:** ENCCS, NCC Denmark, NCC Lithuania
 :::
 
