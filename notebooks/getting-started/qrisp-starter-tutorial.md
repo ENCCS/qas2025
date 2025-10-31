@@ -9,6 +9,10 @@ This interactive notebook introduces you to quantum programming with Qrisp and s
 
 {download}`Download qrisp-starter.ipynb </_static/qrisp-starter.ipynb>`
 
+Run the notebook via Binder:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ENCCS/qas2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)
+
 The notebook is self-contained and portable - works locally or on cloud platforms like Google Colab!
 :::
 
