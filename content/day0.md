@@ -74,9 +74,13 @@ Get ready for the school with these optional preparation materials and resources
 **Don't worry if you don't complete all of this—we'll guide you through the essentials during the school!**
 
 The goal is to give you a head start, not to overwhelm you. Even if you arrive with no preparation, you'll be able to follow along and learn.
+:::
 
+### Easiest option: Use Binder (recommended for beginners)
 
-### Quick start: Environment setup
+**No installation needed!** Use Binder to run notebooks directly in your browser - it's free, instant, and pre-configured with everything you need. See the [Qrisp Starter Tutorial](notebooks/getting-started/qrisp-starter-tutorial) for the Binder link.
+
+### Local setup (for those who prefer to run on their own machine)
 
 Watch this **[short video by Stefan from IQM](https://www.youtube.com/watch?v=gYD87xxlxJU)** to learn how to set up your environment for the school:
 - Covers Jupyter notebook setup and basic quantum computing examples
@@ -84,7 +88,6 @@ Watch this **[short video by Stefan from IQM](https://www.youtube.com/watch?v=gY
 
 :::{tip}
 If you're new to Jupyter notebooks, don't worry! Stefan's video above provides a great introduction, and we'll walk through everything during the school.
-:::
 :::
 :::
 
@@ -111,11 +114,12 @@ Get practical experience with our interactive **[Qrisp Starter Tutorial](noteboo
 :class: tip
 
 Visit the **[Qrisp Starter Tutorial page](notebooks/getting-started/qrisp-starter-tutorial)** to:
+- **Run instantly with Binder** - free, no installation, runs in your browser
 - View the complete notebook with outputs
 - Download it to run on your own machine
 - Follow step-by-step instructions
 
-The notebook is self-contained and portable - works locally or on cloud platforms like Google Colab!
+**Recommended: Use Binder during the school!** It's pre-configured with all dependencies (qrisp, IQM interface) and requires zero setup.
 :::
 :::
 

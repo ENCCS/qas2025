@@ -11,9 +11,11 @@ You can run this notebook and other code examples during the school using Binder
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ENCCS/qas2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)
 
+**Binder is free, requires no installation, and runs directly in your browser!** It's pre-configured with all necessary dependencies (including qrisp and IQM interface), so you can start coding immediately without any setup.
+
 Or {download}`download qrisp-starter.ipynb </_static/qrisp-starter.ipynb>` to run locally.
 
-The notebook is self-contained and portable - works with Binder, locally, or on cloud platforms like Google Colab!
+The notebook is self-contained and portable - works with Binder or locally!
 :::
 
 ## What you'll learn
@@ -26,7 +28,7 @@ The notebook is self-contained and portable - works with Binder, locally, or on 
 ## Prerequisites
 
 - Python 3.10, 3.11, or 3.12 (NOT 3.13+ due to Qrisp compatibility)
-- Jupyter notebook environment (VS Code, JupyterLab, or Google Colab)
+- Jupyter notebook environment (VS Code or JupyterLab)
 - IQM API token from [IQM Resonance](https://resonance.meetiqm.com/)
 
 :::{admonition} IQM Token Setup
