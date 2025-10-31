@@ -6,3 +6,4 @@ dependencies:
   - pip
   - pip:
     - qrisp[iqm]
+    - jupyterlab-myst
