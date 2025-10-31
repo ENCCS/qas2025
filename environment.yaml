@@ -1,0 +1,8 @@
+channels:
+  - conda-forge
+  - conda-forge/label/broken
+dependencies:
+  - python
+  - pip
+  - pip:
+    - qrisp[iqm]
