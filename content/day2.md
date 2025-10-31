@@ -1,18 +1,18 @@
 # Day 2 - Tuesday, November 4th
 
-*Learning Track: Basic/Intermediate - Optimization, QAOA and overview on hybrid use cases*
+*Learning Track: Basic/Intermediate - variational algorithms, optimization, QAOA and overview on hybrid use cases*
 
-## Introduction to variational quantum algorithms: QAOA
-**Speaker:** Franz Fuchs (SINTEF, UiO, NO)  
+## Introduction to variational quantum algorithms: VQE and beyond (OPE, ..., SQD)
+**Speaker:** Juan de Gracia Triviño (ENCCS/RISE, SE)
 **Time:** 9:00-10:00
 
-Introduction to the Quantum Approximate Optimization Algorithm (QAOA), one of the most promising near-term quantum algorithms. This session covers the theoretical foundations of QAOA, its applications to combinatorial optimization problems, and why it's particularly suited for NISQ devices.
+Comprehensive overview of Variational Quantum Eigensolvers (VQE) and related algorithms including Quantum Phase Estimation (QPE) and quantum simulation methods. This session covers the theoretical foundations of variational quantum algorithms and their applications to quantum chemistry and materials science.
 
-## In-depth description of variational quantum algorithms: QAOA
-**Speaker:** Franz Fuchs (SINTEF, UiO, NO)  
+## interactive tutorial: experiments with quantum gates, circuits and algorithms (qrips simulations)
+**Speaker:** Juan de Gracia Triviño (ENCCS/RISE, SE)
 **Time:** 10:00-10:40
 
-A detailed exploration of QAOA implementation and optimization strategies.
+Interactive tutorial on implementing quantum gates, circuits and algorithms using Qrisp SDK. This comprehensive session provides hands-on experience with quantum programming, covering circuit construction, simulation, and algorithms.
 
 ## Coffee break
 **Time:** 10:40-11:00
@@ -41,14 +41,8 @@ This hands-on session introduces qrisp’s high-level, Pythonic workflow that co
 ## Coffee break
 **Time:** 15:00-15:30
 
-## Interactive tutorial: Execution of simple optimization examples with QAOA (simulation)
-**Speaker:** Franz (Hands-on)  
+## QAOA - Theory
+**Speaker:** Ruben Pariente Bassa (SINTEF, NO) 
 **Time:** 15:30-16:30
 
-Practical tutorial on executing simple optimization examples using QAOA simulation. This hands-on session provides direct experience with implementing and running QAOA algorithms, focusing on parameter optimization techniques and performance analysis for combinatorial optimization problems.
-
-## interactive tutorial: experiments with quantum gates, circuits and algorithms  (qiskit/qrips simulation)
-**Speaker:** Juan de Gracia Triviño (ENCCS/RISE, SE)
-**Time:** 16:30-17:30
-
-Interactive tutorial on implementing quantum gates, circuits and algorithms using Qrisp SDK. This comprehensive session provides hands-on experience with quantum programming, covering circuit construction, simulation, and algorithms.
+More in-depth into the Quantum Approximate Optimization Algorithm (QAOA), one of the most promising near-term quantum algorithms. This session covers theoretical foundations of QAOA, its applications to combinatorial optimization problems, and why it's particularly suited for NISQ devices.
