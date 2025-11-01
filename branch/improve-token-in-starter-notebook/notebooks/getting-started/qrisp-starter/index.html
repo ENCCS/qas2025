@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting started with Qrisp on IQM &mdash; Quantum Autumn School 2025  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/overrides.css?v=c88db32d" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=187304be"></script>
+      <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../_static/copybutton.js?v=35a8b989"></script>
+      <script src="../../../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" />
+    <link rel="next" title="Nordic Quantum Autumn School 2025 - Schedule" href="../../../schedule/" />
+    <link rel="prev" title="Qrisp Starter Tutorial" href="../qrisp-starter-tutorial/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../" class="icon icon-home">
+            Quantum Autumn School 2025
+              <img src="../../../_static/ENCCS.jpg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../day0/">Day 0: before you arrive</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../day0/#welcome">Welcome!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day0/#access-to-quantum-hardware">Access to quantum hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day0/#environment-setup-to-run-calculations-yourself">Environment setup to run calculations yourself</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day0/#fun-session-for-in-person-participants">Fun session for in-person participants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day0/#online-participation-details">Online participation details</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day0/#quick-links-summary">Quick links summary</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../day0/#questions">Questions?</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../qrisp-starter-tutorial/">Qrisp Starter Tutorial</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Getting started with Qrisp on IQM</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#installing-the-necessary-packages">Installing the necessary packages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#imports">Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#running-on-iqm-resonance">Running on IQM Resonance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../schedule/">Nordic Quantum Autumn School 2025 - Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pechakucha/">PechaKucha Evening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qrisp-starter-tutorial/">Qrisp Starter Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day1/">Day 1 - Monday, November 3rd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day2/">Day 2 - Tuesday, November 4th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day3/">Day 3 - Wednesday, November 5th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day4/">Day 4 - Thursday, November 6th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day5/">Day 5 - Friday, November 7th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../related-resources/">Related resources</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../">Quantum Autumn School 2025</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../day0/">Day 0: before you arrive</a></li>
+      <li class="breadcrumb-item active">Getting started with Qrisp on IQM</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ENCCS/qas2025/blob/main/content/notebooks/getting-started/qrisp-starter.ipynb" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="getting-started-with-qrisp-on-iqm">
+<h1>Getting started with Qrisp on IQM<a class="headerlink" href="#getting-started-with-qrisp-on-iqm" title="Link to this heading"></a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Download this Notebook</p>
+<p><a class="reference download internal" download="" href="../../../_downloads/9258d89fe4b9e08391eccc6a297494dd/qrisp-starter.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">qrisp-starter.ipynb</span></code></a> to run locally on your machine.</p>
+</div>
+<p>Qrisp is a quantum programming language build around the concept of quantum variables. It is designed to be a high-level language that is easy to use and understand. Qrisp is a great tool for beginners to learn quantum computing and for experts to quickly prototype quantum algorithms. It offers a fresh take on quantum programming. You can learn more about Qrisp on the official website: <a class="reference external" href="https://qrisp.eu/">https://qrisp.eu/</a>.</p>
+<p>In this notebook, you will learn how to …</p>
+<ul class="simple">
+<li><p>… get started with Qrisp.</p></li>
+<li><p>… run a Qrisp program on an IQM backend both mock and real device.</p></li>
+</ul>
+<p>This notebook is from https://www.iqmacademy.com/learn/qrisp/00-intro/ with few edits to make it simpler to use on IQM device <code class="docutils literal notranslate"><span class="pre">Sirius</span></code></p>
+<p><em>note:</em> you can run this notebook with token.txt file next to it</p>
+<section id="installing-the-necessary-packages">
+<h2>Installing the necessary packages<a class="headerlink" href="#installing-the-necessary-packages" title="Link to this heading"></a></h2>
+<p>In order to get started, make sure you have the appropriate packages installed. Make sure that you install qrisp with the iqm extension.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span>
+
+<span class="o">%</span><span class="n">pip</span> <span class="n">install</span> <span class="n">qrisp</span><span class="p">[</span><span class="n">iqm</span><span class="p">]</span>
+<span class="c1"># On some systems, you may need to use quotes around the extras:</span>
+<span class="c1">#!pip install &quot;qrisp[iqm]&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="imports">
+<h2>Imports<a class="headerlink" href="#imports" title="Link to this heading"></a></h2>
+<p>In order to use Qrisp, you need to import the <code class="docutils literal notranslate"><span class="pre">qrisp</span></code> package. You can do this by running <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">qrisp</span> <span class="pre">import</span> <span class="pre">*</span></code></p>
+<p>ofcourse it is not the best practice to import everything like this, but for the sake of simplicity in this notebook we do it.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">qrisp</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">qrisp.interface</span><span class="w"> </span><span class="kn">import</span> <span class="n">IQMBackend</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Qrisp provides advanced quantum data types such as QuantumFloat that we will use in this example. In this example we wil encode a 2 it will multiply it with itself and then measure the result.</p>
+<p>Let’s run it on a simulator first.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">QuantumFloat</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">a</span><span class="p">[:]</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">a</span><span class="o">.</span><span class="n">get_measurement</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                                     
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{2: 1.0}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="running-on-iqm-resonance">
+<h2>Running on IQM Resonance<a class="headerlink" href="#running-on-iqm-resonance" title="Link to this heading"></a></h2>
+<p>Now let’s run circuits on IQM Resonance. IQM provides both real quantum hardware and a mock backend for testing.</p>
+<section id="token-authentication">
+<h3>Token Authentication<a class="headerlink" href="#token-authentication" title="Link to this heading"></a></h3>
+<p>To access IQM quantum computers, you need an API Token. Get one at</p>
+<p>🔗 <a class="reference external" href="https://resonance.meetiqm.com/">resonance.meetiqm.com</a></p>
+<p>by clicking “Create Token” in the side panel.</p>
+<p><strong>Note</strong>: Here, We will use IQM Sirius (16 qubits, 0.30 credits/second) as it’s the most cost-effective option and can perform this demo efficiently.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">getpass</span><span class="w"> </span><span class="kn">import</span> <span class="n">getpass</span>
+
+<span class="n">token_file</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;token.txt&#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">token_file</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">while</span> <span class="n">token</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+        <span class="n">token</span> <span class="o">=</span> <span class="n">getpass</span><span class="p">(</span><span class="s2">&quot;Please enter the token from that you generated from IQM resonance&quot;</span><span class="p">)</span>
+        <span class="n">token_file</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Reusing existing token.txt&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">token</span> <span class="o">=</span> <span class="n">token_file</span><span class="o">.</span><span class="n">read_text</span><span class="p">()</span>
+
+<span class="c1"># IQM Backend for Sirius (mock Hardware)</span>
+<span class="n">iqm_mock</span> <span class="o">=</span> <span class="n">IQMBackend</span><span class="p">(</span><span class="n">api_token</span> <span class="o">=</span> <span class="n">token</span><span class="p">,</span> <span class="n">device_instance</span> <span class="o">=</span> <span class="s2">&quot;sirius:mock&quot;</span><span class="p">)</span>
+
+<span class="c1"># IQM Backend for Sirius (real Hardware)</span>
+<span class="n">iqm_sirius</span> <span class="o">=</span> <span class="n">IQMBackend</span><span class="p">(</span><span class="n">api_token</span> <span class="o">=</span> <span class="n">token</span><span class="p">,</span> <span class="n">device_instance</span> <span class="o">=</span> <span class="s2">&quot;sirius&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/srv/conda/envs/notebook/lib/python3.10/site-packages/iqm/iqm_client/iqm_client.py:142: UserWarning: Your IQM Client version 28.0.0 was built for a different version of IQM Server. You might encounter issues. For the best experience, consider using a version of IQM Client that satisfies 29.2.0 &lt;= iqm-client &lt; 30.0.
+  warnings.warn(version_incompatibility_msg)
+/srv/conda/envs/notebook/lib/python3.10/site-packages/iqm/iqm_client/iqm_client.py:142: UserWarning: Your IQM Client version 28.0.0 was built for a different version of IQM Server. You might encounter issues. For the best experience, consider using a version of IQM Client that satisfies 30.1.0 &lt;= iqm-client &lt; 31.0.
+  warnings.warn(version_incompatibility_msg)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="compare-all-three-runs-simulator-vs-mock-vs-real-hardware">
+<h3>Compare all three runs: Simulator vs Mock vs Real Hardware<a class="headerlink" href="#compare-all-three-runs-simulator-vs-mock-vs-real-hardware" title="Link to this heading"></a></h3>
+<p>This will consume credits (0.30 credits/second).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># local simulator</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">QuantumFloat</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">a</span><span class="p">[:]</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">sim_result</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">get_measurement</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Qrisp Simulator:  </span><span class="si">{</span><span class="n">sim_result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Simulator: Perfect (no noise)&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Qrisp Simulator:  {2: 1.0}                                                           
+Simulator: Perfect (no noise)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># mock backend on IQM resonance</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">QuantumFloat</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">a</span><span class="p">[:]</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">mock_result</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">get_measurement</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="n">iqm_mock</span><span class="p">,</span> <span class="n">shots</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;IQM Mock Backend: </span><span class="si">{</span><span class="n">mock_result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mock: Simulates IQM backend behavior (with noise model), zero credits used&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>IQM Mock Backend: {0: 1.0}
+Mock: Simulates IQM backend behavior (with noise model), zero credits used
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Always test on the mock backend (above) first before using real hardware to avoid wasting credits!</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># real hardware backend on IQM sirius</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">QuantumFloat</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">a</span><span class="p">[:]</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">iqm_result</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">get_measurement</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="n">iqm_sirius</span><span class="p">,</span> <span class="n">shots</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;IQM Sirius (Real): </span><span class="si">{</span><span class="n">iqm_result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Real Hardware with actual NISQ noise&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>IQM Sirius (Real): {2: 0.952, 0: 0.028, 3: 0.018, 1: 0.002}
+Real Hardware with actual NISQ noise
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../qrisp-starter-tutorial/" class="btn btn-neutral float-left" title="Qrisp Starter Tutorial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../../schedule/" class="btn btn-neutral float-right" title="Nordic Quantum Autumn School 2025 - Schedule" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, The contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
