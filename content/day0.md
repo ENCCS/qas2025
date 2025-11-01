@@ -7,7 +7,8 @@ Some info is sent only via email to registered participants:
 - **Zoom connection links** for online school participation and pre-event check-in
 - **IQM Resonance exclusive signup link** for access to a specific project with credits on IQM resonance cloud
 - **Calendar invites** (.ics files) for all calls
-- **Slack workspace invitation** for communicating with instructors and fellow participants
+- **Zulip workspace invitation** (optional) for communicating with instructors and fellow participants
+- **Nextcloud markdown file links** for submitting questions during lectures
 :::
 
 ## Welcome!
@@ -18,7 +19,7 @@ Thank you for registering for the Quantum Autumn School 2025! Whether you're joi
 :class: tip
 
 - **Dates:** November 3-7, 2025
-- **Venue (In-person):** RISE KTH "Innoversum" room, Drottning Kristinas väg 61, Stockholm (4th floor)
+- **Venue (In-person):** Stockholm, Sweden (address details shared in email communications)
 - **DONE: Pre-Event Check-in:** October 29, 2025 at 11:00 AM Stockholm time (Zoom link in email)
 - **School Website:** [https://enccs.github.io/qas2025/](https://enccs.github.io/qas2025/)
 :::
@@ -27,7 +28,7 @@ Thank you for registering for the Quantum Autumn School 2025! Whether you're joi
 **Few logistics!:**
 
 - After each talk, there will be time for questions. Please save your questions until the end of each session to keep the flow and allow speakers to complete their presentations. We want to make sure everyone gets a chance to ask!
-- There will be a chance to write questions in slack or hackMD link to be shared
+- You can write questions during lectures using Nextcloud markdown files (links shared in email communication)
 :::
 
 ### Can't make it? Let us know!
@@ -73,9 +74,13 @@ Get ready for the school with these optional preparation materials and resources
 **Don't worry if you don't complete all of this—we'll guide you through the essentials during the school!**
 
 The goal is to give you a head start, not to overwhelm you. Even if you arrive with no preparation, you'll be able to follow along and learn.
+:::
 
+### Easiest option: Use Binder (recommended for beginners)
 
-### Quick start: Environment setup
+**No installation needed!** Use Binder to run notebooks directly in your browser - it's free, instant, and pre-configured with everything you need. See the [Qrisp Starter Tutorial](notebooks/getting-started/qrisp-starter-tutorial) for the Binder link.
+
+### Local setup (for those who prefer to run on their own machine)
 
 Watch this **[short video by Stefan from IQM](https://www.youtube.com/watch?v=gYD87xxlxJU)** to learn how to set up your environment for the school:
 - Covers Jupyter notebook setup and basic quantum computing examples
@@ -83,7 +88,6 @@ Watch this **[short video by Stefan from IQM](https://www.youtube.com/watch?v=gY
 
 :::{tip}
 If you're new to Jupyter notebooks, don't worry! Stefan's video above provides a great introduction, and we'll walk through everything during the school.
-:::
 :::
 :::
 
@@ -110,11 +114,12 @@ Get practical experience with our interactive **[Qrisp Starter Tutorial](noteboo
 :class: tip
 
 Visit the **[Qrisp Starter Tutorial page](notebooks/getting-started/qrisp-starter-tutorial)** to:
+- **Run instantly with Binder** - free, no installation, runs in your browser
 - View the complete notebook with outputs
 - Download it to run on your own machine
 - Follow step-by-step instructions
 
-The notebook is self-contained and portable - works locally or on cloud platforms like Google Colab!
+**Recommended: Use Binder during the school!** It's pre-configured with all dependencies (qrisp, IQM interface) and requires zero setup.
 :::
 :::
 
@@ -160,8 +165,8 @@ Together with the Quantum Autumn School, this will give you an excellent skillse
 
 :::{dropdown} PechaKucha Evening - Wednesday, November 5th
 
-**Time:** Wednesday, November 5th at 16:30
-**Location:** RISE KTH "Innoversum" room (before dinner)
+**Time:** Wednesday, November 5th at 16:00
+**Location:** Stockholm venue (address details shared in email communications)
 
 To balance all that brainwork with some light-hearted fun, we warmly invite you to the **Social PechaKucha Evening**!
 
@@ -257,11 +262,11 @@ Here's everything you need in one place:
 | **Qrisp SDK** | [https://qrisp.eu/](https://qrisp.eu/) |
 | **ENCCS Lessons** | [https://enccs.se/lessons/](https://enccs.se/lessons/) |
 | **LinkedIn** | [linkedin.com/company/enccs](https://www.linkedin.com/company/enccs) |
-| **Venue Map** | [View on Google Maps](https://maps.app.goo.gl/9rphvAS7ugRUC46U8) |
+| **Venue Address** | Details shared in email communications |
 
 ## Questions?
 
-If you have any questions or concerns before the school starts, don't hesitate to reach out to the organizing team via email or slack.
+If you have any questions or concerns before the school starts, don't hesitate to reach out to the organizing team via email or Zulip (optional).
 
 :::{seealso}
 **Next Steps:**
