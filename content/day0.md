@@ -165,7 +165,7 @@ Together with the Quantum Autumn School, this will give you an excellent skillse
 
 :::{dropdown} PechaKucha Evening - Wednesday, November 5th
 
-**Time:** Wednesday, November 5th at 16:30
+**Time:** Wednesday, November 5th at 16:00
 **Location:** Stockholm venue (address details shared in email communications)
 
 To balance all that brainwork with some light-hearted fun, we warmly invite you to the **Social PechaKucha Evening**!
