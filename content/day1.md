@@ -65,10 +65,12 @@ Introduction to the fundamental building blocks of quantum computing. This sessi
 An introduction to the theoretical foundations of quantum information processing. This session covers key concepts including quantum superposition, entanglement, and quantum measurements. We'll discuss the Quantum Fourier Transform (QFT) and other fundamental quantum algorithms, providing the theoretical background needed for advanced quantum computing applications. This is an excellent foundation to learn how to build a quantum algorithm.
 
 ## From qubits 2000 to Nobel Prize 2025
-**Speaker:** Göran Wendin (RISE, SE)  
+**Speaker:** Göran Wendin (RISE, SE)
 **Time:** 16:30-17:30
 
 Learn about the technological advances that led to the recent nobel prize winning
+
+📄 **[Download Slides (PDF)](resources/GW_Monday_251103_small.pdf)**
 
 ## Reception & mingling
 **Time:** 18:00-20:00
