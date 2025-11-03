@@ -16,16 +16,20 @@ and introduction to the school and
 Welcome to the Nordic Quantum Autumn School 2025! This opening session will introduce participants to the school, the structure, learning outcomes and logistics. An introduction about ENCCS and EuroHPC-JU as well with an overview of the five-day program, introduce the instructors, and set expectations for the intensive quantum computing week ahead.
 
 ## Introduction to MIMER AI Factory
-**Speaker:** Thor Wikfeldt (MIMER/RISE, SE)  
+**Speaker:** Thor Wikfeldt (MIMER/RISE, SE)
 **Time:** 9:40-10:00
 
 You will get a welcoming message from the director of MIMER AI factory and understand more details on the AI factory initiative.
 
+📄 **[Download Slides (PDF)](resources/QAS_Mimer_overview_03-11-2025.pdf)**
+
 ## Introduction to the European HPC+AI+QC ecosystem. LUMI-Q Quantum Flagship
-**Speaker:** Mikael Johansson (CSC, FI)  
+**Speaker:** Mikael Johansson (CSC, FI)
 **Time:** 10:00-11:00
 
 This session provides a comprehensive overview of the European landscape for hybrid classical/quantum high-performance computing. We'll explore the LUMI-Q Quantum Flagship initiative and discuss how quantum computing is being integrated into the broader European HPC and AI ecosystem. Participants will learn about current infrastructure, future developments, and opportunities for accessing quantum resources.
+
+📄 **[Download Slides (PDF)](resources/Hybrid_HPC_AI_QC_Johansson.pdf)**
 
 ## Coffee break
 **Time:** 10:40-11:00
