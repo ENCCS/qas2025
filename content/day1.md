@@ -48,10 +48,12 @@ A technical deep-dive into the software ecosystem that connects classical high-p
 Building on the previous session, we'll explore how quantum circuits are used to implement quantum algorithms. This session bridges the gap between basic gate operations and practical quantum algorithms, showing how circuit design principles apply to real quantum computing problems.
 
 ## Quantum gates and circuits
-**Speaker:** Giulia Ferrini (MC2, Chalmers/WACQT, SE)  
+**Speaker:** Giulia Ferrini (MC2, Chalmers/WACQT, SE)
 **Time:** 13:00-14:00
 
 Introduction to the fundamental building blocks of quantum computing. This session covers basic quantum gates, how they manipulate qubits, and how gates are combined to create quantum circuits.
+
+📄 **[Download Slides (PDF)](resources/Tutorial-Quantum-Autumn-School-reduced2.pdf)**
 
 ## Coffee break
 **Time:** 15:00-15:30
