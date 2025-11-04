@@ -10,7 +10,7 @@ Comprehensive overview of Variational Quantum Eigensolvers (VQE) and related alg
 
 📄 **[Download Slides (PDF)](resources/HamiltonianSimulation.pdf)**
 
-## interactive tutorial: experiments with quantum gates, circuits and algorithms (qrips simulations)
+## interactive tutorial: experiments with quantum gates, circuits and algorithms
 **Speaker:** Juan de Gracia Triviño (ENCCS/RISE, SE)
 **Time:** 10:00-10:40
 
