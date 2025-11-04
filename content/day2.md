@@ -2,11 +2,13 @@
 
 *Learning Track: Basic/Intermediate - variational algorithms, optimization, QAOA and overview on hybrid use cases*
 
-## Introduction to variational quantum algorithms: VQE and beyond (OPE, ..., SQD)
+## Hamiltonian Simulation and Estimation
 **Speaker:** Juan de Gracia Triviño (ENCCS/RISE, SE)
 **Time:** 9:00-10:00
 
 Comprehensive overview of Variational Quantum Eigensolvers (VQE) and related algorithms including Quantum Phase Estimation (QPE) and quantum simulation methods. This session covers the theoretical foundations of variational quantum algorithms and their applications to quantum chemistry and materials science.
+
+📄 **[Download Slides (PDF)](resources/HamiltonianSimulation.pdf)**
 
 ## interactive tutorial: experiments with quantum gates, circuits and algorithms (qrips simulations)
 **Speaker:** Juan de Gracia Triviño (ENCCS/RISE, SE)

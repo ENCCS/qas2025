@@ -43,11 +43,13 @@ A technical deep-dive into the software ecosystem that connects classical high-p
 ## Lunch
 **Time:** 12:00-13:00
 
-## Quantum gates, circuits and algorithms
-**Speakers:** Juan de Gracia Triviño (ENCCS/RISE, SE)
+## Introduction to Quantum Computing - Qubits, gates and circuits
+**Speaker:** Juan de Gracia Triviño (ENCCS/RISE, SE)
 **Time:** 13:00-14:00
 
 Building on the previous session, we'll explore how quantum circuits are used to implement quantum algorithms. This session bridges the gap between basic gate operations and practical quantum algorithms, showing how circuit design principles apply to real quantum computing problems.
+
+📄 **[Download Slides (PDF)](resources/Introduction%20to%20Quantum%20Computing.pdf)**
 
 ## Introduction to Quantum Algorithms
 **Speaker:** Giulia Ferrini (MC2, Chalmers/WACQT, SE)
@@ -60,11 +62,13 @@ Introduction to the fundamental building blocks of quantum computing. This sessi
 ## Coffee break
 **Time:** 15:00-15:30
 
-## Quantum Information Theory introduction, building quantum algorithm, QFT, ...
-**Speaker:** Stefano Markidis (KTH, SE)  
+## Quantum Algorithms: A Top-Down Approach
+**Speaker:** Stefano Markidis (KTH, SE)
 **Time:** 15:30-16:30
 
 An introduction to the theoretical foundations of quantum information processing. This session covers key concepts including quantum superposition, entanglement, and quantum measurements. We'll discuss the Quantum Fourier Transform (QFT) and other fundamental quantum algorithms, providing the theoretical background needed for advanced quantum computing applications. This is an excellent foundation to learn how to build a quantum algorithm.
+
+📄 **[Download Slides (PDF)](resources/RISE-QuantumAlgorithmMarkidis-2025.pdf)**
 
 ## From qubits 2000 to Nobel Prize 2025
 **Speaker:** Göran Wendin (RISE, SE)
