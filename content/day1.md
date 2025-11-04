@@ -8,10 +8,12 @@
 Welcome setup and registration for participants arriving at RISE KTH "Innoversum" room.
 
 ## Welcome & introduction to QAS2025
-**Speaker:** Apostolos Vasileiadis, Karim Elgammal (ENCCS/RISE, SE)  
+**Speaker:** Apostolos Vasileiadis, Karim Elgammal (ENCCS/RISE, SE)
 **Time:** 9:15-09:40
 
 Welcome to the Nordic Quantum Autumn School 2025! This opening session will introduce participants to the school, the structure, learning outcomes and logistics. An introduction about ENCCS and EuroHPC-JU as well with an overview of the five-day program, introduce the instructors, and set expectations for the intensive quantum computing week ahead.
+
+📄 **[Download Slides (PDF)](resources/welcome%20talk%20and%20ENCCS%20intro.pdf)**
 
 ## Introduction to MIMER AI Factory
 **Speaker:** Thor Wikfeldt (MIMER/RISE, SE)
