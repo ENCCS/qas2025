@@ -29,10 +29,14 @@ The advent of hybrid computing platforms consisting of quantum processing units 
 **Time:** 12:00-13:00
 
 ## Getting started with algorithm development on actual quantum hardware using IQM Resonance
-**Speaker:** Stefan Seegerer (IQM)  
+**Speaker:** Stefan Seegerer (IQM)
 **Time:** 13:00-14:00
 
-In this session you will be learning how to execute quantum circuits on actual hardware with IQM’s cloud-accessible Resonance platform. You will not only run your first experiments but also acquire tips and tricks on how to get the most out of the hardware.
+In this session you will be learning how to execute quantum circuits on actual hardware with IQM's cloud-accessible Resonance platform. You will not only run your first experiments but also acquire tips and tricks on how to get the most out of the hardware.
+
+🔗 **[please visit IQM Academy Workshop link](https://www.iqmacademy.com/curriculum/workshop-en-3.html)**
+
+📓 **[Download Getting Started Notebook](_static/qrisp-starter.ipynb)** - Jupyter notebook for hands-on exercises
 
 ## Developing quantum algorithms with qrisp—the next generation of quantum algorithm development
 **Speaker:** Stefan Seegerer (IQM)
