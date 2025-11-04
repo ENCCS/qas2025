@@ -43,6 +43,12 @@ In this session you will be learning how to execute quantum circuits on actual h
 - **[09: Dynamic Decoupling](_static/09-dd.ipynb)** - Error mitigation with dynamic decoupling
 - **[11: Readout](_static/11-readout.ipynb)** - Pulse-level readout programming
 
+**🚀 Run Notebooks in the Cloud (No Installation Required):**
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ENCCS/qas2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)
+
+Click the badge above to launch all notebooks in Binder - free, no installation needed, pre-configured with all dependencies!
+
 ## Developing quantum algorithms with qrisp—the next generation of quantum algorithm development
 **Speaker:** Stefan Seegerer (IQM)
 **Time:** 14:00-15:00

@@ -53,6 +53,11 @@ Building on the previous session, we'll explore how quantum circuits are used to
 
 📄 **[Download Slides (PDF)](resources/Introduction%20to%20Quantum%20Computing.pdf)**
 
+**📓 Download Notebooks for Hands-on Practice:**
+- **[03: Operations](_static/03-operations.ipynb)** - Quantum operations and gates
+- **[04: Bernstein-Vazirani Algorithm](_static/04-bv.ipynb)** - BV algorithm implementation
+- **[09: Dynamic Decoupling](_static/09-dd.ipynb)** - Error mitigation with dynamic decoupling
+
 ## Introduction to Quantum Algorithms
 **Speaker:** Giulia Ferrini (MC2, Chalmers/WACQT, SE)
 **Time:** 13:00-14:00
