@@ -57,6 +57,10 @@ Click the badge above to launch all notebooks in Binder - free, no installation 
 
 This hands-on session introduces qrisp’s high-level, Pythonic workflow that converts mathematical intent directly into resource-optimized quantum circuits. Participants will prototype variational and fault-tolerant routines, run it on simulators and real hardware and experience first hand how qrisp empowers you to develop novel quantum algorithms.
 
+For notebooks, it was continuation for the previous ones
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ENCCS/qas2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)
+
 ## Coffee break
 **Time:** 15:00-15:30
 

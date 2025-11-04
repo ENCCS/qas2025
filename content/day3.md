@@ -14,6 +14,9 @@ Key topics: how to design a use case for a near term quantum algorithms, how one
 
 Leave the gate model behind and dive into the microwave layer where quantum logic is born. Through interactive demos you’ll be gaining an intuitive feel for how precise analog signals steer digital-era quantum computation.
 
+**📓 Download Notebooks for Hands-on Exercises:**
+- 📥 **[11: Readout](https://github.com/ENCCS/qas2025/blob/main/notebooks/pulse/11-readout.ipynb)** - Pulse-level readout programming
+
 ## Coffee break
 **Time:** 10:40-11:00
 
