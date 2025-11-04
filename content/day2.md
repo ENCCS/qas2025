@@ -36,7 +36,12 @@ In this session you will be learning how to execute quantum circuits on actual h
 
 🔗 **[please visit IQM Academy Workshop link](https://www.iqmacademy.com/curriculum/workshop-en-3.html)**
 
-📓 **[Download Getting Started Notebook](_static/qrisp-starter.ipynb)** - Jupyter notebook for hands-on exercises
+**📓 Download Notebooks for Hands-on Exercises:**
+- **[Getting Started Notebook](_static/qrisp-starter.ipynb)** - Introduction to Qrisp and IQM
+- **[03: Operations](_static/03-operations.ipynb)** - Quantum operations and gates
+- **[04: Bernstein-Vazirani Algorithm](_static/04-bv.ipynb)** - BV algorithm implementation
+- **[09: Dynamic Decoupling](_static/09-dd.ipynb)** - Error mitigation with dynamic decoupling
+- **[11: Readout](_static/11-readout.ipynb)** - Pulse-level readout programming
 
 ## Developing quantum algorithms with qrisp—the next generation of quantum algorithm development
 **Speaker:** Stefan Seegerer (IQM)
