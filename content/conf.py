@@ -46,7 +46,14 @@ extensions = [
 # jupyter_execute_notebooks = "auto"   # *only* execute if at least one output is missing.
 # jupyter_execute_notebooks = "force"
 nb_execution_mode = "cache"
-nb_execution_excludepatterns = ["notebooks/getting-started/qrisp-starter.ipynb"]
+nb_execution_excludepatterns = [
+    "notebooks/getting-started/qrisp-starter.ipynb",
+    "notebooks/getting-started/03-operations.ipynb",
+    "notebooks/getting-started/04-bv.ipynb",
+    "notebooks/getting-started/09-dd.ipynb",
+    "notebooks/pulse/11-readout.ipynb",
+    "notebooks/me_trying/*",  # Exclude all practice notebooks
+]
 
 # https://myst-parser.readthedocs.io/en/latest/syntax/optional.html
 myst_enable_extensions = [
@@ -70,6 +77,7 @@ exclude_patterns = [
     "jupyter_execute",
     "*venv*",
     "template_folders",
+    "notebooks/me_trying",  # Personal practice folder - exclude from build
 ]
 
 # -- Options for HTML output -------------------------------------------------
