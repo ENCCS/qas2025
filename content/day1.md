@@ -21,7 +21,7 @@ You will get a welcoming message from the director of MIMER AI factory and under
 
 📄 **[Download Slides (PDF)](resources/QAS_Mimer_overview_03-11-2025.pdf)**
 
-## Introduction to the European HPC+AI+QC ecosystem. LUMI-Q Quantum Flagship
+## The European hybrid HPC+AI+QC ecosystem
 **Speaker:** Mikael Johansson (CSC, FI)
 **Time:** 10:00-11:00
 
@@ -32,11 +32,13 @@ This session provides a comprehensive overview of the European landscape for hyb
 ## Coffee break
 **Time:** 10:40-11:00
 
-## Overview of the HPC/QC software stack, from ready-made Q-libraries for common tasks to circuit level assembly and hardware-level coding
+## SW Stack for NISQ devices
 **Speaker:** Miroslav Dobsicek
 **Time:** 11:00-12:00
 
 A technical deep-dive into the software ecosystem that connects classical high-performance computing with quantum computing. This session covers the full stack from ready-made quantum libraries for common tasks down to circuit-level assembly and hardware-level programming.
+
+📄 **[Download Slides (PDF)](resources/SW-stack--QAS25.pdf)**
 
 ## Lunch
 **Time:** 12:00-13:00
@@ -47,7 +49,7 @@ A technical deep-dive into the software ecosystem that connects classical high-p
 
 Building on the previous session, we'll explore how quantum circuits are used to implement quantum algorithms. This session bridges the gap between basic gate operations and practical quantum algorithms, showing how circuit design principles apply to real quantum computing problems.
 
-## Quantum gates and circuits
+## Introduction to Quantum Algorithms
 **Speaker:** Giulia Ferrini (MC2, Chalmers/WACQT, SE)
 **Time:** 13:00-14:00
 
