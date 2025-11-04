@@ -10,3 +10,6 @@ content/welcome_message.md
 
 notebooks/**/token.txt
 .DS_Store
+
+# Personal practice/testing folders
+content/notebooks/me_trying/

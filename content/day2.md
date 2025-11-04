@@ -16,6 +16,8 @@ Comprehensive overview of Variational Quantum Eigensolvers (VQE) and related alg
 
 Interactive tutorial on implementing quantum gates, circuits and algorithms using Qrisp SDK. This comprehensive session provides hands-on experience with quantum programming, covering circuit construction, simulation, and algorithms.
 
+📥 **[Download Notebook](https://github.com/ENCCS/qas2025/blob/main/notebooks/simulating_QC/QuantumCompSimulator.ipynb)** - Quantum Computing Simulator Tutorial
+
 ## Coffee break
 **Time:** 10:40-11:00
 
