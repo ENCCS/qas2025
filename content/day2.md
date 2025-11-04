@@ -37,11 +37,11 @@ In this session you will be learning how to execute quantum circuits on actual h
 🔗 **[please visit IQM Academy Workshop link](https://www.iqmacademy.com/curriculum/workshop-en-3.html)**
 
 **📓 Download Notebooks for Hands-on Exercises:**
-- 📥 **[Getting Started Notebook](_static/qrisp-starter.ipynb)** - Introduction to Qrisp and IQM
-- 📥 **[03: Operations](_static/03-operations.ipynb)** - Quantum operations and gates
-- 📥 **[04: Bernstein-Vazirani Algorithm](_static/04-bv.ipynb)** - BV algorithm implementation
-- 📥 **[09: Dynamic Decoupling](_static/09-dd.ipynb)** - Error mitigation with dynamic decoupling
-- 📥 **[11: Readout](_static/11-readout.ipynb)** - Pulse-level readout programming
+- 📥 **[Getting Started Notebook](https://github.com/ENCCS/qas2025/blob/main/notebooks/getting-started/qrisp-starter.ipynb)** - Introduction to Qrisp and IQM
+- 📥 **[03: Operations](https://github.com/ENCCS/qas2025/blob/main/notebooks/getting-started/03-operations.ipynb)** - Quantum operations and gates
+- 📥 **[04: Bernstein-Vazirani Algorithm](https://github.com/ENCCS/qas2025/blob/main/notebooks/getting-started/04-bv.ipynb)** - BV algorithm implementation
+- 📥 **[09: Dynamic Decoupling](https://github.com/ENCCS/qas2025/blob/main/notebooks/getting-started/09-dd.ipynb)** - Error mitigation with dynamic decoupling
+- 📥 **[11: Readout](https://github.com/ENCCS/qas2025/blob/main/notebooks/pulse/11-readout.ipynb)** - Pulse-level readout programming
 
 **🚀 Run Notebooks in the Cloud (No Installation Required):**
 
