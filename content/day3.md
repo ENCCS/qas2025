@@ -17,6 +17,11 @@ Leave the gate model behind and dive into the microwave layer where quantum logi
 **📓 Download Notebooks for Hands-on Exercises:**
 - 📥 **[11: Readout](https://github.com/ENCCS/qas2025/blob/main/notebooks/pulse/11-readout.ipynb)** - Pulse-level readout programming
 
+**🚀 Run Notebooks in the Cloud (No Installation Required):**
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ENCCS/qas2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)
+
+
 ## Coffee break
 **Time:** 10:40-11:00
 
