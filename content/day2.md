@@ -27,6 +27,8 @@ Interactive tutorial on implementing quantum gates, circuits and algorithms usin
 
 The advent of hybrid computing platforms consisting of quantum processing units integrated with conventional high-performance computing brings new opportunities for algorithm design. By strategically offloading select portions of the workload to classical hardware where tractable, we may broaden the applicability of quantum computation in the near term. In this talk, we review techniques that facilitate the study of subdomains of chemical systems with quantum computers and present a proof-of-concept demonstration of quantum-selected configuration interaction deployed within a multiscale/multiphysics simulation workflow leveraging classical molecular dynamics, projection-based embedding and qubit subspace tools. This allows the technology to be utilised for simulating systems of real scientific and industrial interest, which not only brings true quantum utility closer to realisation but is also relevant as we look forward to the fault-tolerant regime.
 
+📄 **[Download Slides (PDF)](resources/2025_autumn_school.pdf)**
+
 ## Lunch
 **Time:** 12:00-13:00
 
