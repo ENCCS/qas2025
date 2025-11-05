@@ -1,0 +1,16 @@
+channels:
+  - conda-forge
+  - conda-forge/label/broken
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - iqm-client>=32.1.1,< 33.0
+      - qrisp[iqm]
+      - iqm-station-control-client==11.3.1
+      - iqm-pulla
+      - iqm-pulse
+      - numpy
+      - matplotlib
+      - pylatexenc
+      - jupyterlab-myst

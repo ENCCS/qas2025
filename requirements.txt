@@ -1,2 +1,0 @@
-qrisp[iqm]
-jupyterlab-myst
