@@ -58,7 +58,7 @@ Hands-on tutorial implementing quantum error correction using repetition codes o
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ENCCS/qas2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)
 
 ## interactive tutorial: Quantum kernel estimation with application to disability insurance
-**Speakers:** Björn Löfdahl (SEB), Anastasiia Andriievska (RISE)
+**Speakers:** Anastasiia Andriievska (RISE), Björn Löfdahl (SEB)
 **Time:** 16:30-17:30
 
 Hands-on tutorial on quantum kernel estimation methods applied to real-world financial data analysis. This interactive session demonstrates how quantum machine learning techniques can be applied to disability insurance data using quantum kernels.
