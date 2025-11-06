@@ -33,10 +33,12 @@ GPU-accelerated workloads are increasingly being adopted in heterogeneous quantu
 Introduction to quantum error correction, essential for fault-tolerant quantum computing. This session covers the principles of quantum error correction codes and the requirements for implementing QEC in practical quantum workflows.
 
 ## Quantum kernel estimation with application to disability insurance
-**Speaker:** Björn Löfdahl (SEB)  
+**Speaker:** Björn Löfdahl (SEB)
 **Time:** 14:00-15:00
 
 applications of quantum computing within the financial sector.
+
+📄 **[Download Slides (PDF)](resources/QSVR_presentation.pdf)**
 
 ## Coffee break
 **Time:** 15:00-15:30
@@ -56,7 +58,14 @@ Hands-on tutorial implementing quantum error correction using repetition codes o
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ENCCS/qas2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)
 
 ## interactive tutorial: Quantum kernel estimation with application to disability insurance
-**Speakers:** Björn Löfdahl
+**Speakers:** Björn Löfdahl (SEB), Anastasiia Andriievska (RISE)
 **Time:** 16:30-17:30
 
-Quantum kernel estimation tutorial
+Hands-on tutorial on quantum kernel estimation methods applied to real-world financial data analysis. This interactive session demonstrates how quantum machine learning techniques can be applied to disability insurance data using quantum kernels.
+
+**📓 Download Notebook:**
+- 📥 **[Download Notebook](https://github.com/ENCCS/qas2025/blob/main/notebooks/QKE/QKE_BL_AA_IQM_2025.ipynb)** - Quantum kernel estimation for disability insurance
+
+**🚀 Run Notebook in the Cloud (No Installation Required):**
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ENCCS/qas2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)
