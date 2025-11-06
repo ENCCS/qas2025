@@ -45,7 +45,15 @@ applications of quantum computing within the financial sector.
 **Speakers:** Moritz Lange (Göteborg University)
 **Time:** 15:30-16:30
 
-QEC tutorial
+Hands-on tutorial implementing quantum error correction using repetition codes on IQM quantum hardware. This interactive session provides practical experience with QEC concepts, circuit implementation, and error mitigation techniques.
+
+**📓 Download Notebook and Solutions:**
+- 📥 **[Download Notebook](https://github.com/ENCCS/qas2025/blob/main/notebooks/QEC/Repetition%20code%20on%20IQM.ipynb)** - Repetition code on IQM
+- 📄 **[Download PDF Solutions](resources/Repetition%20code%20on%20IQM%20-%20solutions.pdf)** - Complete solutions for the QEC exercises
+
+**🚀 Run Notebook in the Cloud (No Installation Required):**
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ENCCS/qas2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)
 
 ## interactive tutorial: Quantum kernel estimation with application to disability insurance
 **Speakers:** Björn Löfdahl
