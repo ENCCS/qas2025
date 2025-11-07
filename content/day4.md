@@ -21,14 +21,45 @@ An overview on Applications of quantum computing to atomistic simulations and ma
 **Speaker:** Esperanza Cuenca-Gómez (NVIDIA)
 **Time:** 11:00-12:00
 
+**📊 Slides:** [NVIDIA_Accelerated Quantum Supercomputing_Using_CUDA-Q_Esperanza_Cuenca-Gomez.pdf](resources/NVIDIA_Accelerated%20Quantum%20Supercomputing_Using_CUDA-Q_Esperanza_Cuenca-Gomez.pdf)
+
+**🔗 Resources from the Talk:**
+
+**Getting Started:**
+- [CUDA-Q Quick Start](https://nvidia.github.io/cuda-quantum/latest/using/quick_start.html)
+- [CUDA-Q Developer Portal](https://developer.nvidia.com/cuda-q)
+- [CUDA-Q Academic Program](https://nvidia.github.io/cuda-quantum/latest/using/quick_start.html#cuda-q-academic)
+- [CUDA-Q Academic GitHub](https://github.com/NVIDIA/cuda-q-academic)
+
+**Examples and Workflows:**
+- [CUDA-Q Examples](https://nvidia.github.io/cuda-quantum/latest/using/examples/examples.html)
+- [Multi-GPU Workflows](https://nvidia.github.io/cuda-quantum/latest/using/examples/multi_gpu_workflows.html)
+- [Parallel Execution (MQPU)](https://nvidia.github.io/cuda-quantum/latest/using/examples/multi_gpu_workflows.html#parallel-execution-over-multiple-qpus-mqpu)
+
+**CUDA-Q Extensions (cudaqx):**
+- [cudaqx Overview](https://nvidia.github.io/cudaqx/index.html)
+- [Applications](https://nvidia.github.io/cuda-quantum/latest/using/applications.html)
+- [VQE Solvers](https://nvidia.github.io/cudaqx/components/solvers/introduction.html#vqe-examples)
+- [ADAPT-VQE](https://nvidia.github.io/cudaqx/components/solvers/introduction.html#adapt-vqe)
+
+**Quantum Error Correction:**
+- [QEC Introduction](https://nvidia.github.io/cudaqx/components/qec/introduction.html)
+- [Pre-built QEC Decoders](https://nvidia.github.io/cudaqx/components/qec/introduction.html#pre-built-qec-decoders)
+- [Numerical Experiments](https://nvidia.github.io/cudaqx/components/qec/introduction.html#numerical-experiments)
+
+**cuQuantum:**
+- [cuQuantum Documentation](https://docs.nvidia.com/cuda/cuquantum/latest/index.html)
+
 GPU-accelerated workloads are increasingly being adopted in heterogeneous quantum-classical architectures. These workloads are used to speed up algorithm run time, to test and implement future parallel QPU workflows, to scale up the size of quantum research, and to deploy workflows where QPUs and GPUs are tightly coupled. This session explains NVIDIA’s vision of accelerated quantum supercomputing, introducing CUDA-Q as the platform for high-performance hybrid quantum-classical computing. Relevant works using CUDA-Q are presented. The session includes code examples on how to use CUDA-Q, including quantum kernels and hybrid quantum-classical applications. Attendees are encouraged to explore CUDA-Q and the resources provided after the session.
 
 ## Lunch
 **Time:** 12:00-13:00
 
 ## Quantum error-correction (QEC)
-**Speaker:** Mats Granath (Göteborg University)  
+**Speaker:** Mats Granath (Göteborg University)
 **Time:** 13:00-14:00
+
+**📄 Lecture Notes:** [QEC Course 2025.pdf](resources/QEC%20Course%202025.pdf)
 
 Introduction to quantum error correction, essential for fault-tolerant quantum computing. This session covers the principles of quantum error correction codes and the requirements for implementing QEC in practical quantum workflows.
 

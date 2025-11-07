@@ -35,8 +35,10 @@ Overview on LUMI-Q consortium and EuroHPC-JU VLQ quantum device overview
 **Time:** 11:30-13:00
 
 ## How to use quantum computers for biomolecular free energies
-**Speaker:** Matthias Christandl (København U, DK)  
+**Speaker:** Matthias Christandl (København U, DK)
 **Time:** 13:00-14:00
+
+**📊 Slides:** [FreeQuantum.pdf](resources/FreeQuantum.pdf)
 
 Free energy calculations are at the heart of physics-based analyses of biochemical processes. They allow us to quantify molecular recognition mechanisms, which determine a wide range of biological phenomena from how cells send and receive signals to how pharmaceutical compounds can be used to treat diseases. Quantitative and predictive free energy calculations require computational models that accurately capture both the varied and intricate electronic interactions between molecules as well as the entropic contributions from motions of these molecules and their aqueous environment. However, accurate quantum-mechanical energies and forces can only be obtained for small atomistic models, not for large biomacromolecules. Here, we demonstrate how to consistently link accurate quantum-mechanical data obtained for substructures to the overall potential energy of biomolecular complexes by machine learning in an integrated algorithm. We do so using a two-fold quantum embedding strategy where the innermost quantum cores are treated at a very high level of accuracy. We demonstrate the viability of this approach for the molecular recognition of a ruthenium-based anticancer drug by its protein target, applying traditional quantum chemical methods. As such methods scale unfavorable with system size, we analyze requirements for quantum computers to provide highly accurate energies that impact the resulting free energies. Once the requirements are met, our computational pipeline FreeQuantum is able to make efficient use of the quantum computed energies, thereby enabling quantum computing enhanced modeling of biochemical processes. This approach combines the exponential speedups of quantum computers for simulating interacting electrons with modern classical simulation techniques that incorporate machine learning to model large molecules.
 
