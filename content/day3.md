@@ -46,6 +46,8 @@ Free energy calculations are at the heart of physics-based analyses of biochemic
 **Moderator:** Göran Wendin (RISE, SE)
 **Time:** 14:00-14:30
 
+**📊 Slides:** [FreeQuantum.pdf](resources/GW_Panel_251104.pdf)
+
 Let's spark topics then continue talking about during the following coffee break!
 
 ## Coffee break
