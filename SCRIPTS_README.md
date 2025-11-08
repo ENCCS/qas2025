@@ -120,6 +120,5 @@ uv sync                # Install dependencies
 
 ## More Information
 
-- Project docs: See `CLAUDE.md` and `building_steps.md`
 - Site URL: https://enccs.github.io/qas2025/
 - GitHub Actions: https://github.com/ENCCS/qas2025/actions
