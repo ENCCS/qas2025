@@ -25,6 +25,8 @@ introduction to Quantum reservoir computing.
 ## Lunch
 **Time:** 12:00-13:00
 
+📄 **[Download Slides (PDF)](resources/ENCCS_2025_QRC.pdf)**
+
 
 ## Closing and see you next year (hopefully!)
 **Time:** 13:00-14:00

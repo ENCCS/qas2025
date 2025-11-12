@@ -71,3 +71,5 @@ For notebooks, it was continuation for the previous ones
 **Time:** 15:30-16:30
 
 More in-depth into the Quantum Approximate Optimization Algorithm (QAOA), one of the most promising near-term quantum algorithms. This session covers theoretical foundations of QAOA, its applications to combinatorial optimization problems, and why it's particularly suited for NISQ devices.
+
+📄 **[Download Slides (PDF)](resources/ENCCS_2025_QAOA.pdf)**
