@@ -1,0 +1,250 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 4 - Thursday, November 6th &mdash; Quantum Autumn School 2025  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/overrides.css?v=c88db32d" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=35a8b989"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Day 5 - Friday, November 7th" href="../day5/" />
+    <link rel="prev" title="Day 3 - Wednesday, November 5th" href="../day3/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Quantum Autumn School 2025
+              <img src="../_static/ENCCS.jpg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../day0/">Day 0: before you arrive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pechakucha/">PechaKucha Evening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/getting-started/qrisp-starter-tutorial/">Qrisp Starter Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../day1/">Day 1 - Monday, November 3rd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../day2/">Day 2 - Tuesday, November 4th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../day3/">Day 3 - Wednesday, November 5th</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Day 4 - Thursday, November 6th</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#scaling-up-ion-trap-quantum-computers-and-quantum-technologies-the-case-of-ionq">Scaling up ion trap quantum computers and quantum technologies; the case of IonQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#atomistic-simulations-on-quantum-accelerated-supercomputing">Atomistic simulations on quantum accelerated supercomputing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coffee-break">Coffee break</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accelerated-quantum-supercomputing-using-nvidia-cuda-q">Accelerated quantum supercomputing using NVIDIA CUDA-Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lunch">Lunch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quantum-error-correction-qec">Quantum error-correction (QEC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quantum-kernel-estimation-with-application-to-disability-insurance">Quantum kernel estimation with application to disability insurance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Coffee break</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interactive-tutorial-quantum-error-correction-qec-hands-on">Interactive tutorial: Quantum error-correction (QEC) hands-on</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interactive-tutorial-quantum-kernel-estimation-with-application-to-disability-insurance">interactive tutorial: Quantum kernel estimation with application to disability insurance</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../day5/">Day 5 - Friday, November 7th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../related-resources/">Related resources</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Quantum Autumn School 2025</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Day 4 - Thursday, November 6th</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ENCCS/qas2025/blob/main/content/day4.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="day-4-thursday-november-6th">
+<h1>Day 4 - Thursday, November 6th<a class="headerlink" href="#day-4-thursday-november-6th" title="Link to this heading"></a></h1>
+<p><em>Learning Track: overview on ion trap modality, accelerating DFT calculations using quantum algorithms, accelerating quantum algorithms using GPUs, quantum error correction, quantum kernel estimation</em></p>
+<section id="scaling-up-ion-trap-quantum-computers-and-quantum-technologies-the-case-of-ionq">
+<h2>Scaling up ion trap quantum computers and quantum technologies; the case of IonQ<a class="headerlink" href="#scaling-up-ion-trap-quantum-computers-and-quantum-technologies-the-case-of-ionq" title="Link to this heading"></a></h2>
+<p><strong>Speaker:</strong> Panagiotis Barkoutsos (IonQ)
+<strong>Time:</strong> 9:00-10:00</p>
+<p>Key topics: ion-trap technology and the updated roadmap of IonQ, scalability beyond qubits and qubit registers, quantum technologies in the industry and how they can be used from an end user perspective</p>
+</section>
+<section id="atomistic-simulations-on-quantum-accelerated-supercomputing">
+<h2>Atomistic simulations on quantum accelerated supercomputing<a class="headerlink" href="#atomistic-simulations-on-quantum-accelerated-supercomputing" title="Link to this heading"></a></h2>
+<p><strong>Speaker:</strong> Karim Elgammal (ENCCS/RISE, SE), Marc Maußner (infoteam, DE)
+<strong>Time:</strong> 10:00-10:40</p>
+<p>An overview on Applications of quantum computing to atomistic simulations and materials science. This session explores how quantum algorithms can enhance Density Functional Calculations (DFT) electronic structure calculations, with practical examples from materials research.</p>
+</section>
+<section id="coffee-break">
+<h2>Coffee break<a class="headerlink" href="#coffee-break" title="Link to this heading"></a></h2>
+<p><strong>Time:</strong> 10:40-11:00</p>
+</section>
+<section id="accelerated-quantum-supercomputing-using-nvidia-cuda-q">
+<h2>Accelerated quantum supercomputing using NVIDIA CUDA-Q<a class="headerlink" href="#accelerated-quantum-supercomputing-using-nvidia-cuda-q" title="Link to this heading"></a></h2>
+<p><strong>Speaker:</strong> Esperanza Cuenca-Gómez (NVIDIA)
+<strong>Time:</strong> 11:00-12:00</p>
+<p><strong>📊 Slides:</strong> <a class="reference download internal" download="" href="../_downloads/02213e9275cfb4a381cc516c5b095fae/NVIDIA_Accelerated%20Quantum%20Supercomputing_Using_CUDA-Q_Esperanza_Cuenca-Gomez.pdf"><span class="xref download myst">NVIDIA_Accelerated Quantum Supercomputing_Using_CUDA-Q_Esperanza_Cuenca-Gomez.pdf</span></a></p>
+<p><strong>🔗 Resources from the Talk:</strong></p>
+<p><strong>Getting Started:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://nvidia.github.io/cuda-quantum/latest/using/quick_start.html">CUDA-Q Quick Start</a></p></li>
+<li><p><a class="reference external" href="https://developer.nvidia.com/cuda-q">CUDA-Q Developer Portal</a></p></li>
+<li><p><a class="reference external" href="https://nvidia.github.io/cuda-quantum/latest/using/quick_start.html#cuda-q-academic">CUDA-Q Academic Program</a></p></li>
+<li><p><a class="reference external" href="https://github.com/NVIDIA/cuda-q-academic">CUDA-Q Academic GitHub</a></p></li>
+</ul>
+<p><strong>Examples and Workflows:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://nvidia.github.io/cuda-quantum/latest/using/examples/examples.html">CUDA-Q Examples</a></p></li>
+<li><p><a class="reference external" href="https://nvidia.github.io/cuda-quantum/latest/using/examples/multi_gpu_workflows.html">Multi-GPU Workflows</a></p></li>
+<li><p><a class="reference external" href="https://nvidia.github.io/cuda-quantum/latest/using/examples/multi_gpu_workflows.html#parallel-execution-over-multiple-qpus-mqpu">Parallel Execution (MQPU)</a></p></li>
+</ul>
+<p><strong>CUDA-Q Extensions (cudaqx):</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://nvidia.github.io/cudaqx/index.html">cudaqx Overview</a></p></li>
+<li><p><a class="reference external" href="https://nvidia.github.io/cuda-quantum/latest/using/applications.html">Applications</a></p></li>
+<li><p><a class="reference external" href="https://nvidia.github.io/cudaqx/components/solvers/introduction.html#vqe-examples">VQE Solvers</a></p></li>
+<li><p><a class="reference external" href="https://nvidia.github.io/cudaqx/components/solvers/introduction.html#adapt-vqe">ADAPT-VQE</a></p></li>
+</ul>
+<p><strong>Quantum Error Correction:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://nvidia.github.io/cudaqx/components/qec/introduction.html">QEC Introduction</a></p></li>
+<li><p><a class="reference external" href="https://nvidia.github.io/cudaqx/components/qec/introduction.html#pre-built-qec-decoders">Pre-built QEC Decoders</a></p></li>
+<li><p><a class="reference external" href="https://nvidia.github.io/cudaqx/components/qec/introduction.html#numerical-experiments">Numerical Experiments</a></p></li>
+</ul>
+<p><strong>cuQuantum:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.nvidia.com/cuda/cuquantum/latest/index.html">cuQuantum Documentation</a></p></li>
+</ul>
+<p>GPU-accelerated workloads are increasingly being adopted in heterogeneous quantum-classical architectures. These workloads are used to speed up algorithm run time, to test and implement future parallel QPU workflows, to scale up the size of quantum research, and to deploy workflows where QPUs and GPUs are tightly coupled. This session explains NVIDIA’s vision of accelerated quantum supercomputing, introducing CUDA-Q as the platform for high-performance hybrid quantum-classical computing. Relevant works using CUDA-Q are presented. The session includes code examples on how to use CUDA-Q, including quantum kernels and hybrid quantum-classical applications. Attendees are encouraged to explore CUDA-Q and the resources provided after the session.</p>
+</section>
+<section id="lunch">
+<h2>Lunch<a class="headerlink" href="#lunch" title="Link to this heading"></a></h2>
+<p><strong>Time:</strong> 12:00-13:00</p>
+</section>
+<section id="quantum-error-correction-qec">
+<h2>Quantum error-correction (QEC)<a class="headerlink" href="#quantum-error-correction-qec" title="Link to this heading"></a></h2>
+<p><strong>Speaker:</strong> Mats Granath (Göteborg University)
+<strong>Time:</strong> 13:00-14:00</p>
+<p><strong>📄 Lecture Notes:</strong> <a class="reference download internal" download="" href="../_downloads/dad14621aefb216a6525a1a31852e79b/QEC%20Course%202025.pdf"><span class="xref download myst">QEC Course 2025.pdf</span></a></p>
+<p>Introduction to quantum error correction, essential for fault-tolerant quantum computing. This session covers the principles of quantum error correction codes and the requirements for implementing QEC in practical quantum workflows.</p>
+</section>
+<section id="quantum-kernel-estimation-with-application-to-disability-insurance">
+<h2>Quantum kernel estimation with application to disability insurance<a class="headerlink" href="#quantum-kernel-estimation-with-application-to-disability-insurance" title="Link to this heading"></a></h2>
+<p><strong>Speaker:</strong> Björn Löfdahl (SEB)
+<strong>Time:</strong> 14:00-15:00</p>
+<p>applications of quantum computing within the financial sector.</p>
+<p>📄 <strong><a class="reference download internal" download="" href="../_downloads/90b49b6a43dccbe23c2f93099cdf055b/QSVR_presentation.pdf"><span class="xref download myst">Download Slides (PDF)</span></a></strong></p>
+</section>
+<section id="id1">
+<h2>Coffee break<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p><strong>Time:</strong> 15:00-15:30</p>
+</section>
+<section id="interactive-tutorial-quantum-error-correction-qec-hands-on">
+<h2>Interactive tutorial: Quantum error-correction (QEC) hands-on<a class="headerlink" href="#interactive-tutorial-quantum-error-correction-qec-hands-on" title="Link to this heading"></a></h2>
+<p><strong>Speakers:</strong> Moritz Lange (Göteborg University)
+<strong>Time:</strong> 15:30-16:30</p>
+<p>Hands-on tutorial implementing quantum error correction using repetition codes on IQM quantum hardware. This interactive session provides practical experience with QEC concepts, circuit implementation, and error mitigation techniques.</p>
+<p><strong>📓 Download Notebook and Solutions:</strong></p>
+<ul class="simple">
+<li><p>📥 <strong><a class="reference external" href="https://github.com/ENCCS/qas2025/blob/main/notebooks/QEC/Repetition%20code%20on%20IQM.ipynb">Download Notebook</a></strong> - Repetition code on IQM</p></li>
+<li><p>📄 <strong><a class="reference download internal" download="" href="../_downloads/a90d6ecf67975128dff222f2205e5841/Repetition%20code%20on%20IQM%20-%20solutions.pdf"><span class="xref download myst">Download PDF Solutions</span></a></strong> - Complete solutions for the QEC exercises</p></li>
+</ul>
+<p><strong>🚀 Run Notebook in the Cloud (No Installation Required):</strong></p>
+<p><a class="reference external" href="https://mybinder.org/v2/gh/ENCCS/qas2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
+</section>
+<section id="interactive-tutorial-quantum-kernel-estimation-with-application-to-disability-insurance">
+<h2>interactive tutorial: Quantum kernel estimation with application to disability insurance<a class="headerlink" href="#interactive-tutorial-quantum-kernel-estimation-with-application-to-disability-insurance" title="Link to this heading"></a></h2>
+<p><strong>Speakers:</strong> Anastasiia Andriievska (RISE), Björn Löfdahl (SEB)
+<strong>Time:</strong> 16:30-17:30</p>
+<p>Hands-on tutorial on quantum kernel estimation methods applied to real-world financial data analysis. This interactive session demonstrates how quantum machine learning techniques can be applied to disability insurance data using quantum kernels.</p>
+<p><strong>📓 Download Notebook:</strong></p>
+<ul class="simple">
+<li><p>📥 <strong><a class="reference external" href="https://github.com/ENCCS/qas2025/blob/main/notebooks/QKE/QKE_BL_AA_IQM_2025.ipynb">Download Notebook</a></strong> - Quantum kernel estimation for disability insurance</p></li>
+</ul>
+<p><strong>🚀 Run Notebook in the Cloud (No Installation Required):</strong></p>
+<p><a class="reference external" href="https://mybinder.org/v2/gh/ENCCS/qas2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../day3/" class="btn btn-neutral float-left" title="Day 3 - Wednesday, November 5th" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../day5/" class="btn btn-neutral float-right" title="Day 5 - Friday, November 7th" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, The contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

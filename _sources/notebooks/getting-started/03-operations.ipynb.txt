@@ -1,0 +1,228 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "36275687",
+   "metadata": {},
+   "source": [
+    "# Operations continued\n",
+    "We have been using a visual editor to create quantum circuits throughout the course. Now it's your turn to create some circuits on your own using qrisp, the next generation  quantum programming framework!\n",
+    "\n",
+    "This notebook will help you deepen your understanding of quantum operations and universal gate sets introduced in the lecture.\n",
+    "\n",
+    "You will:\n",
+    "- Review single- and two-qubit gates.\n",
+    "- Learn about universal gate sets and circuit transpilation.\n",
+    "- Specify the physical qubits using **Qrisp**.\n",
+    "- Transpile multi-controlled gates into a universal two-qubit gate set.\n",
+    "\n",
+    "\n",
+    "In order to use qrisp together with IQM devices, please make sure to install the latest version of qrisp. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d33d4122",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "%pip install \"iqm-client[qiskit] >= 32.1.1, < 33.0\"\n",
+    "%pip install \"qrisp[iqm]\""
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b9fa7745",
+   "metadata": {},
+   "source": [
+    "## Universal Gate Sets\n",
+    "\n",
+    "A **universal gate set** allows any quantum computation to be approximated to arbitrary accuracy.\n",
+    "\n",
+    "Common examples:\n",
+    "- {H, T, CNOT}\n",
+    "- {Rz, Rx, CZ}\n",
+    "- {CZ, R}  (used in this notebook)\n",
+    "\n",
+    "The process of **transpilation** converts a general quantum circuit into one that uses only gates from the chosen universal set.\n",
+    "\n",
+    "**Task: Use the `qc.transpile(basis_gates=[\"cz\", \"r\"])` method to transpile the circuit and compare it to the untranspiled version.**\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "30cd13db",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Import the Qrisp quantum library\n",
+    "from qrisp import *\n",
+    "\n",
+    "# Define two qubits as a quantum variable\n",
+    "q = QuantumVariable(2)\n",
+    "\n",
+    "# Apply a Hadamard to the first qubit\n",
+    "h(q[0])\n",
+    "\n",
+    "# Apply a CNOT (control: q[0], target: q[1])\n",
+    "cx(q[0], q[1])\n",
+    "\n",
+    "# Visualize and compile\n",
+    "qc = q.qs.compile()\n",
+    "print(qc)\n",
+    "\n",
+    "print(\"TODO: print the transpiled circuit diagram here\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "04ca8415",
+   "metadata": {},
+   "source": [
+    "## Multi-Controlled Gates and Decomposition\n",
+    "\n",
+    "The **multi-controlled X gate (MCX)** generalizes the CNOT gate.  \n",
+    "For example, `mcx([0,1,2], 3)` flips qubit 3 if all control qubits (0,1,2) are in state `1`.\n",
+    "\n",
+    "However, **quantum hardware** typically only supports *two-qubit gates*, so multi-controlled gates must be **decomposed** into equivalent two-qubit operations.\n",
+    "\n",
+    "**Task: Create a circuit that uses the MCX gate and transpile it to see how it is decomposed into two-qubit gates.**\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6f722b6f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Define 4 qubits\n",
+    "qv = QuantumVariable(4)\n",
+    "\n",
+    "# Apply a multi-controlled X (at least three controls -> one target)\n",
+    "\n",
+    "# Compile and transpile\n",
+    "\n",
+    "# Transpile to two-qubit universal gate set\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f7b076b1",
+   "metadata": {},
+   "source": [
+    "**Task: MCX Decomposition**\n",
+    "\n",
+    "1. Observe the above transpiled version of the `mcx` gate (tip: use `__dir__()` on the object return by the `transpile` method).\n",
+    "2. How many **two-qubit** gates does it require?\n",
+    "3. Compare the number of required cz gates to the number of required iswap gates when considering the universal gate set that includes iSWAP as the two-qubit gate {iSWAP, R}.\n",
+    "4. For the quick ones: Try building your own 3-control gate manually using `cx` and `cz` gates only. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "48ff9f9f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1a5c12d0",
+   "metadata": {},
+   "source": [
+    "When running on hardware, this transpilation is automatically handled for us, however, it makes sense to understand what is happening \"under the hood\"."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cc7d1d6e",
+   "metadata": {},
+   "source": [
+    "## Improving outcomes by selecting physical qubits\n",
+    "\n",
+    "A typical quantum processor consists of multiple qubits with varying coherence times and gate fidelities. By selecting the best physical qubits for your circuit, you can improve the overall performance and reliability of your quantum computations.\n",
+    "\n",
+    "This can be done in any framework. For qrisp, the following is a way to do it:\n",
+    "\n",
+    "**Task: But, oops, the coupling map is incomplete, check IQM Resonance's coupling map and add at least one edge to give the transpiler enough freedom to map the circuit.**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fc57e232",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from qrisp.interface import IQMBackend\n",
+    "\n",
+    "import qiskit\n",
+    "# Define a custom transpilation procedure (default will be default \n",
+    "# qiskit transpiler to match connectivity and gate set).\n",
+    "# Should take a Qiskit circuit and return a Qiskit circuit\n",
+    "\n",
+    "\n",
+    "qb_index = lambda q: int(q.strip().upper().replace(\"QB\", \"\")) - 1 if q.strip().upper().startswith(\"QB\") else None\n",
+    "\n",
+    "\n",
+    "def custom_transpilation(qc : qiskit.QuantumCircuit):\n",
+    "    # TODO: Check and change only the next line\n",
+    "    couplings = [[\"QB15\",\"QB16\"],[\"QB16\",\"QB24\"],[\"QB23\",\"QB24\"],[\"QB23\",\"QB15\"]] \n",
+    "    reduced_coupling_map = [[qb_index(q) for q in row] for row in couplings]\n",
+    "    qc = qiskit.transpile(qc, basis_gates = [\"cz\", \"r\", \"measure\", \"reset\"], coupling_map=reduced_coupling_map, optimization_level=3)\n",
+    "        \n",
+    "    return qc\n",
+    "    \n",
+    "# Create a backend object\n",
+    "quantum_computer = IQMBackend(api_token = input(\"Enter your IQM Resonance API token: \"), \n",
+    "                          device_instance = \"emerald\",\n",
+    "                          transpiler = custom_transpilation)\n",
+    "\n",
+    "\n",
+    "qv = QuantumVariable(5)\n",
+    "\n",
+    "x(qv[0])\n",
+    "cx(qv[0], qv[1])\n",
+    "cx(qv[1], qv[2])\n",
+    "cx(qv[2], qv[3])\n",
+    "cx(qv[3], qv[4])\n",
+    "\n",
+    "\n",
+    "meas_res = qv.get_measurement(backend = quantum_computer)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c9cd0982",
+   "metadata": {},
+   "source": [
+    "**Task: Then, try to find qubits with low readout errors and good two-qubit gate fidelities for your circuit.**"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": ".venv",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

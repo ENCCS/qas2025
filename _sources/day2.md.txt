@@ -1,0 +1,75 @@
+# Day 2 - Tuesday, November 4th
+
+*Learning Track: Basic/Intermediate - variational algorithms, optimization, QAOA and overview on hybrid use cases*
+
+## Hamiltonian Simulation and Estimation
+**Speaker:** Juan de Gracia Triviño (ENCCS/RISE, SE)
+**Time:** 9:00-10:00
+
+Comprehensive overview of Variational Quantum Eigensolvers (VQE) and related algorithms including Quantum Phase Estimation (QPE) and quantum simulation methods. This session covers the theoretical foundations of variational quantum algorithms and their applications to quantum chemistry and materials science.
+
+📄 **[Download Slides (PDF)](resources/HamiltonianSimulation.pdf)**
+
+## interactive tutorial: experiments with quantum gates, circuits and algorithms
+**Speaker:** Juan de Gracia Triviño (ENCCS/RISE, SE)
+**Time:** 10:00-10:40
+
+Interactive tutorial on implementing quantum gates, circuits and algorithms using Qrisp SDK. This comprehensive session provides hands-on experience with quantum programming, covering circuit construction, simulation, and algorithms.
+
+📥 **[Download Notebook](https://github.com/ENCCS/qas2025/blob/main/notebooks/simulating_QC/QuantumCompSimulator.ipynb)** - Quantum Computing Simulator Tutorial
+
+## Coffee break
+**Time:** 10:40-11:00
+
+## Opportunities for extending quantum computing through subspace, embedding and classical molecular dynamics techniques
+**Speaker:** Thomas M. Bickley (UCL, UK)
+**Time:** 11:00-12:00
+
+The advent of hybrid computing platforms consisting of quantum processing units integrated with conventional high-performance computing brings new opportunities for algorithm design. By strategically offloading select portions of the workload to classical hardware where tractable, we may broaden the applicability of quantum computation in the near term. In this talk, we review techniques that facilitate the study of subdomains of chemical systems with quantum computers and present a proof-of-concept demonstration of quantum-selected configuration interaction deployed within a multiscale/multiphysics simulation workflow leveraging classical molecular dynamics, projection-based embedding and qubit subspace tools. This allows the technology to be utilised for simulating systems of real scientific and industrial interest, which not only brings true quantum utility closer to realisation but is also relevant as we look forward to the fault-tolerant regime.
+
+📄 **[Download Slides (PDF)](resources/2025_autumn_school.pdf)**
+
+## Lunch
+**Time:** 12:00-13:00
+
+## Getting started with algorithm development on actual quantum hardware using IQM Resonance
+**Speaker:** Stefan Seegerer (IQM)
+**Time:** 13:00-14:00
+
+In this session you will be learning how to execute quantum circuits on actual hardware with IQM's cloud-accessible Resonance platform. You will not only run your first experiments but also acquire tips and tricks on how to get the most out of the hardware.
+
+🔗 **[please visit IQM Academy Workshop link](https://www.iqmacademy.com/curriculum/workshop-en-3.html)**
+
+**📓 Download Notebooks for Hands-on Exercises:**
+- 📥 **[Getting Started Notebook](https://github.com/ENCCS/qas2025/blob/main/notebooks/getting-started/qrisp-starter.ipynb)** - Introduction to Qrisp and IQM
+- 📥 **[03: Operations](https://github.com/ENCCS/qas2025/blob/main/notebooks/getting-started/03-operations.ipynb)** - Quantum operations and gates
+- 📥 **[04: Bernstein-Vazirani Algorithm](https://github.com/ENCCS/qas2025/blob/main/notebooks/getting-started/04-bv.ipynb)** - BV algorithm implementation
+- 📥 **[09: Dynamic Decoupling](https://github.com/ENCCS/qas2025/blob/main/notebooks/getting-started/09-dd.ipynb)** - Error mitigation with dynamic decoupling
+- 📥 **[11: Readout](https://github.com/ENCCS/qas2025/blob/main/notebooks/pulse/11-readout.ipynb)** - Pulse-level readout programming
+
+**🚀 Run Notebooks in the Cloud (No Installation Required):**
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ENCCS/qas2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)
+
+Click the badge above to launch all notebooks in Binder - free, no installation needed, pre-configured with all dependencies!
+
+## Developing quantum algorithms with qrisp—the next generation of quantum algorithm development
+**Speaker:** Stefan Seegerer (IQM)
+**Time:** 14:00-15:00
+
+This hands-on session introduces qrisp’s high-level, Pythonic workflow that converts mathematical intent directly into resource-optimized quantum circuits. Participants will prototype variational and fault-tolerant routines, run it on simulators and real hardware and experience first hand how qrisp empowers you to develop novel quantum algorithms.
+
+For notebooks, it was continuation for the previous ones
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ENCCS/qas2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)
+
+## Coffee break
+**Time:** 15:00-15:30
+
+## QAOA - Theory
+**Speaker:** Ruben Pariente Bassa (SINTEF, NO) 
+**Time:** 15:30-16:30
+
+More in-depth into the Quantum Approximate Optimization Algorithm (QAOA), one of the most promising near-term quantum algorithms. This session covers theoretical foundations of QAOA, its applications to combinatorial optimization problems, and why it's particularly suited for NISQ devices.
+
+📄 **[Download Slides (PDF)](resources/ENCCS_2025_QAOA.pdf)**

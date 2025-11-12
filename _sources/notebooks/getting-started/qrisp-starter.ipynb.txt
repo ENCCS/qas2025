@@ -1,0 +1,302 @@
+{
+ "cells": [
+  {
+   "attachments": {},
+   "cell_type": "markdown",
+   "id": "13ce3e15",
+   "metadata": {},
+   "source": [
+    "# Getting started with Qrisp on IQM\n",
+    "\n",
+    ":::{admonition} Download this Notebook\n",
+    ":class: tip\n",
+    "\n",
+    "{download}`Download qrisp-starter.ipynb </_static/qrisp-starter.ipynb>` to run locally on your machine.\n",
+    ":::\n",
+    "\n",
+    "Qrisp is a quantum programming language build around the concept of quantum variables. It is designed to be a high-level language that is easy to use and understand. Qrisp is a great tool for beginners to learn quantum computing and for experts to quickly prototype quantum algorithms. It offers a fresh take on quantum programming. You can learn more about Qrisp on the official website: [https://qrisp.eu/](https://qrisp.eu/).\n",
+    "\n",
+    "\n",
+    "In this notebook, you will learn how to ...\n",
+    "* ... get started with Qrisp.\n",
+    "* ... run a Qrisp program on an IQM backend both mock and real device.\n",
+    "\n",
+    "This notebook is from https://www.iqmacademy.com/learn/qrisp/00-intro/ with few edits to make it simpler to use on IQM device `Sirius`\n",
+    "\n",
+    "*note:* you can run this notebook with token.txt file next to it\n",
+    "\n",
+    "### Installing the necessary packages\n",
+    "In order to get started, make sure you have the appropriate packages installed. Make sure that you install qrisp with the iqm extension."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "18db38ae",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "%%capture\n",
+    "\n",
+    "%pip install qrisp[iqm]\n",
+    "# On some systems, you may need to use quotes around the extras:\n",
+    "#!pip install \"qrisp[iqm]\""
+   ]
+  },
+  {
+   "attachments": {},
+   "cell_type": "markdown",
+   "id": "853eed3d",
+   "metadata": {},
+   "source": [
+    "### Imports\n",
+    "\n",
+    "In order to use Qrisp, you need to import the `qrisp` package. You can do this by running `from qrisp import *`  \n",
+    "\n",
+    "ofcourse it is not the best practice to import everything like this, but for the sake of simplicity in this notebook we do it."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "4d2c9406",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from qrisp import *\n",
+    "from qrisp.interface import IQMBackend"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b7d1573d",
+   "metadata": {},
+   "source": [
+    "Qrisp provides advanced quantum data types such as QuantumFloat that we will use in this example. In this example we wil encode a 2 it will multiply it with itself and then measure the result. \n",
+    "\n",
+    "Let's run it on a simulator first."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "aa2b6d22",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "                                                                                     \u001b[2K"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "{2: 1.0}"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = QuantumFloat(2)\n",
+    "a[:] = 2\n",
+    "a.get_measurement()"
+   ]
+  },
+  {
+   "attachments": {},
+   "cell_type": "markdown",
+   "id": "37081f56",
+   "metadata": {},
+   "source": [
+    "## Running on IQM Resonance\n",
+    "\n",
+    "Now let's run circuits on IQM Resonance. IQM provides both real quantum hardware and a mock backend for testing.\n",
+    "\n",
+    "### Token Authentication\n",
+    "\n",
+    "To access IQM quantum computers, you need an API Token. Get one at \n",
+    "\n",
+    "🔗 [resonance.meetiqm.com](https://resonance.meetiqm.com/)\n",
+    "\n",
+    "by clicking \"Create Token\" in the side panel.\n",
+    "\n",
+    "**Note**: Here, We will use IQM Sirius (16 qubits, 0.30 credits/second) as it's the most cost-effective option and can perform this demo efficiently."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "44c7d313-158b-40cc-b1b7-cd8111d0d381",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Please enter the token from that you generated from IQM resonance ········\n"
+     ]
+    }
+   ],
+   "source": [
+    "from pathlib import Path\n",
+    "from getpass import getpass\n",
+    "\n",
+    "token_file = Path('token.txt')\n",
+    "\n",
+    "if not token_file.exists():\n",
+    "    token = \"\"\n",
+    "    while token == \"\":\n",
+    "        token = getpass(\"Please enter the token from that you generated from IQM resonance\")\n",
+    "        token_file.write_text(token)\n",
+    "else:\n",
+    "    print(\"Reusing existing token.txt\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "9ed3ea8b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/srv/conda/envs/notebook/lib/python3.10/site-packages/iqm/iqm_client/iqm_client.py:142: UserWarning: Your IQM Client version 28.0.0 was built for a different version of IQM Server. You might encounter issues. For the best experience, consider using a version of IQM Client that satisfies 29.2.0 <= iqm-client < 30.0.\n",
+      "  warnings.warn(version_incompatibility_msg)\n",
+      "/srv/conda/envs/notebook/lib/python3.10/site-packages/iqm/iqm_client/iqm_client.py:142: UserWarning: Your IQM Client version 28.0.0 was built for a different version of IQM Server. You might encounter issues. For the best experience, consider using a version of IQM Client that satisfies 30.1.0 <= iqm-client < 31.0.\n",
+      "  warnings.warn(version_incompatibility_msg)\n"
+     ]
+    }
+   ],
+   "source": [
+    "token = token_file.read_text()\n",
+    "\n",
+    "# IQM Backend for Sirius (mock Hardware)\n",
+    "iqm_mock = IQMBackend(api_token = token, device_instance = \"sirius:mock\")\n",
+    "\n",
+    "# IQM Backend for Sirius (real Hardware)\n",
+    "iqm_sirius = IQMBackend(api_token = token, device_instance = \"sirius\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f9096281",
+   "metadata": {},
+   "source": [
+    "### Compare all three runs: Simulator vs Mock vs Real Hardware\n",
+    "\n",
+    "This will consume credits (0.30 credits/second)."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "e607c209-f57c-4a99-b3e9-7fe3aca1cdfb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Qrisp Simulator:  {2: 1.0}                                                           \u001b[2K\n",
+      "Simulator: Perfect (no noise)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# local simulator\n",
+    "a = QuantumFloat(2)\n",
+    "a[:] = 2\n",
+    "sim_result = a.get_measurement()\n",
+    "print(f\"Qrisp Simulator:  {sim_result}\")\n",
+    "print(\"Simulator: Perfect (no noise)\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "e787b563-4ab9-4651-8250-b9dafd132f4d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "IQM Mock Backend: {0: 1.0}\n",
+      "Mock: Simulates IQM backend behavior (with noise model), zero credits used\n"
+     ]
+    }
+   ],
+   "source": [
+    "# mock backend on IQM resonance\n",
+    "a = QuantumFloat(2)\n",
+    "a[:] = 2\n",
+    "mock_result = a.get_measurement(backend=iqm_mock, shots=500)\n",
+    "print(f\"IQM Mock Backend: {mock_result}\")\n",
+    "print(\"Mock: Simulates IQM backend behavior (with noise model), zero credits used\")"
+   ]
+  },
+  {
+   "attachments": {},
+   "cell_type": "markdown",
+   "id": "96604fed-d691-47ad-a5f9-4431aba9a4fe",
+   "metadata": {},
+   "source": [
+    ":::{tip}\n",
+    "Always test on the mock backend (above) first before using real hardware to avoid wasting credits!\n",
+    ":::"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "f65e6ed3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "IQM Sirius (Real): {2: 0.952, 0: 0.028, 3: 0.018, 1: 0.002}\n",
+      "Real Hardware with actual NISQ noise\n"
+     ]
+    }
+   ],
+   "source": [
+    "# real hardware backend on IQM sirius\n",
+    "a = QuantumFloat(2)\n",
+    "a[:] = 2\n",
+    "iqm_result = a.get_measurement(backend=iqm_sirius, shots=500)\n",
+    "print(f\"IQM Sirius (Real): {iqm_result}\")\n",
+    "print(\"Real Hardware with actual NISQ noise\")"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.19"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

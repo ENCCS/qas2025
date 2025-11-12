@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bernstein-Vazirani algorithm &mdash; Quantum Autumn School 2025  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/overrides.css?v=c88db32d" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=187304be"></script>
+      <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../_static/copybutton.js?v=35a8b989"></script>
+      <script src="../../../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../" class="icon icon-home">
+            Quantum Autumn School 2025
+              <img src="../../../_static/ENCCS.jpg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../day0/">Day 0: before you arrive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pechakucha/">PechaKucha Evening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qrisp-starter-tutorial/">Qrisp Starter Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day1/">Day 1 - Monday, November 3rd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day2/">Day 2 - Tuesday, November 4th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day3/">Day 3 - Wednesday, November 5th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day4/">Day 4 - Thursday, November 6th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day5/">Day 5 - Friday, November 7th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../related-resources/">Related resources</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../">Quantum Autumn School 2025</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Bernstein-Vazirani algorithm</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ENCCS/qas2025/blob/main/content/notebooks/getting-started/04-bv.ipynb" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="bernstein-vazirani-algorithm">
+<h1>Bernstein-Vazirani algorithm<a class="headerlink" href="#bernstein-vazirani-algorithm" title="Link to this heading"></a></h1>
+<p>The Bernstein-Vazirani algorithm is a quantum algorithm that solves the following problem:</p>
+<blockquote>
+<div><p>Given a hidden n-bit secret code $s$, and access to an oracle that computes the function $f(x) = s \cdot x$ (the dot product modulo 2), determine the secret code $s$ using as few queries to the oracle as possible.</p>
+</div></blockquote>
+<p>In this notebook, you will learn how to</p>
+<ul class="simple">
+<li><p>… how to use qrisp and it’s features to implement Bernstein-Vazirani’s algorithm,</p></li>
+<li><p>… and execute it on an IQM quantum computer</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;iqm-client[qiskit] &gt;= 32.1.1, &lt; 33.0&quot;</span>
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;qrisp[iqm]&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>In order to implement the Bernstein-Vazirani algorithm, we will follow these steps:</p>
+<ol class="arabic simple">
+<li><p><strong>Initialization</strong>: Prepare an n-qubit register in the state $\ket{0}^{\otimes n}$ and an auxiliary qubit in the state $\ket{1}$.</p></li>
+<li><p><strong>Hadamard Transform</strong>: Apply the Hadamard gate to all qubits to create a superposition of all possible input states.</p></li>
+<li><p><strong>Oracle Implementation</strong>: Implement the oracle that encodes the secret code $s$.</p></li>
+<li><p><strong>Final Hadamard Transform</strong>: Apply the Hadamard gate again to the n-qubit register.</p></li>
+<li><p><strong>Measurement</strong>: Measure the n-qubit register to obtain the secret code $s$.</p></li>
+</ol>
+<p>Let’s start by importing the qrisp package (takes around 50s to load).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">qrisp</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Step 1: Initialize a quantum variable</span>
+<span class="n">length_of_secret_code</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">qv</span> <span class="o">=</span> <span class="n">TODO</span>
+
+<span class="c1"># Step 2: Apply Hadamard gates to all qubits</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Next up is the oracle.
+An oracle is a black-box operation that encodes a function $f(x)$ into a quantum circuit. In the Bernstein-Vazirani algorithm, the oracle is designed to encode the secret code $s$ such that when it is applied to an input state $\ket{x}$, it produces a phase shift based on the dot product of $s$ and $x$. Specifically, the oracle applies the transformation: $$U_f\ket{x} = (-1)^{s \cdot x}\ket{x}$$</p>
+<p><strong>Task: Implement the Bernstein-Vazirani oracle that encodes the secret code $s$ using a controlled-NOT (CNOT) operation. Remember to use an ancillary qubit (recommended: via an additional quantum variable).</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Implementation</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">oracle</span><span class="p">(</span><span class="n">qubits</span><span class="p">,</span> <span class="n">secret_code</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">qubits</span>
+
+<span class="c1"># Step 3: Define a secret code and call the oracle</span>
+<span class="n">secret_code</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+<span class="c1"># Step 4: Apply a final round of Hadamard gates</span>
+
+<span class="c1"># Simulate the circuit</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">qv</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>If you want to see the circuit you have built so far, you can print it out using the <code class="docutils literal notranslate"><span class="pre">print</span></code> function:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">qv</span><span class="o">.</span><span class="n">qs</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now, use the IQM backend to execute the circuit and measure the qubits to retrieve the secret code.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">qrisp.interface</span><span class="w"> </span><span class="kn">import</span> <span class="n">IQMBackend</span>
+<span class="n">token</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your IQM API token: &quot;</span><span class="p">)</span>
+<span class="n">iqm_emerald</span> <span class="o">=</span> <span class="n">IQMBackend</span><span class="p">(</span><span class="n">api_token</span> <span class="o">=</span> <span class="n">token</span><span class="p">,</span> 
+                          <span class="n">device_instance</span> <span class="o">=</span> <span class="s2">&quot;emerald&quot;</span><span class="p">)</span>
+
+
+<span class="n">qv</span><span class="o">.</span><span class="n">get_measurement</span><span class="p">(</span><span class="n">backend</span> <span class="o">=</span> <span class="n">iqm_emerald</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="uncomputation">
+<h2>Uncomputation<a class="headerlink" href="#uncomputation" title="Link to this heading"></a></h2>
+<p>The ancilla qubit used in the oracle should ideally be returned to its initial state (usually $\ket{0}$) after the oracle operation. This is important to prevent any unintended interference in subsequent operations or measurements. In the Bernstein-Vazirani algorithm, since the ancilla qubit is only used to facilitate the oracle’s function, it can be left in its final state after the oracle operation without affecting the outcome of the algorithm. However, if you were to use the ancilla qubit in further computations, you would need to apply the inverse of the operations performed on it during the oracle implementation to return it to its original state.</p>
+<p><strong>Task: Uncompute the ancilla qubit to return it to its initial state after the oracle operation. Print the resulting circuit.</strong></p>
+<p>Tipp:</p>
+<ul class="simple">
+<li><p>You can use <a class="reference external" href="https://qrisp.eu/reference/Core/generated/qrisp.QuantumVariable.uncompute.html#qrisp.QuantumVariable.uncompute">this function</a> or the <a class="reference external" href="https://qrisp.eu/general/tutorial/tutorial.html#Oracle-Construction">auto_uncompute</a> wrapper. You can use <a class="reference external" href="https://qrisp.eu/reference/Core/generated/qrisp.QuantumVariable.uncompute.html#qrisp.QuantumVariable.uncompute">this function</a> or the <a class="reference external" href="https://qrisp.eu/general/tutorial/tutorial.html#Oracle-Construction">auto_uncompute</a> wrapper. As Hadamard gates are used we need to add also <code class="docutils literal notranslate"><span class="pre">&#64;gate_wrap(is_qfree</span> <span class="pre">=</span> <span class="pre">True)</span></code></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Copyright 2025 IQM Quantum Computers (Stefan Seegerer)</span>
+<span class="c1">#</span>
+<span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="c1"># you may not use this file except in compliance with the License.</span>
+<span class="c1"># You may obtain a copy of the License at</span>
+<span class="c1">#</span>
+<span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="c1">#</span>
+<span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
+<span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="c1"># WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="c1"># See the License for the specific language governing permissions and</span>
+<span class="c1"># limitations under the License.</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, The contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

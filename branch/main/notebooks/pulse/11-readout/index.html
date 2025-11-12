@@ -1,0 +1,494 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Readout distributions: measuring qubits &mdash; Quantum Autumn School 2025  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/overrides.css?v=c88db32d" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=187304be"></script>
+      <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../_static/copybutton.js?v=35a8b989"></script>
+      <script src="../../../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../" class="icon icon-home">
+            Quantum Autumn School 2025
+              <img src="../../../_static/ENCCS.jpg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../day0/">Day 0: before you arrive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pechakucha/">PechaKucha Evening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/qrisp-starter-tutorial/">Qrisp Starter Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day1/">Day 1 - Monday, November 3rd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day2/">Day 2 - Tuesday, November 4th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day3/">Day 3 - Wednesday, November 5th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day4/">Day 4 - Thursday, November 6th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day5/">Day 5 - Friday, November 7th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../related-resources/">Related resources</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../">Quantum Autumn School 2025</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Readout distributions: measuring qubits</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ENCCS/qas2025/blob/main/content/notebooks/pulse/11-readout.ipynb" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="readout-distributions-measuring-qubits">
+<h1>Readout distributions: measuring qubits<a class="headerlink" href="#readout-distributions-measuring-qubits" title="Link to this heading"></a></h1>
+<p>Measuring the state of a qubit is the fundamental operation we need to perform to know anything about our experiments on a quantum computer.</p>
+<p>In this notebook, you will …</p>
+<ul class="simple">
+<li><p>… understand how the measurement of qubits works in a superconducting quantum computer.</p></li>
+</ul>
+<p>By the end of this notebook, you will not only have a basic understanding of how to execute pulse schedules, but you will also have a feeling for the outcome to expect in your experiments.</p>
+<p>In order to get started, make sure you have the appropriate packages installed:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span> 
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="s2">&quot;iqm-client&gt;= 32.1.1, &lt; 33.0&quot;</span>
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">iqm</span><span class="o">-</span><span class="n">station</span><span class="o">-</span><span class="n">control</span><span class="o">-</span><span class="n">client</span><span class="o">==</span><span class="mf">11.3.1</span>
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">iqm</span><span class="o">-</span><span class="n">pulla</span>
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">iqm</span><span class="o">-</span><span class="n">pulse</span>
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">matplotlib</span>
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">pylatexenc</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;iqm&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>iqm-client                               32.1.1
+iqm-data-definitions                     2.19
+iqm-exa-common                           27.3.1
+iqm-pulla                                11.16.2
+iqm-pulse                                12.6.1
+iqm-station-control-client               11.3.1
+</pre></div>
+</div>
+</div>
+</div>
+<section id="preparation">
+<h2>1. Preparation<a class="headerlink" href="#preparation" title="Link to this heading"></a></h2>
+<section id="connecting-to-the-qpu-station-control">
+<h3>1.1 Connecting to the QPU station control<a class="headerlink" href="#connecting-to-the-qpu-station-control" title="Link to this heading"></a></h3>
+<p>In the following, we will use the PulLa (Pulse Level Access) package. You can find the documentation <a class="reference external" href="https://docs.meetiqm.com/iqm-pulla/">here</a>.</p>
+<p>As a first step, we need to create a <strong>PulLa object</strong>. In general, this is a <strong>compiler</strong>, in a particular state, linked to a particular quantum computer. It contains calibration data and the set of available operations.</p>
+<p>Make sure you have the correct url and token below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">iqm.pulla.pulla</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pulla</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">iqm.iqm_client.authentication</span><span class="w"> </span><span class="kn">import</span> <span class="n">TokenManager</span>
+
+<span class="c1"># On-premise</span>
+<span class="c1">#os.environ[&quot;IQM_TOKENS_FILE&quot;]=&quot;your-token-here&quot;</span>
+<span class="c1">#p = Pulla(&quot;your-url-here&quot;, get_token_callback=TokenManager().get_bearer_token) </span>
+
+<span class="c1">#Resonance </span>
+<span class="n">api_token</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">Pulla</span><span class="p">(</span><span class="s2">&quot;https://cocos.resonance.meetiqm.com/sirius&quot;</span><span class="p">,</span> <span class="n">get_token_callback</span><span class="o">=</span><span class="k">lambda</span><span class="p">:</span> <span class="n">api_token</span><span class="p">)</span> 
+
+<span class="n">compiler</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">get_standard_compiler</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="measurement-operation">
+<h2>2. Measurement operation<a class="headerlink" href="#measurement-operation" title="Link to this heading"></a></h2>
+<p>Qubit readout in superconducting systems is done via <strong>superconducting resonators</strong> (e.g. LC oscillators) that are coupled to the transmon qubits in the QPU. The coupling between the qubit and the resonator can be described with the <a class="reference external" href="https://en.wikipedia.org/wiki/Jaynes%E2%80%93Cummings_model">Jaynes-Cummings model</a>, which allows for two different regimes of the system, the <strong>resonant</strong> and the <strong>dispersive</strong> one. In the latter, looking at the spectrum of the resonator, one can infer the state of the qubit thanks to the <strong>shift</strong> in the resonator’s frequency caused by the coupling.</p>
+<p>The raw measurement signal is typically represented as a <strong>complex number</strong> as function of time. The measurement instrument integrates the signal over time to yield a complex number, one per measurement operation.</p>
+<p>What we are used to see as a result of a measurement looks different though, right? An extra step is required: the complex number is rotated so that the difference between the states is maximal along the real axis. The real value of the signal is then compared with a <strong>calibrated threshold value</strong>, from which we get the well known 0/1 labels :)</p>
+<p>In the following, <strong>we will not perform the thresholding</strong> to investigate and get familiar with the raw results of a measurement operation!</p>
+<section id="measuring-a-qubit-in-different-states">
+<h3>2.1 Measuring a qubit in different states<a class="headerlink" href="#measuring-a-qubit-in-different-states" title="Link to this heading"></a></h3>
+<p>Knowing now that the readout signal depends on the state of the qubit, our strategy will be to prepare the qubits in different states and compare observations!
+We will inspect the results of 3 circuits:</p>
+<ol class="arabic simple">
+<li><p>Prepare a qubit in the $|0\rangle$ state and measure.</p></li>
+<li><p>Prepare a qubit in the $|1\rangle$ state and measure.</p></li>
+<li><p>Prepare a qubit in the superposition of $|0\rangle$ and $|1\rangle$ and measure.</p></li>
+</ol>
+<p>Below we use the IQM Pulse syntax to define the circuits (you can find the documentation <a class="reference external" href="https://docs.meetiqm.com/iqm-pulse/">here</a>).</p>
+<p>The PRX gate is defined as $R_{\phi}(\theta) = e^{-i(X cos(\phi)+Y sin(\phi))\frac{\theta}{2}}$. We can prepare the qubit in the three different states above changing the rotation angle $\theta$ and setting the phase angle $\phi$ to zero.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">iqm.pulse</span><span class="w"> </span><span class="kn">import</span> <span class="n">Circuit</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">iqm.pulse</span><span class="w"> </span><span class="kn">import</span> <span class="n">CircuitOperation</span> <span class="k">as</span> <span class="n">Op</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="n">qubit</span> <span class="o">=</span> <span class="s2">&quot;QB4&quot;</span>
+<span class="n">circuits</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">angle</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">([</span><span class="s2">&quot;state0&quot;</span><span class="p">,</span> <span class="s2">&quot;state1&quot;</span><span class="p">,</span> <span class="s2">&quot;superposition&quot;</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">]):</span>
+    <span class="n">circuit</span> <span class="o">=</span> <span class="n">Circuit</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="p">[</span>
+        <span class="n">Op</span><span class="p">(</span><span class="s2">&quot;prx&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">qubit</span><span class="p">,),</span> <span class="n">args</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;angle&quot;</span><span class="p">:</span> <span class="n">angle</span><span class="p">,</span> <span class="s2">&quot;phase&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">}),</span>
+        <span class="n">Op</span><span class="p">(</span><span class="s2">&quot;measure&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">qubit</span><span class="p">,),</span> <span class="n">args</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;key&quot;</span><span class="p">:</span> <span class="s2">&quot;M&quot;</span><span class="p">})</span>
+    <span class="p">])</span>
+    <span class="n">circuits</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">circuit</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>To see the unthresholded signals, we need to tweak the <strong>calibration settings</strong> of the <code class="docutils literal notranslate"><span class="pre">measure</span></code> operation.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">measure</span></code> operation can be implemented in more than one way. To see the available settings of all implementations, you can use <code class="docutils literal notranslate"><span class="pre">print_implementations_trees</span></code> (the first one in the list is the default).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">compiler</span><span class="o">.</span><span class="n">print_implementations_trees</span><span class="p">(</span><span class="n">compiler</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">op_table</span><span class="p">[</span><span class="s2">&quot;measure&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> &quot;Operation: measure, implementation: constant: align_name=True&quot;
+ ╠─ duration: Readout pulse duration = None (automatic/unspecified)
+ ╠─ frequency: Readout pulse frequency = None (automatic/unspecified)
+ ╠─ phase: Readout pulse phase = None (automatic/unspecified)
+ ╠─ amplitude_i: Readout channel I amplitude = None (automatic/unspecified)
+ ╠─ amplitude_q: Readout channel Q amplitude = 0.0 
+ ╠─ integration_length: Integration length = None (automatic/unspecified)
+ ╠─ integration_weights_I: Integration weights for channel I = [] 
+ ╠─ integration_weights_Q: Integration weights for channel Q = [] 
+ ╠─ integration_threshold: Integration threshold = None (automatic/unspecified)
+ ╠─ acquisition_type: Acquisition type = threshold 
+ ╚─ acquisition_delay: Acquisition delay = None (automatic/unspecified)
+</pre></div>
+</div>
+</div>
+</div>
+<p>We need to change the <code class="docutils literal notranslate"><span class="pre">acquisition_type</span></code> of the <code class="docutils literal notranslate"><span class="pre">constant</span></code> implementation from <code class="docutils literal notranslate"><span class="pre">threshold</span></code> to <code class="docutils literal notranslate"><span class="pre">complex</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># IQM Crystal way</span>
+<span class="c1"># compiler.amend_calibration_for_gate_implementation(&quot;measure&quot;, &quot;constant&quot;, (qubit, ), {&quot;acquisition_type&quot;: &quot;complex&quot;})</span>
+
+<span class="c1"># IQM Star way</span>
+<span class="n">updated_cal_set</span> <span class="o">=</span> <span class="n">compiler</span><span class="o">.</span><span class="n">get_calibration</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;QB1&quot;</span><span class="p">,</span> <span class="s2">&quot;QB2&quot;</span><span class="p">,</span> <span class="s2">&quot;QB3&quot;</span><span class="p">,</span> <span class="s2">&quot;QB4&quot;</span><span class="p">,</span> <span class="s2">&quot;QB5&quot;</span><span class="p">,</span> <span class="s2">&quot;QB8&quot;</span><span class="p">,</span> <span class="s2">&quot;QB9&quot;</span><span class="p">,</span> <span class="s2">&quot;QB10&quot;</span><span class="p">,</span> <span class="s2">&quot;QB11&quot;</span><span class="p">,</span> <span class="s2">&quot;QB13&quot;</span><span class="p">,</span> <span class="s2">&quot;QB15&quot;</span><span class="p">,</span> <span class="s2">&quot;QB16&quot;</span><span class="p">,</span> <span class="s2">&quot;QB17&quot;</span><span class="p">,</span> <span class="s2">&quot;QB19&quot;</span><span class="p">,</span> <span class="s2">&quot;QB20&quot;</span><span class="p">,</span> <span class="s2">&quot;QB21&quot;</span><span class="p">]:</span>
+    <span class="n">updated_cal_set</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;gates.measure_fidelity.constant.</span><span class="si">{</span><span class="n">q</span><span class="si">}</span><span class="s1">.acquisition_type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;complex&#39;</span>
+<span class="n">compiler</span><span class="o">.</span><span class="n">set_calibration</span><span class="p">(</span><span class="n">updated_cal_set</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we can execute the circuits with the modified settings:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">playlist</span><span class="p">,</span> <span class="n">context</span> <span class="o">=</span> <span class="n">compiler</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">circuits</span><span class="p">)</span>
+<span class="n">settings</span><span class="p">,</span> <span class="n">context</span> <span class="o">=</span> <span class="n">compiler</span><span class="o">.</span><span class="n">build_settings</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">shots</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">job</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">playlist</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">settings</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[11-03 18:41:41;I] Created job in queue with ID: 019a4acf-7394-7ec2-8644-e08105a3d42b
+[11-03 18:41:41;I] Waiting for the job to finish...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Progress in queue: 100%|██████████| 1/1 [00:02&lt;00:00,  2.49s/it]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[11-03 18:41:45;I] Sweep status: ready
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="analyze-the-results">
+<h2>3. Analyze the results<a class="headerlink" href="#analyze-the-results" title="Link to this heading"></a></h2>
+<p>Now that the ‘playlist’ of instructions above has successfully run, we can extract the results and compare them visualizing their real and imaginary part.</p>
+<p>We start with the first two state preparations in the $|0\rangle$ and $|1\rangle$ states:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">state_0_results</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">job</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;M&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
+<span class="n">state_1_results</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">job</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s2">&quot;M&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>    
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">state_0_results</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">imag</span><span class="p">(</span><span class="n">state_0_results</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Prepare 0&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">state_1_results</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">imag</span><span class="p">(</span><span class="n">state_1_results</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Prepare 1&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Re&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Im&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/70b212bc2d2d6ccb5f24fc441029ab070720bbb48288e05ae0bd16327d4ffb0a.png" src="../../../_images/70b212bc2d2d6ccb5f24fc441029ab070720bbb48288e05ae0bd16327d4ffb0a.png" />
+</div>
+</div>
+<p>Time to stop and think! Let’s make some important observations about these results:</p>
+<ul class="simple">
+<li><p>When preparing state $|0\rangle$ $\left(|1\rangle\right)$, most of the shots are <strong>clustered</strong> on the left (right). The signal has been calibrated so that the difference is maximized along the real axis.</p></li>
+<li><p>However, some shots are in the wrong cluster.</p></li>
+</ul>
+<p>This is due to various state preparation, gate, and measurement errors.</p>
+<p>As we have said already above, to convert a shot to a 0 or 1 label, the system would compare the real part of the measurement shot to a threshold <code class="docutils literal notranslate"><span class="pre">t</span></code> located somewhere in the middle of the two clusters.
+If <code class="docutils literal notranslate"><span class="pre">Re(shot)</span> <span class="pre">&lt;</span> <span class="pre">t</span></code>, the result is labeled as 0, and 1 if <code class="docutils literal notranslate"><span class="pre">Re(shot)</span> <span class="pre">&gt;</span> <span class="pre">t</span></code>.</p>
+<p>Curious to know what the the calibrated <code class="docutils literal notranslate"><span class="pre">t</span></code> was? Run the code below!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t_cal</span> <span class="o">=</span> <span class="n">compiler</span><span class="o">.</span><span class="n">get_calibration</span><span class="p">()[</span><span class="sa">f</span><span class="s2">&quot;gates.measure_fidelity.constant.</span><span class="si">{</span><span class="n">qubit</span><span class="si">}</span><span class="s2">.integration_threshold&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t_cal</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.0034116251795440417
+</pre></div>
+</div>
+</div>
+</div>
+<p>What about the superposition state?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">superposition_results</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">job</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="s2">&quot;M&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>    
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">superposition_results</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">imag</span><span class="p">(</span><span class="n">superposition_results</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Superposition&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Re&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Im&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/7a908bf5d1cffe5f5d936b347b737557aa744c44bc261f620dd4576c3b2d6892.png" src="../../../_images/7a908bf5d1cffe5f5d936b347b737557aa744c44bc261f620dd4576c3b2d6892.png" />
+</div>
+</div>
+<p>We observe that the clusters are in the same locations as for 0 and 1. Moreover, there is no “continuum” of shots between the two clusters, apart from few ones due to noise.</p>
+</section>
+<section id="let-s-play-with-calibration">
+<h2>4. Let’s play with calibration!<a class="headerlink" href="#let-s-play-with-calibration" title="Link to this heading"></a></h2>
+<p>Now that we have seen what the typical behaviour should look like for your readout experiments, we can have some fun and tweek a couple of calibration parameters to see how the reults change.</p>
+<p>This is interesting to understand the effects of bad calibration in fundamental operations like the measurement one.</p>
+<section id="change-the-threshold">
+<h3>4.1 Change the threshold<a class="headerlink" href="#change-the-threshold" title="Link to this heading"></a></h3>
+<p>Change <code class="docutils literal notranslate"><span class="pre">&quot;acquisition_type&quot;</span></code> back to <code class="docutils literal notranslate"><span class="pre">&quot;threshold&quot;</span></code> and choose a new <code class="docutils literal notranslate"><span class="pre">&quot;gates.measure_fidelity.constant.QB1.integration_threshold&quot;</span></code>, then repeat the experiment.</p>
+<p>What happens for the superposition state?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">compiler</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">get_standard_compiler</span><span class="p">()</span> <span class="c1"># Get a new compiler to reset the settings</span>
+<span class="n">compiler</span><span class="o">.</span><span class="n">amend_calibration_for_gate_implementation</span><span class="p">(</span>
+    <span class="s2">&quot;measure&quot;</span><span class="p">,</span> <span class="s2">&quot;constant&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">qubit</span><span class="p">,),</span> <span class="p">{</span><span class="s2">&quot;integration_threshold&quot;</span><span class="p">:</span> <span class="n">t_cal</span><span class="o">*</span><span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;acquisition_type&quot;</span><span class="p">:</span> <span class="s2">&quot;threshold&quot;</span><span class="p">}</span> 
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">playlist</span><span class="p">,</span> <span class="n">context</span> <span class="o">=</span> <span class="n">compiler</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">circuits</span><span class="p">)</span>
+<span class="n">settings</span><span class="p">,</span> <span class="n">context</span> <span class="o">=</span> <span class="n">compiler</span><span class="o">.</span><span class="n">build_settings</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">shots</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">job</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">playlist</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">settings</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[11-03 18:41:46;I] Created job in queue with ID: 019a4acf-87ac-7242-acbb-1efc5ea2e757
+[11-03 18:41:46;I] Waiting for the job to finish...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Progress in queue: 100%|██████████| 1/1 [00:02&lt;00:00,  2.76s/it]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[11-03 18:41:50;I] Sweep status: ready
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">Counter</span>
+<span class="n">counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">job</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="s2">&quot;M&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">squeeze</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;0:&quot;</span><span class="p">,</span> <span class="n">counts</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1:&quot;</span><span class="p">,</span> <span class="n">counts</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0: 502
+1: 498
+</pre></div>
+</div>
+</div>
+</div>
+<p>We see that the distribution of counts is not 50-50 anymore because we misinterpret the raw signal and assign wrong 0/1 labels!</p>
+</section>
+<section id="change-the-drive-amplitude">
+<h3>4.2 Change the drive amplitude<a class="headerlink" href="#change-the-drive-amplitude" title="Link to this heading"></a></h3>
+<p>Change the parameter <code class="docutils literal notranslate"><span class="pre">&quot;gates.measure_fidelity.constant.QB1.amplitude_i&quot;</span></code> in the interval $[0.0, 0.35]$ and repeat the experiment.</p>
+<p>What happens for the $|0\rangle$ and $|1\rangle$ states?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">compiler</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">get_standard_compiler</span><span class="p">()</span> <span class="c1"># Get a new compiler to reset the settings</span>
+
+<span class="c1"># IQM Crystal way</span>
+<span class="c1">#compiler.amend_calibration_for_gate_implementation(&quot;measure&quot;, &quot;constant&quot;, (&quot;qubit&quot;,), </span>
+<span class="c1">#                                                   {&quot;amplitude_i&quot;: 0.05, &quot;acquisition_type&quot;: &quot;complex&quot;}) </span>
+
+<span class="c1"># IQM Star way</span>
+<span class="n">updated_cal_set</span> <span class="o">=</span> <span class="n">compiler</span><span class="o">.</span><span class="n">get_calibration</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;QB1&quot;</span><span class="p">,</span> <span class="s2">&quot;QB2&quot;</span><span class="p">,</span> <span class="s2">&quot;QB3&quot;</span><span class="p">,</span> <span class="s2">&quot;QB4&quot;</span><span class="p">,</span> <span class="s2">&quot;QB5&quot;</span><span class="p">,</span> <span class="s2">&quot;QB8&quot;</span><span class="p">,</span> <span class="s2">&quot;QB9&quot;</span><span class="p">,</span> <span class="s2">&quot;QB10&quot;</span><span class="p">,</span> <span class="s2">&quot;QB11&quot;</span><span class="p">,</span> <span class="s2">&quot;QB13&quot;</span><span class="p">,</span> <span class="s2">&quot;QB15&quot;</span><span class="p">,</span> <span class="s2">&quot;QB16&quot;</span><span class="p">,</span> <span class="s2">&quot;QB17&quot;</span><span class="p">,</span> <span class="s2">&quot;QB19&quot;</span><span class="p">,</span> <span class="s2">&quot;QB20&quot;</span><span class="p">,</span> <span class="s2">&quot;QB21&quot;</span><span class="p">]:</span>
+    <span class="n">updated_cal_set</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;gates.measure_fidelity.constant.</span><span class="si">{</span><span class="n">q</span><span class="si">}</span><span class="s1">.acquisition_type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;complex&#39;</span>
+    <span class="n">updated_cal_set</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;gates.measure_fidelity.constant.</span><span class="si">{</span><span class="n">q</span><span class="si">}</span><span class="s1">.amplitude_i&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.30</span>
+    
+<span class="n">compiler</span><span class="o">.</span><span class="n">set_calibration</span><span class="p">(</span><span class="n">updated_cal_set</span><span class="p">)</span>
+
+<span class="n">playlist</span><span class="p">,</span> <span class="n">context</span> <span class="o">=</span> <span class="n">compiler</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">circuits</span><span class="p">)</span>
+<span class="n">settings</span><span class="p">,</span> <span class="n">context</span> <span class="o">=</span> <span class="n">compiler</span><span class="o">.</span><span class="n">build_settings</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">shots</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">job</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">playlist</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">settings</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">state_0_results</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">job</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;M&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
+<span class="n">state_1_results</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">job</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s2">&quot;M&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>    
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">state_0_results</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">imag</span><span class="p">(</span><span class="n">state_0_results</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Prepare 0&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">state_1_results</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">imag</span><span class="p">(</span><span class="n">state_1_results</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Prepare 1&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Re&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Im&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[11-03 18:41:51;I] Created job in queue with ID: 019a4acf-9af4-76b1-97e3-5f3991086dbd
+[11-03 18:41:51;I] Waiting for the job to finish...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Progress in queue: 100%|██████████| 1/1 [00:02&lt;00:00,  2.71s/it]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[11-03 18:41:55;I] Sweep status: ready
+</pre></div>
+</div>
+<img alt="../../../_images/acb2590e7b7a5771ea8919906eed883b280de38aac1e425a24f270bc84875fc5.png" src="../../../_images/acb2590e7b7a5771ea8919906eed883b280de38aac1e425a24f270bc84875fc5.png" />
+</div>
+</div>
+<p>We can see that for small values of the amplitude, the clusters overlap more and they are not well separated.</p>
+<p>For high values of the amplitude instead, the clusters will be further apart, but they could be distorted. In fact, too high amplitudes could blast the readout resonator and the qubit into higher states, making other clusters appear in the plot above.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Copyright 2025 IQM Quantum Computers (Joni Ikonen, Nadia Milazzo)</span>
+<span class="c1">#</span>
+<span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="c1"># you may not use this file except in compliance with the License.</span>
+<span class="c1"># You may obtain a copy of the License at</span>
+<span class="c1">#</span>
+<span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="c1">#</span>
+<span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
+<span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="c1"># WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="c1"># See the License for the specific language governing permissions and</span>
+<span class="c1"># limitations under the License.</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, The contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

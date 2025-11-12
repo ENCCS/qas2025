@@ -1,0 +1,484 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using Dynamical Decoupling (DD) &mdash; Quantum Autumn School 2025  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/overrides.css?v=c88db32d" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=187304be"></script>
+      <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../_static/copybutton.js?v=35a8b989"></script>
+      <script src="../../../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../" class="icon icon-home">
+            Quantum Autumn School 2025
+              <img src="../../../_static/ENCCS.jpg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../day0/">Day 0: before you arrive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pechakucha/">PechaKucha Evening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qrisp-starter-tutorial/">Qrisp Starter Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day1/">Day 1 - Monday, November 3rd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day2/">Day 2 - Tuesday, November 4th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day3/">Day 3 - Wednesday, November 5th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day4/">Day 4 - Thursday, November 6th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day5/">Day 5 - Friday, November 7th</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../related-resources/">Related resources</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../">Quantum Autumn School 2025</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Using Dynamical Decoupling (DD)</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ENCCS/qas2025/blob/main/content/notebooks/getting-started/09-dd.ipynb" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="using-dynamical-decoupling-dd">
+<h1>Using Dynamical Decoupling (DD)<a class="headerlink" href="#using-dynamical-decoupling-dd" title="Link to this heading"></a></h1>
+<p>Dynamical Decoupling (DD) is an effective error-suppression technique used to suppress errors in quantum computers. Here, we’ll explain (in basic terms) the technique behind DD, how it works, and how you can leverage IQM’s API to implement DD sequences on your quantum circuits when executing them on IQM’s quantum computers via cloud.</p>
+<p>DD sequences typically consist of a series of π-pulses (180-degree rotations) applied to the qubits. These pulses are designed to refocus the qubit’s state, effectively canceling out, for example, the accumulated phase errors (Z and ZZ errors, for instance). Common DD sequences available as default sequences via IQM’s cloud API include:</p>
+<ul class="simple">
+<li><p>XX: A simple sequence of two π-pulses. This is also known as CPMG pulses.</p></li>
+<li><p>YXYX: A sequence that alternates between X and Y pulses.</p></li>
+<li><p>XYXYYXYX: A longer sequence.</p></li>
+</ul>
+<p>In this notebook, you will learn how to</p>
+<ul class="simple">
+<li><p>… apply the standard DD sequences on your quantum circuits.</p></li>
+<li><p>… customize your DD sequences.</p></li>
+<li><p>… build your own DD sequences.</p></li>
+</ul>
+<p>By the end of this notebook, you will be able to execute your quantum circuits with our standard as well as your chosen DD sequences to squeeze the maximum performance out of our quantum computers.</p>
+<section id="installing-the-necessary-packages">
+<h2>Installing the necessary packages<a class="headerlink" href="#installing-the-necessary-packages" title="Link to this heading"></a></h2>
+<p>In order to get started, make sure you have the appropriate packages installed:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span>
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="s2">&quot;iqm-client[qiskit] &gt;= 32.1.1, &lt; 33.0&quot;</span>
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="s2">&quot;qrisp[iqm]&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="connecting-to-iqm-garnet">
+<h2>Connecting to IQM Garnet<a class="headerlink" href="#connecting-to-iqm-garnet" title="Link to this heading"></a></h2>
+<p>In order to access IQM Garnet through IQM Resonance, you will need to create an API Token. Copy the token, execute the cell, and paste the token to store it as an environment variable (or follow the guidelines for your system to create an environment variable). Let’s first check that our connection is working. We can do this by authenticating ourselves to IQM Resonance.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">qrisp.interface</span><span class="w"> </span><span class="kn">import</span> <span class="n">IQMBackend</span>
+
+
+<span class="c1"># Create a backend object</span>
+<span class="n">quantum_computer</span> <span class="o">=</span> <span class="n">IQMBackend</span><span class="p">(</span><span class="n">api_token</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your IQM Resonance API token: &quot;</span><span class="p">),</span> 
+                          <span class="n">device_instance</span> <span class="o">=</span> <span class="s2">&quot;sirius&quot;</span><span class="p">,)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="imports">
+<h1>Imports<a class="headerlink" href="#imports" title="Link to this heading"></a></h1>
+<p>Let us now import relevant modules necessary for this tutorial. For instance, it is important to import <em>CircuitCompilationOptions</em>, <em>DDMode</em>, and <em>DDStrategy</em>. Because DD operates at a lower compilation stage, at the so-called “time-box” representation of Qiskit instructions, it is important to import <em>CircuitCompilationOptions</em>. <em>DDMode</em> and <em>DDStrategy</em> are other classes that allow one to turn the DD on or off and specify a given DD pulse sequence and its alignment.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># General</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="c1"># qrisp</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">qrisp</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Matplotlib</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpl</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.dpi&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">500</span>
+
+<span class="c1"># IQM Client</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">iqm.iqm_client.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">CircuitCompilationOptions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">iqm.iqm_client.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">DDMode</span><span class="p">,</span> <span class="n">DDStrategy</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="choose-qubits-pair">
+<h1>Choose qubits pair<a class="headerlink" href="#choose-qubits-pair" title="Link to this heading"></a></h1>
+<p>Let us now choose a qubit pair. In our example circuit, defined on the next cell, there is a DD qubit (called dd_qubit) and control qubit (called ctrl_qubit). We add a control qubit in our circuit because it allows one to easily create delays on the DD qubit by appropriately positioning the barriers.</p>
+<p><strong>Task: Select two qubits (e.g. “QB3”, “QB4”) and add them to the code below. Check the Resonance page to find two neighboring qubits</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dd_qubit</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">ctrl_qubit</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">qubits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;QB3&#39;</span><span class="p">,</span> <span class="s1">&#39;QB4&#39;</span><span class="p">]</span> <span class="c1"># Choose two qubits</span>
+<span class="n">ini_layout</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">qubits</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Initial layout is: </span><span class="si">{</span><span class="n">ini_layout</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="define-the-example-circuit-to-apply-dd-on">
+<h1>Define the example circuit to apply DD on<a class="headerlink" href="#define-the-example-circuit-to-apply-dd-on" title="Link to this heading"></a></h1>
+<p>As an example of DD applied to a single qubit that is idling, we consider a Ramsey-like circuit, called a quantum memory circuit, following Fig. 1 of Ref. [1]. A quantum memory experiment specifically involves preparing a superposition state, waiting for a period, and then reversing the initial operation to assess coherence preservation. During the wait period (also known as the idle period), when no gates are being applied to the qubit, the qubit might accumulate errors due to, for example, a mis-aligned drive frame or residual ZZ interaction. The idea behind this circuit is to see if the coherence loss due to those error mechanisms can be avoided as a result of applying DD pulses during the wait period. The function below generates the example circuit:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">r</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">qubit</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Implements the RGate(theta, phi) in Qrisp.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    theta : float</span>
+<span class="sd">        Rotation angle.</span>
+<span class="sd">    phi : float</span>
+<span class="sd">        Axis angle in XY plane.</span>
+<span class="sd">    qubit : Qubit or QuantumVariable</span>
+<span class="sd">        Target qubit.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rz</span><span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">qubit</span><span class="p">)</span>
+    <span class="n">rx</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">qubit</span><span class="p">)</span>
+    <span class="n">rz</span><span class="p">(</span><span class="o">-</span><span class="n">phi</span><span class="p">,</span> <span class="n">qubit</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">qubit</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">quantum_memory_circuit</span><span class="p">(</span><span class="n">num_id_gates</span><span class="p">:</span> <span class="nb">float</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Generates a quantum memory circuit with variable delay for the data qubit (dd_qubit) </span>
+<span class="sd">    using multiple identity gates on the control qubit (ctrl_qubit). Adding identity gates</span>
+<span class="sd">    to neighboring qubit (ctrl_qubit) and methodically adding barriers to the circuit will create </span>
+<span class="sd">    idlings in the dd_qubit. </span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        num_id_gates: number of identity (or zero angle gates typically of 20 ns duration) to be added in neighboring qubit.</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        a transpiled circuit.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">qv</span> <span class="o">=</span> <span class="n">QuantumVariable</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">ancilla</span> <span class="o">=</span> <span class="n">QuantumVariable</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">r</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">qv</span><span class="p">)</span>
+    <span class="n">r</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="n">qv</span><span class="p">)</span>
+    <span class="n">barrier</span><span class="p">(</span><span class="n">qv</span><span class="p">)</span>  <span class="c1"># giant barrier through both qubits</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_id_gates</span><span class="p">):</span>
+        <span class="n">r</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">ancilla</span><span class="p">)</span>  <span class="c1"># add zero angle or identity gates to methodically allow for delay to be added to DD qubit</span>
+        <span class="n">barrier</span><span class="p">(</span><span class="n">ancilla</span><span class="p">)</span>  <span class="c1"># single barrier for qubit 1</span>
+    <span class="n">barrier</span><span class="p">(</span><span class="n">qv</span><span class="p">)</span>
+    <span class="n">r</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">qv</span><span class="p">)</span>
+    <span class="n">r</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="n">qv</span><span class="p">)</span>
+    <span class="n">measure</span><span class="p">(</span><span class="n">qv</span><span class="p">)</span>  <span class="c1"># PFR: REPLACED measure_all TO MEASURING ONLY THE IDLING QUBIT!</span>
+    
+    <span class="k">return</span> <span class="n">qv</span>
+    
+<span class="c1">#Draw the transpiled circuit</span>
+<span class="n">qc</span> <span class="o">=</span> <span class="n">quantum_memory_circuit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">qs</span><span class="o">.</span><span class="n">compile</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">qc</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="submit-jobs-with-and-without-dd">
+<h1>Submit jobs with and without DD<a class="headerlink" href="#submit-jobs-with-and-without-dd" title="Link to this heading"></a></h1>
+<p>To create our circuits of interest, we sweep the number of zero-angle single-qubit gates (SQG) on the control qubit. Depending on the number of these gates, increasingly longer delays are created on the control qubit. The typical duration of our SQG is 20 ns. Therefore, the duration of delays is just going to be the number of gates multiplied by 20 ns. We can now run our circuits with and without DD as we do in Qiskit, but if one wants to run circuits with DD, one now additionally provides a flag for DD to be operational when submitting the circuits, as shown below. When using DD in such a default way, the API automatically chooses the so-called standard strategy. Under the standard strategy, the three DD sequences introduced in the introduction are automatically placed by looking at idles that have fitting sizes. For example, if the idles are short (i.e., three times the duration of the X gate), the XX sequence is symmetrically placed. If the idles are longer than eight times the duration of the X gate, the XYXYYXYX sequence is placed accordingly.</p>
+<p><strong>TASK: Set a meaningful list of identity / r(0,0) gates to be added to the control qubit in <code class="docutils literal notranslate"><span class="pre">length_array</span></code>.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">token</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your IQM Resonance API token: &quot;</span><span class="p">)</span>
+<span class="n">length_array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">]</span> <span class="c1"># Define a meaningful list of identity / r(0,0) gates to be added to the control qubit</span>
+<span class="n">qc_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">length</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">length_array</span><span class="p">):</span>
+    <span class="n">qc_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">quantum_memory_circuit</span><span class="p">(</span><span class="n">length</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="sa">f</span><span class="s2">&quot;Now generating circuit </span><span class="si">{</span><span class="n">idx</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">length_array</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\r</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">shots</span> <span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="mi">10</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Submitting DD&quot;</span><span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">qrisp.interface</span><span class="w"> </span><span class="kn">import</span> <span class="n">IQMBackend</span>
+<span class="n">quantum_computer_dd</span> <span class="o">=</span> <span class="n">IQMBackend</span><span class="p">(</span><span class="n">api_token</span> <span class="o">=</span> <span class="n">token</span><span class="p">,</span> 
+                          <span class="n">device_instance</span> <span class="o">=</span> <span class="s2">&quot;garnet&quot;</span><span class="p">,</span>
+                          <span class="n">compilation_options</span> <span class="o">=</span> <span class="n">CircuitCompilationOptions</span><span class="p">(</span><span class="n">dd_mode</span><span class="o">=</span><span class="n">DDMode</span><span class="o">.</span><span class="n">ENABLED</span><span class="p">))</span>
+
+<span class="n">job_dd</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">qv</span> <span class="ow">in</span> <span class="n">qc_list</span><span class="p">:</span>
+    <span class="n">job_dd</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">qv</span><span class="o">.</span><span class="n">get_measurement</span><span class="p">(</span><span class="n">backend</span> <span class="o">=</span> <span class="n">quantum_computer_dd</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Submitting Bare&quot;</span><span class="p">)</span>
+
+<span class="n">quantum_computer_bare</span> <span class="o">=</span> <span class="n">IQMBackend</span><span class="p">(</span><span class="n">api_token</span> <span class="o">=</span> <span class="n">token</span><span class="p">,</span> 
+                          <span class="n">device_instance</span> <span class="o">=</span> <span class="s2">&quot;garnet&quot;</span><span class="p">,</span>
+                          <span class="n">compilation_options</span> <span class="o">=</span> <span class="n">CircuitCompilationOptions</span><span class="p">(</span><span class="n">dd_mode</span><span class="o">=</span><span class="n">DDMode</span><span class="o">.</span><span class="n">DISABLED</span><span class="p">))</span>
+<span class="n">job_bare</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">qv</span> <span class="ow">in</span> <span class="n">qc_list</span><span class="p">:</span>
+    <span class="n">job_bare</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">qv</span><span class="o">.</span><span class="n">get_measurement</span><span class="p">(</span><span class="n">backend</span> <span class="o">=</span> <span class="n">quantum_computer_bare</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="retrieve-counts-and-plot-for-standard-strategy">
+<h1>Retrieve counts and plot for standard strategy<a class="headerlink" href="#retrieve-counts-and-plot-for-standard-strategy" title="Link to this heading"></a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Retrieving DD&quot;</span><span class="p">)</span>
+<span class="n">prob_dd</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">job_dd</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Retrieving Bare&quot;</span><span class="p">)</span>
+<span class="n">prob_bare</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">job_bare</span><span class="p">]</span>
+
+<span class="n">time_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">length_array</span><span class="p">)</span><span class="o">*</span><span class="mi">20</span><span class="o">/</span><span class="mf">1e3</span> <span class="c1">#Since our SQG duration is 20 ns each, let us nicely write the x-axis values. </span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time_array</span><span class="p">,</span> <span class="n">prob_dd</span><span class="p">,</span> <span class="s1">&#39;bo-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;With standard DD&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time_array</span><span class="p">,</span> <span class="n">prob_bare</span><span class="p">,</span> <span class="s1">&#39;r^-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Without DD&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Idling time [us]&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Probability of state 0&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Check capacity of DD to preserve coherence when DD is on the specified qubit&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Task: What does the plot above suggest about the effect of DD pulses on the survival probability?</strong></p>
+</section>
+<section id="now-let-us-customize-dd-sequences">
+<h1>Now let us customize DD sequences<a class="headerlink" href="#now-let-us-customize-dd-sequences" title="Link to this heading"></a></h1>
+<p>One can also customize DD sequences. If one wants to apply just the XX sequence, for example, on all the idles that have durations larger than twice the duration of a single-qubit gate, one can define a custom XX strategy. We define below a custom strategy for XX, and YXYX sequences.</p>
+<p><strong>Task: Create a custom strategy for the DD sequences. Compare the performance of the standard and custom strategies.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">comp_options_xx</span> <span class="o">=</span> <span class="n">CircuitCompilationOptions</span><span class="p">(</span><span class="n">dd_mode</span><span class="o">=</span><span class="n">DDMode</span><span class="o">.</span><span class="n">ENABLED</span><span class="p">,</span> <span class="n">dd_strategy</span><span class="o">=</span><span class="n">DDStrategy</span><span class="p">(</span><span class="n">gate_sequences</span><span class="o">=</span><span class="p">[(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;XX&#39;</span><span class="p">,</span> <span class="s1">&#39;alap&#39;</span><span class="p">)]))</span> <span class="c1">#Given the idles, alap suggests DD pulses&#39; application is as late as possible. 2 suggests, if the delay is longer than 2 times SQG duration, DD pulses are applied.  </span>
+<span class="c1">#comp_options_yxyx = CircuitCompilationOptions(dd_mode=DDMode.ENABLED, dd_strategy=DDStrategy(gate_sequences=[(5, &#39;YXYX&#39;, &#39;asap&#39;)])) #When it is asap, that means as soon as possible. Here we specifically choose to apply YXYX sequence.</span>
+<span class="n">my_personal_comp_options</span> <span class="o">=</span> <span class="c1"># TODO</span>
+
+<span class="c1">###COMP OPTIONS XX###</span>
+<span class="n">quantum_computer_xx</span> <span class="o">=</span> <span class="n">IQMBackend</span><span class="p">(</span><span class="n">api_token</span> <span class="o">=</span> <span class="n">token</span><span class="p">,</span> 
+                          <span class="n">device_instance</span> <span class="o">=</span> <span class="s2">&quot;garnet&quot;</span><span class="p">,</span>
+                          <span class="n">compilation_options</span> <span class="o">=</span> <span class="n">comp_options_xx</span><span class="p">)</span>
+<span class="n">job_dd_xx</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">qv</span> <span class="ow">in</span> <span class="n">qc_list</span><span class="p">:</span>
+    <span class="n">job_dd_xx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">qv</span><span class="o">.</span><span class="n">get_measurement</span><span class="p">(</span><span class="n">backend</span> <span class="o">=</span> <span class="n">quantum_computer_xx</span><span class="p">))</span>
+
+
+
+<span class="c1">###MY PERSONAL COMP OPTIONS###</span>
+<span class="n">quantum_computer_custom_dd</span> <span class="o">=</span> <span class="n">IQMBackend</span><span class="p">(</span><span class="n">api_token</span> <span class="o">=</span> <span class="n">token</span><span class="p">,</span> 
+                          <span class="n">device_instance</span> <span class="o">=</span> <span class="s2">&quot;garnet&quot;</span><span class="p">,</span>
+                          <span class="n">compilation_options</span> <span class="o">=</span> <span class="n">my_personal_comp_options</span><span class="p">)</span>
+<span class="n">my_personal_job_dd</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">qv</span> <span class="ow">in</span> <span class="n">qc_list</span><span class="p">:</span>
+    <span class="n">my_personal_job_dd</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">qv</span><span class="o">.</span><span class="n">get_measurement</span><span class="p">(</span><span class="n">backend</span> <span class="o">=</span> <span class="n">quantum_computer_custom_dd</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="retrieve-counts-and-plot-for-custom-strategy">
+<h1>Retrieve counts and plot for custom strategy<a class="headerlink" href="#retrieve-counts-and-plot-for-custom-strategy" title="Link to this heading"></a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Retrieving custom DD&quot;</span><span class="p">)</span>
+<span class="n">prob_dd_xx</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">job_dd_xx</span><span class="p">]</span>
+
+<span class="n">personal_job_dd_probs</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">my_personal_job_dd</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time_array</span><span class="p">,</span> <span class="n">prob_dd_xx</span><span class="p">,</span> <span class="s1">&#39;go-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;With custom DD (XX sequence)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time_array</span><span class="p">,</span> <span class="n">personal_job_dd_probs</span><span class="p">,</span> <span class="s1">&#39;bo-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Name your sequence here&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time_array</span><span class="p">,</span> <span class="n">prob_bare</span><span class="p">,</span> <span class="s1">&#39;r^-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Without DD&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Idling time [us]&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Probability of state 0&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Check capacity of DD to preserve coherence when DD is on the selected qubits&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>As you can see, depending on the DD sequences, higher or lower error suppression is seen.
+<strong>Task: Create a custom strategy for the DD sequences. Compare the performance of the standard and custom strategies. Make sure, your’s is outperform the existing strategies.</strong></p>
+</section>
+<section id="we-can-customise-the-dd-sequences-further-by-also-changing-the-phases-of-individual-dd-pulse">
+<h1>We can customise the DD sequences further by also changing the phases of individual DD pulse<a class="headerlink" href="#we-can-customise-the-dd-sequences-further-by-also-changing-the-phases-of-individual-dd-pulse" title="Link to this heading"></a></h1>
+<p>One can further customise the DD sequences by also tuning not just the polar angle of SQG pulses on the Bloch sphere but azimuthal angles too, as shown below. Tuning both θ and ϕ gives flexibility to create more advanced sequences such as the Universally Robust (UR) sequence [1].</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gate_sequences</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+<span class="p">]</span> <span class="c1">#This is equivalent to &#39;XYXYYXYX&#39; sequence</span>
+
+<span class="n">comp_options_angles</span> <span class="o">=</span> <span class="n">CircuitCompilationOptions</span><span class="p">(</span><span class="n">dd_mode</span><span class="o">=</span><span class="n">DDMode</span><span class="o">.</span><span class="n">ENABLED</span><span class="p">,</span> <span class="n">dd_strategy</span><span class="o">=</span><span class="n">DDStrategy</span><span class="p">(</span><span class="n">gate_sequences</span><span class="o">=</span><span class="p">[(</span><span class="mi">8</span><span class="p">,</span> <span class="n">gate_sequences</span><span class="p">,</span> <span class="s1">&#39;center&#39;</span><span class="p">)]))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Task: Now, repeat the above with two different qubits. Make sure to choose one qubit pair with low T2 times and one qubit pair with high T2 times. Does it work better for one pair than the other?</strong></p>
+</section>
+<section id="conclusion">
+<h1>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading"></a></h1>
+<p>Depending on the error profile of the QPU, DD is good at suppressing errors. The effectiveness of DD sequences depends fundamentally on their interaction with the error Hamiltonian. For a QPU with dominant Pauli error channels, we can analyze suppression below:</p>
+<section id="key-mathematical-insights">
+<h2>Key Mathematical Insights:<a class="headerlink" href="#key-mathematical-insights" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p><strong>XX Sequence Properties</strong>:</p>
+<ul class="simple">
+<li><p>Perfect suppression of Z/ZZ errors:</p>
+<ul>
+<li><p>XZX = -Z ⇒ ⟨Z⟩_DD ≈ Z + XZX = 0 over one cycle</p></li>
+<li><p>Similarly, XZZX = -ZZ ⇒ ⟨ZZ⟩_DD = 0</p></li>
+</ul>
+</li>
+<li><p>No X-error suppression:</p>
+<ul>
+<li><p>XXX = X ⇒ ⟨X⟩_DD = X remains unchanged</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>XYXY Universal Sequence</strong>:</p>
+<ul class="simple">
+<li><p>Higher-order cancellation via nested anti-commutation:</p>
+<ul>
+<li><p>XXYXXXY = -X (using {X,Y}=0)</p></li>
+<li><p>Similarly cancels Y and Z errors to 1st order</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Universally Robust (UR) Sequences</strong>:</p>
+<ul class="simple">
+<li><p>UR sequences can be generated by tuning both θ and ϕ of the DD pulse. This flexibility is allowed by our API as we saw at the end of this tutorial.</p></li>
+<li><p>One can also achieve higher-order suppression via:</p>
+<ul>
+<li><p>Concatenated sequences</p></li>
+<li><p>Non-uniform pulse timing, etc.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+<section id="citation">
+<h1>Citation<a class="headerlink" href="#citation" title="Link to this heading"></a></h1>
+<p>[1] Ezzell, N., Pokharel, B., Tewala, L., Quiroz, G., &amp; Lidar, D. A. (2023). Dynamical decoupling for superconducting qubits: A performance survey. Physical Review Applied, 20(6), 064027.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Copyright 2025 IQM Quantum Computers (José Diogo da Costa Guimarães, Manish Thapa, Stefan Seegerer)</span>
+<span class="c1">#</span>
+<span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="c1"># you may not use this file except in compliance with the License.</span>
+<span class="c1"># You may obtain a copy of the License at</span>
+<span class="c1">#</span>
+<span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="c1">#</span>
+<span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
+<span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="c1"># WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="c1"># See the License for the specific language governing permissions and</span>
+<span class="c1"># limitations under the License.</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, The contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
